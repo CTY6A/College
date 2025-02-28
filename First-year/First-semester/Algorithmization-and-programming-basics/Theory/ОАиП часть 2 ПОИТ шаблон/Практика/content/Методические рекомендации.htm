@@ -1,0 +1,604 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Методические%20рекомендации.files/filelist.xml">
+<title>Методические рекомендации по изучению дисциплины &quot;Основы
+алгоритмизации и программирования. Часть 2&quot; </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>31</o:Revision>
+  <o:TotalTime>136</o:TotalTime>
+  <o:Created>2011-06-02T15:24:00Z</o:Created>
+  <o:LastSaved>2011-06-22T08:52:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1026</o:Words>
+  <o:Characters>5853</o:Characters>
+  <o:Company>home</o:Company>
+  <o:Lines>48</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6866</o:CharactersWithSpaces>
+  <o:Version>11.5703</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>TextFit</w:Zoom>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 пт</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-update:auto;
+	mso-style-next:"Заголовок 2";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:104.4pt;
+	text-indent:-49.6pt;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	mso-list:l2 level1 lfo2;
+	tab-stops:54.0pt list 104.4pt;
+	font-size:20.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial Black";
+	mso-bidi-font-family:Arial;
+	text-transform:uppercase;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 480.25pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:-.25pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:54.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:35.45pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:-.25pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Знак Знак";
+	margin-top:0cm;
+	margin-right:-.25pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:54.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.a
+	{mso-style-name:"Знак Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Основной текст с отступом 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 42.5pt 62.35pt 70.9pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1344043857;
+	mso-list-type:simple;
+	mso-list-template-ids:275003528;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:53.45pt;
+	mso-level-number-position:left;
+	margin-left:49.6pt;
+	text-indent:-14.15pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1373649412;
+	mso-list-type:simple;
+	mso-list-template-ids:133305242;}
+@list l1:level1
+	{mso-level-text:"%1\)\.";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1460219351;
+	mso-list-template-ids:-759037036;}
+@list l2:level1
+	{mso-level-style-link:"Заголовок 1";
+	mso-level-tab-stop:104.4pt;
+	mso-level-number-position:left;
+	margin-left:104.4pt;
+	text-indent:-49.6pt;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Arial Black";
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;}
+@list l2:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:70.9pt;
+	mso-level-number-position:left;
+	margin-left:70.9pt;
+	text-indent:-42.55pt;
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Arial Black";
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;}
+@list l2:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:118.6pt;
+	mso-level-number-position:left;
+	margin-left:118.6pt;
+	text-indent:-63.8pt;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Arial Black";
+	color:windowtext;
+	mso-text-animation:none;
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+@list l2:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:323.7pt;
+	mso-level-number-position:left;
+	margin-left:323.7pt;
+	text-indent:-54.0pt;
+	mso-ansi-font-weight:bold;}
+@list l2:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:359.15pt;
+	mso-level-number-position:left;
+	margin-left:359.15pt;
+	text-indent:-54.0pt;
+	mso-ansi-font-weight:bold;}
+@list l2:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:412.6pt;
+	mso-level-number-position:left;
+	margin-left:412.6pt;
+	text-indent:-72.0pt;
+	mso-ansi-font-weight:bold;}
+@list l2:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:466.05pt;
+	mso-level-number-position:left;
+	margin-left:466.05pt;
+	text-indent:-90.0pt;
+	mso-ansi-font-weight:bold;}
+@list l2:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:501.5pt;
+	mso-level-number-position:left;
+	margin-left:501.5pt;
+	text-indent:-90.0pt;
+	mso-ansi-font-weight:bold;}
+@list l2:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:554.95pt;
+	mso-level-number-position:left;
+	margin-left:554.95pt;
+	text-indent:-108.0pt;
+	mso-ansi-font-weight:bold;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h2 align=center style='margin-top:18.0pt;margin-right:0cm;margin-bottom:18.0pt;
+margin-left:0cm;text-align:center'><a name="_Toc265837698"><span
+style='font-size:20.0pt;mso-bidi-font-size:14.0pt;font-family:"Arial Black";
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal;font-style:normal'>Методические рекомендации <br>
+по изучению дисциплины</span></a><span style='font-size:20.0pt;mso-bidi-font-size:
+14.0pt;font-family:"Arial Black";mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal;font-style:normal'><o:p></o:p></span></h2>
+
+<p class=MsoBodyTextIndent2 style='text-indent:35.45pt'><span style='color:
+black'>Программа дисциплины «Основы алгоритмизации и программирования» (ОАиП)
+для студентов специальности 1-40 01 01 «Программное обеспечение информационных
+технологий» (ПОИТ) составлена в соответствии с требованиями образовательного
+стандарта ОСРБ 1-40 01 01-2007. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:35.45pt'><span style='color:
+black'>При составлении структуры материалов по дисциплине преследовались цели
+обучения студентов, во-первых, основным методам, приемам и базовым методологиям
+алгоритмизации задач; во-вторых, основам современных методологий проектирования
+программ; в-третьих, программированию на процедурно-ориентированном языке
+высокого уровня, отладке и выполнению на компьютере конкретных задач. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:35.45pt'><span style='color:
+black'>С учетом взаимосвязи дисциплин специальности ПОИТ в курсе ОАиП изучается
+алгоритмический язык программирования Паскаль.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='color:black'>Дисциплина ОАиП разделена на две части, соответствующие
+первому и второму семестру обучения. Такая структуризация курса должна
+позволить студентам лучше ориентироваться в последовательности изучения тем, а также
+более равномерно распределить силы и время для изучения дисциплины. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:35.45pt'><span style='color:black'>В
+состав <i style='mso-bidi-font-style:normal'>ЭУМКД по второй части дисциплины</i>
+<i style='mso-bidi-font-style:normal'>ОАиП</i> входят следующие компоненты: <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>рабочая учебная
+программа дисциплины;<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>теория (курс лекций); <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>методические
+рекомендации </span>по изучению дисциплины<span style='color:black'>; <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>методические указания
+к выполнению лабораторных работ;<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>указания к курсовому
+проектированию;<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:49.6pt;margin-bottom:.0001pt;text-indent:-14.15pt;mso-pagination:
+none;mso-list:l0 level1 lfo4;tab-stops:list 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>перечень
+экзаменационных вопросов.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoBodyTextIndent2><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'>Теория содержит
+следующие основные разделы: <o:p></o:p></span></i></b></p>
+
+<p class=MsoBodyText style='margin:0cm;margin-bottom:.0001pt;text-indent:35.45pt;
+mso-pagination:none;mso-list:l0 level1 lfo4;tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>Раздел 1.
+Подпрограммы: виды подпрограмм. Процедуры: синтаксис описания процедуры; вызов
+процедуры: принцип локализации; процедуры без параметров; процедуры с
+параметрами. Параметры подпрограмм: параметры-значения; параметры-переменные;
+параметры процедурных типов; параметры без типа. Функции: описание; вызов
+функции; рекурсивные функции. Взаимная рекурсия: организация взаимной рекурсии;
+директива Forward. Модули Unit: назначение и структура модуля Unit; особенности
+работы с модулями Unit.<o:p></o:p></span></p>
+
+<p class=MsoBodyText align=left style='margin:0cm;margin-bottom:.0001pt;
+text-align:left;text-indent:35.45pt;mso-pagination:none;mso-list:l0 level1 lfo4;
+tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span style='font-family:
+Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'><a
+href="../../../../../../%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%20%D0%BD%D0%B0%D1%88%D0%B8/%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%202011/%D0%AD%D0%A3%D0%9C%D0%9A_%D0%9E%D0%90%D0%B8%D0%9F%D1%87%D0%B0%D1%81%D1%82%D1%8C2_2011/%D0%9E%D0%90%D0%B8%D0%9F%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%202%20%D0%9F%D0%9E%D0%98%D0%A2%20%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/lk1/index.htm"
+target="_new"></a>Раздел 2. Простейший ввод-вывод. <o:p></o:p></span></p>
+
+<p class=MsoBodyText align=left style='margin:0cm;margin-bottom:.0001pt;
+text-align:left;text-indent:35.45pt;mso-pagination:none;mso-list:l0 level1 lfo4;
+tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span style='font-family:
+Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>Раздел 3. Записи:
+записи без вариантов; записи с вариантами; оператор присоединения; операции над
+записями. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin:0cm;margin-bottom:.0001pt;text-indent:35.45pt;
+mso-pagination:none;mso-list:l0 level1 lfo4;tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'><a
+href="../../../../../../%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%20%D0%BD%D0%B0%D1%88%D0%B8/%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%202011/%D0%AD%D0%A3%D0%9C%D0%9A_%D0%9E%D0%90%D0%B8%D0%9F%D1%87%D0%B0%D1%81%D1%82%D1%8C2_2011/%D0%9E%D0%90%D0%B8%D0%9F%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%202%20%D0%9F%D0%9E%D0%98%D0%A2%20%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/content/lk1/lk1.htm"
+target="_new"></a>Раздел 4. Множества: множественные типы; назначение, задание;
+конструктор множества; множественная переменная; операции над множествами.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin:0cm;margin-bottom:.0001pt;text-indent:35.45pt;
+mso-pagination:none;mso-list:l0 level1 lfo4;tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'><a
+href="../../../../../../%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%20%D0%BD%D0%B0%D1%88%D0%B8/%D0%AD%D0%A3%D0%9C%D0%9A%D0%94%202011/%D0%AD%D0%A3%D0%9C%D0%9A_%D0%9E%D0%90%D0%B8%D0%9F%D1%87%D0%B0%D1%81%D1%82%D1%8C2_2011/%D0%9E%D0%90%D0%B8%D0%9F%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%202%20%D0%9F%D0%9E%D0%98%D0%A2%20%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/lk1/index.htm"
+target="_new"></a>Раздел 5. Файлы: виды файлов; описание. Файлы с типом:
+процедуры и функции, определенные над файлами с типом. Текстовые файлы: Процедуры
+и функции, определенные над текстовыми файлами. Внутренняя структура файлов:
+сравнительная характеристика внутреннего представления информации в файлах с
+типом и текстовых файлах. Файлы без типа: процедуры и функции, определенные над
+ними.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin:0cm;margin-bottom:.0001pt;text-indent:35.45pt;
+mso-pagination:none;mso-list:l0 level1 lfo4;tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>Раздел 6. Ссылочный
+тип: задание; действия над ссылочными типами. Динамические элементы: Процедуры
+и функции, определенные над динамическими элементами.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin:0cm;margin-bottom:.0001pt;text-indent:35.45pt;
+mso-pagination:none;mso-list:l0 level1 lfo4;tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>Раздел 7. Динамические
+структуры данных. Динамические цепочки: создание; операции над динамическими
+цепочками. Двунаправленные списки: создание; операции над двунаправленными
+списками. Очереди и стеки: создание; операции над очередями и стеками. Способы
+организации таблиц. Двоичные деревья: алгоритмы формирования двоичного дерева.
+Операции над деревьями.<o:p></o:p></span></p>
+
+<p class=MsoBodyText align=left style='margin:0cm;margin-bottom:.0001pt;
+text-align:left;text-indent:35.45pt;mso-pagination:none;mso-list:l0 level1 lfo4;
+tab-stops:list 48.0pt 53.45pt'><![if !supportLists]><span style='font-family:
+Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;color:black'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='color:black'>Литература. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent style='text-align:justify'><span style='font-size:
+14.0pt;mso-bidi-font-size:10.0pt;color:black'>Для успешного освоения дисциплины
+«Основы алгоритмизации и программирования» рекомендуется следующая <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>последовательность
+ее изучения.<o:p></o:p></i></b></span></p>
+
+<p class=MsoBodyTextIndent><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.45pt;
+mso-pagination:none;mso-list:l1 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='color:black'><span style='mso-list:Ignore'>1).<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span></i></b><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'>Изучение
+теоретического материала. <o:p></o:p></span></i></b></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:35.45pt'><span style='color:
+black'>Разделы теории желательно изучать в том порядке, в котором они
+представлены в лекционном курсе. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent><span style='font-size:14.0pt;mso-bidi-font-size:
+10.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.45pt;
+mso-pagination:none;mso-list:l1 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='color:black'><span style='mso-list:Ignore'>2).<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'>Выполнение
+лабораторной работы по разделу</span></i></b><span style='color:black'> (если
+она предусмотрена).<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2 style='text-indent:35.45pt'><span style='color:
+black'>Перед выполнением работы необходимо изучить соответствующий раздел
+теоретического материала. Выполнение работы заключается в написании и отладке программы,
+соответствующей полученному от преподавателя индивидуальному заданию. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:black'>Лабораторные работы
+необходимо выполнять в соответствии с <b style='mso-bidi-font-weight:normal'><u>Методическими
+указаниями к выполнению лабораторных работ</u></b>, приведенными в разделе
+«Практика» ЭУМКД.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:black'>Каждая лабораторная
+работа оценивается преподавателем. По результатам выполнения всех лабораторных
+работ студенты получают итоговую оценку за семестр. Данная оценка учитывается
+на экзамене при выставлении итоговой оценки по дисциплине. Студенты, не сдавшие
+лабораторные работы в течение семестра, к сессии не допускаются.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent3 style='tab-stops:54.0pt 63.8pt 382.75pt'><span
+style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.45pt;
+mso-pagination:none;mso-list:l1 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='color:black'><span style='mso-list:Ignore'>3).<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'>Выполнение
+курсовой работы</span></i></b><span style='color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:black'>Для успешного выполнения
+ряда заданий по курсовому проектированию необходимо владеть основами знаний из
+высшей математики, в том числе по темам: математические ряды, методы нахождения
+корней уравнения, системы уравнений, численные методы, приближенное вычисление
+функций. <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:black'>Курсовую работу
+необходимо выполнять в соответствии с <b style='mso-bidi-font-weight:normal'><u>Указаниями
+к курсовому проектированию</u></b>, приведенными в разделе «Практика» ЭУМКД.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:black'>Курсовая работа
+оценивается итоговой оценкой. Курсовую работу необходимо сдать до начала
+экзаменационной сессии. В противном случае студент к сессии не допускается.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;mso-pagination:none'><span
+style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent3 style='tab-stops:54.0pt 63.8pt 382.75pt'><span
+style='color:black'>Итоговой формой контроля знаний по второй части дисциплины
+ОАиП является <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>экзамен</i></b>. По каждому разделу, подразделу и пункту теоретического
+материала предусмотрены вопросы в экзаменационных билетах. По материалу, не
+вошедшему в теоретический материал, вопросы не предусмотрены. Перечень вопросов
+содержится в <b style='mso-bidi-font-weight:normal'><u>Экзаменационных вопросах</u></b></span><span
+lang=BE style='color:black;mso-ansi-language:BE'>, приведенных </span><span
+style='color:black'>в разделе «Контроль знаний» ЭУМКД.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent3 style='tab-stops:54.0pt 63.8pt 382.75pt'><span
+style='color:black'>Каждый экзаменационный билет содержит два вопроса по теории
+и задачу. В соответствии с условием задачи необходимо написать программу,
+реализующую данную задачу. Тематика задач соответствует разделам теоретического
+материала ЭУМКД и тематике лабораторных работ.<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent3 style='tab-stops:54.0pt 63.8pt 382.75pt'><span
+style='color:black'>При выставлении оценки за экзамен учитывается оценка,
+полученная студентом в семестре за выполнение лабораторных работ.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='color:black'>Студент допускается к экзамену по дисциплине после успешной
+сдачи всех предусмотренных лабораторных работ и курсовой работы.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
