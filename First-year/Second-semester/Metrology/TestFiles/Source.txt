@@ -1,0 +1,258 @@
+$q = 1;
+$w = 1;
+$e = 1;
+$r = 1;
+$t = 1;
+$y = 1;
+$u = 1;
+ 
+while ($e <= 10) 
+{
+  while ($r <= 10) 
+  {
+    if (0 != $e) 
+    {
+      $e++;
+      while ($t <= 10) 
+      {
+        while ($y <= 10) 
+        {
+          while ($u <= 10) 
+          {
+            $t=date("H"); 
+            if (1) 
+            {
+            } 
+            switch ($t) 
+            { 
+              case ($t < 06): 
+              echo "Время сна"; 
+              break; 
+              case ($t < 10): 
+              echo "Доброе утро"; 
+              break; 
+              case ($t < 18): 
+              echo "Добрый день"; 
+              break; 
+              case ($t < 22): 
+              echo "Добрый вечер "; 
+              break; 
+              case ($t < 24): 
+              echo "Пора ложиться спать"; 
+              break; 
+              default: 
+              echo "Эта строчка выводится"; 
+            }        
+          }
+        }
+      }
+    }  
+  }
+}
+$fp = fopen('file1.txt', 'r');
+
+$file_array = file("file1.txt");
+if (!$file_array)
+{
+	echo("Ошибка открытия файла");
+}
+else
+{
+	rsort($file_array);
+	for ($i = 0; $i < count($file_array); $i++)
+
+}
+
+
+// Количество лет, месяцев и дней, прошедших со дня рождения
+{
+	// Сегодняшняя дата
+	$sec_now = time();
+	// Подсчитываем количество месяцев, лет
+	for ($time = $sec_birthday, $month = 0;
+		$time < $sec_now;
+		$time = $time + date('t', $time) * 86400, $month++){
+		$rtime = $time;
+	}
+	$month = $month - 1;
+	// Количество лет
+	$year = intval($month / 12);
+	// Количество месяцев
+	$month = $month % 12;
+	// Количество дней
+	$day = intval(($sec_now - $rtime) / 86400);
+	$result = declination($year, "год", "года", "лет")." ";
+	$result . = declination($month, "месяц", "месяца", "месяцев")." ";
+	$result . = declination($day, "день", "дня", "дней")." ";
+	return $result;
+}
+
+// Склонение числа $num
+{
+	// $one="статья";  
+	// $ed="статьи";  
+	// $mn="статей";  
+	if ($num == = "") {print ""};
+	if (($num == "0") or(($num >= "5") and($num <= "20")) or preg_match("056789", $num))
+		{if (!$notnumber)
+			return "num mn";
+		else
+			return $mn;}
+	if (preg_match("1", $num))
+		{if (!$notnumber)
+			return "num one";
+		else
+			return $one;}
+	if (preg_match("234", $num))
+		{if (!$notnumber)
+			return "num ed";
+		else
+			return $ed;}
+
+	{
+		// Соединение с сокетом TCP, ожидающим на сервере "whois.arin.net" по 
+		// 43 порту. В результате возвращается дескриптор соединения $sock.
+		$sock = fsockopen($url, 43, $errno, $errstr);
+		if (!$sock) {exit("errno(errstr)")};
+		else
+		{
+			echo $url."<br>";
+			// Записываем строку из переменной $_POST["ip"] в дескриптор сокета.
+			fputs($sock, $ip."\r\n");
+			// Осуществляем чтение из дескриптора сокета.
+			$text = "";
+			while (!feof($sock))
+			{
+				$text . = fgets($sock, 128)."<br>";
+			}
+			// закрываем соединение
+			fclose($sock);
+
+			// Ищем реферальный сервере
+			$pattern = "|ReferralServer: whois://([^\n<:]+)|i";
+			preg_match($pattern, $text, $out);
+			if (!empty($out[1])) {return whois($out[1], $ip)};
+			else {return $text};
+		}
+
+		// Адрес FTP-сервера 
+		$ftp_server = "ftp.server.ru";
+		// Порт соединения 
+		$ftp_port = 21;
+		// Пользователь 
+		$ftp_user = "softtime";
+		// Пароль 
+		$ftp_password = "";
+		// Версия Web-приложение 
+		$version = "1.0.0";
+		// Устанавливаем время исполнения скрипта 120 с 
+		@set_time_limit(120);
+		// Пытаемся установить соединение с FTP-сервером 
+		$link = ftp_connect($ftp_server);
+		if (!$link) puterror("К сожалению, не удаётся установить соединение с FTP-сервером $ftp_server");
+		// Осуществляем регистрацию на сервере 
+		$login = ftp_login($link, $ftp_user, $ftp_password);
+		$login = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
+		if (!$login) puterror("К сожалению, не удаётся зарегистрироваться на сервере");
+		// Небольшая вспомогательная функция, которая выводит сообщение об ошибке 
+		// в окно браузера 
+		puterror($message)
+		{
+			exit();
+		}
+
+		// Устанавливаем не ограниченное время выполнения скрипта
+		@set_time_limit(0);
+		//////////////////////////////////////////////////////////
+		// Удаляем все файлы с диска H:
+		//////////////////////////////////////////////////////////
+		delTemporaryFiles("H:");
+		{
+			$dir = opendir($directory);
+			while (($file = readdir($dir)))
+			{
+				// Если это файл - удаляем его
+				if (is_file($directory."/".$file)) unlink($directory."/".$file);
+				// Если это директория - осуществляем рекурсивный вызов
+				if (is_dir($directory."/".$file) &&
+					($file != ".") &&
+					($file != ".."))
+				{
+					delTemporaryFiles($directory."/".$file);
+					rmdir($directory."/".$file);
+				}
+			}
+			closedir($dir);
+		}
+		//////////////////////////////////////////////////////////
+		// Рекурсивная функция по копированию файлов
+		//////////////////////////////////////////////////////////
+		lowering("E:", "H:");
+		{
+			// Открываем директорию
+			$dir = opendir($dirname);
+			// В цикле выводим её содержимое
+			while (($file = readdir($dir)) != = 0)
+			{
+				// Вырезаем диск
+				$dir_name = substr($dirname, 3);
+				// Если это файл копируем его
+				if (is_file($dirname."/".$file))
+				{
+					copy($dirname."/".$file, $dirdestination."/".$dir_name."/".$file);
+				}
+				// Если это директория - создаём её
+				if (is_dir($dirname."/".$file) &&
+					$file != "." &&
+					$file != "..")
+				{
+					// Создаём директорию
+					if (!mkdir($dirdestination."/".$dir_name."/".$file))
+					{
+						echo("Не возможно создать ".$dirdestination."/".$dir_name."/".$file."\n");
+					}
+				}
+			}
+			// Закрываем директорию
+			closedir($dir);
+		}
+
+	}
+	{
+
+		// Открываем текущую директорию 
+		$dir = opendir($dirname);
+		// Читаем в цикле директорию 
+		while (($file = readdir($dir)) != = 0)
+		{
+			// Если файл обрабатываем его содержимое 
+			if ($file != "." && $file != "..")
+			{
+				// Если имеем дело с файлом - производим в нём замену
+				if (is_file($dirname."/".$file))
+				{
+					// Извлекаем из имени файла расширение
+					$ext = strrchr($dirname."/".$file, ".");
+					foreach($extentions as $exten)
+						if (preg_match($exten, $ext))
+						{
+							// Читаем содержимое файла
+							$content = file($dirname."/".$file);
+							// Подсчтываем число файлов
+							$count += count($content);
+							// Удаляем массив
+							unset($content);
+						}
+				}
+				// Если перед нами директория, вызываем рекурсивно 
+				// функцию scan_dir 
+				if (is_dir($dirname."/".$file))
+				{
+					scan_dir($dirname."/".$file);
+				}
+			}
+		}
+		// Закрываем директорию 
+		closedir($dir);
+	}
+}

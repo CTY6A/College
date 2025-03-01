@@ -1,0 +1,45 @@
+readline($z, $h);
+$z = 0;
+while ($e <= 10) 
+{
+  while ($r <= 10) 
+  {
+    if (0 != $e) 
+    {
+      $e++;
+      while ($t <= 10) 
+      {
+        while ($y <= 10) 
+        {
+          while ($u <= 10) 
+          {
+            $t=date("H"); 
+            if (1) 
+            {
+            } 
+            switch ($t) 
+            { 
+              case ($t < 06): 
+              echo "Время сна"; 
+              break; 
+              case ($t < 10): 
+              echo "Доброе утро"; 
+              break; 
+              case ($t < 18): 
+              echo "Добрый день"; 
+              break; 
+              case ($t < 22): 
+              echo "Добрый вечер "; 
+              break; 
+              case ($t < 24): 
+              echo "Пора ложиться спать"; 
+              break; 
+              default: 
+              echo "Эта строчка выводится"; 
+            }        
+          }
+        }
+      }
+    }  
+  }
+}
