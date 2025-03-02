@@ -1,0 +1,6 @@
+﻿  lex.yy.c
+lex.yy.c(1405): warning C4013: exit: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1468): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1486): warning C4013: realloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1496): warning C4013: free: нет определения; предполагается "extern" с возвратом типа "int"
+  Flex.vcxproj -> C:\Users\User\Desktop\Flex\Debug\Flex.exe

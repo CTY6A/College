@@ -1,0 +1,3457 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/filelist.xml">
+<link rel=Edit-Time-Data
+href="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>9. Динамические структуры данных</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place" downloadurl="http://www.5iantlavalamp.com/"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2011-03-30T14:09:00Z</o:Created>
+  <o:LastSaved>2011-03-30T14:09:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>4237</o:Words>
+  <o:Characters>24152</o:Characters>
+  <o:Lines>201</o:Lines>
+  <o:Paragraphs>56</o:Paragraphs>
+  <o:CharactersWithSpaces>28333</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.H1, li.H1, div.H1
+	{mso-style-name:_H1;
+	mso-style-parent:"Заголовок 1";
+	mso-style-link:"_H1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:no-line-numbers;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.P, li.P, div.P
+	{mso-style-name:_P;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Code
+	{mso-style-name:_Code;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Lucida Console";
+	mso-ascii-font-family:"Lucida Console";
+	mso-hansi-font-family:"Lucida Console";}
+p.H2, li.H2, div.H2
+	{mso-style-name:_H2;
+	mso-style-parent:"Заголовок 2";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.IMG, li.IMG, div.IMG
+	{mso-style-name:_IMG;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.H3, li.H3, div.H3
+	{mso-style-name:_H3;
+	mso-style-parent:"Заголовок 3";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-hyphenate:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.H10
+	{mso-style-name:"_H1 Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:_H1;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	text-transform:uppercase;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:253129278;
+	mso-list-type:hybrid;
+	mso-list-template-ids:92981716 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:295067863;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-510363464 68747287 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:883445551;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-253039410 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:1337423537;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1962483584 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l3:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:1541943338;
+	mso-list-type:hybrid;
+	mso-list-template-ids:285875852 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l4:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=H1 style='mso-outline-level:2'><a name="_Toc266272291"></a><a
+name="_Toc265340331"></a><a name="_Toc263373102"><span style='mso-bookmark:
+_Toc265340331'><span style='mso-bookmark:_Toc266272291'>9. Динамические структуры
+данных</span></span></a></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272292"></a><a
+name="_Toc265340332"></a><a name="_Toc263373103"><span style='mso-bookmark:
+_Toc265340332'><span style='mso-bookmark:_Toc266272292'><span style='mso-ansi-language:
+RU'>9.1. Общие сведения</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>В этой главе вводится понятие динамических структур данных. Это
+такие структуры данных, которые не являются строго ограниченными по размеру,
+как, например, массивы или структуры, а увеличиваются или уменьшаются в
+процессе выполнения программы. Примером таких структур являются связные списки,
+стеки, очереди, графы, деревья. Все они будут рассмотрены подробнее далее.</p>
+
+<p class=P>Создание динамических структур требует динамического распределения
+памяти. Это дает возможность заранее не учитывать объем требуемой памяти, а в
+процессе выполнения программы увеличивать ее объем для хранения добавленных
+элементов или освобождать при их удалении. </p>
+
+<p class=P>В Си для этого существуют функции <span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>calloc</span></b></span><b style='mso-bidi-font-weight:normal'>, </b><span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>malloc</span></b></span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US> </span></b>и <b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>free</span>. <o:p></o:p></b></p>
+
+<p class=P>Функции <span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>malloc</span></b></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US> </span></b>и <span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>calloc</span></b></span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US> </span></b>служат для выделения памяти в динамической
+куче, а <b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>free</span><span lang=EN-US> </span></b>– для
+ее освобождения. </p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272293"></a><a
+name="_Toc265340333"></a><a name="_Toc263373104"><span style='mso-bookmark:
+_Toc265340333'><span style='mso-bookmark:_Toc266272293'><span style='mso-ansi-language:
+RU'>9.2. Связные списки</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272294"></a><a
+name="_Toc265340334"></a><a name="_Toc263373105"><span style='mso-bookmark:
+_Toc265340334'><span style='mso-bookmark:_Toc266272294'>9.2.1. Односвязные
+списки</span></span></a></p>
+
+<p class=P>Список – это линейная динамическая структура данных, число элементов
+которой может изменяться по мере их добавления и/или удаления.</p>
+
+<p class=P>Список состоит из элементов, называемых узлами. Каждый узел содержит
+в себе указатель на адрес, где хранится следующий элемент списка. Доступ к
+списку осуществляется через внешний указатель, который объявляется в программе
+и указывает на первый элемент. Указатель на первый элемент списка называется
+головой, а последний – хвостом.</p>
+
+<p class=P>Следует отметить, что узлы связных списков обычно не хранятся в
+памяти друг за другом, как элементы массива.</p>
+
+<p class=P>В зависимости от организации связи между узлами списка различают его
+различные виды.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=P>Однонаправленный связный список представляет собой
+последовательность связанных между собой узлов, каждый из которых состоит из
+поля данных и указателя на место в памяти, где расположен следующий элемент,
+указатель последнего элемента списка имеет значение <b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>. <o:p></o:p></b></p>
+
+<p class=P>На рис. 9.1 приведен пример односвязного направленного списка. Узел
+данного списка состоит из поля данных <span lang=EN-US style='mso-ansi-language:
+EN-US'>element</span> типа <span class=SpellE><span lang=EN-US
+style='mso-ansi-language:EN-US'>int</span></span> и указателя на следующий
+элемент <span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>NextPtr</span><span
+style='mso-no-proof:yes'>, указатель на первый элемент – </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>HeadPtr</span><span
+style='mso-no-proof:yes'>. <o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Структура, описывающая<b
+style='mso-bidi-font-weight:normal'> </b>создаваемый список:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt'> </span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>spisok</span></span></span><span class=Code><span
+style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> element;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>spisok</span>
+*<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:527.25pt;
+ height:62.25pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image001.png"
+  o:title="101"/>
+</v:shape><![endif]--><![if !vml]><img width=703 height=83
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.1.
+Односвязный список</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Если список пуст, то указатель на список (<span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>headPtr</span></span>) будет
+содержать <span lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>, и в
+этом случае список попросту будет заполняться в том порядке, в котором будут
+вводиться данные. Ниже приведена программа по созданию данного списка.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Программа,
+демонстрирующая создание односвязного списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#include &lt;<span class=SpellE>stdio.h</span>&gt; <o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#include &lt;<span class=SpellE>conio.h</span>&gt; <o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+&lt;<span class=SpellE>stdlib.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// структура,
+описывающая создаваемый список<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>spisok</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> element;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>spisok</span>
+*<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>typedef</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>spisok</span> <span class=SpellE>Spisok</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>typedef</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>Spisok</span> *<span class=SpellE>SpisokPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>createSpisok</span>(<span class=SpellE>SpisokPtr</span> *<span
+class=SpellE>firstPtr</span>); // </span></span><span class=Code><span
+style='font-size:12.0pt'>описание</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>прототипа</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                        </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// функции создания<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>main</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>clrscr</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=SpellE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>SpisokPtr</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>headPtr</span> = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> a;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>“<span
+class=SpellE>Vvedite</span> <span class=SpellE>elementi</span>:\n”);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>createSpisok</span></span><span class=GramE>(</span>&amp;<span
+class=SpellE>headPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// функция создания
+односвязного списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// в качестве
+параметра получает указатель на начало списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>createSpisok</span>(<span class=SpellE>SpisokPtr</span> *<span
+class=SpellE>firstPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>SpisokPtr</span> <span class=SpellE>newPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>scanf</span></span><span class=GramE>(</span>“%d”,
+&amp;value);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// выделение памяти для нового
+элемента списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>newPtr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> = (<span
+class=SpellE>Spisok</span> *) <span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(<span class=SpellE>Spisok</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> ((<span class=SpellE>newPtr</span> != NULL) &amp;&amp;
+(value != 1))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;element = value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>newPtr</span></span></span><span
+class=Code><span style='font-size:12.0pt'>-&gt;<span class=SpellE>nextPtr</span>
+= *<span class=SpellE>firstPtr</span>; // список сдвигается на один<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                 </span>// элемент,
+путем<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>*<span class=SpellE>firstPtr</span> = <span
+class=SpellE>newPtr</span>;<span style='mso-spacerun:yes'>          </span>//
+вставки на первое<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                 </span>// место
+нового элемента<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// рекурсивный вызов функции создания<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>createSpisok</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&amp;((*<span
+class=SpellE>firstPtr</span>)-&gt;<span class=SpellE>nextPtr</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>} <o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>“Error!”);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Для того чтобы вставить новый элемент в уже имеющийся список,
+необходимо разорвать связь между узлами списка, куда вставляется новый элемент.
+Для этого указателю узла, расположенного перед вставляемым элементом,
+необходимо присвоить значение<span style='mso-spacerun:yes'>  </span>адреса, по
+которому была выделена память для элемента, и в свою очередь, указателю,
+содержащемуся во вставляемом узле, присвоить адрес узла, расположенного после
+вставляемого элемента (рис. 9.2).<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:543pt;height:159pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image003.png"
+  o:title="102"/>
+</v:shape><![endif]--><![if !vml]><img width=724 height=212
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.2.
+Вставка элемента в список</p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция вставки
+элемента в список<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>insertElement</span>(<span class=SpellE>SpisokPtr</span> *<span
+class=SpellE>firstPtr</span>, <span class=SpellE>int</span> value)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>SpisokPtr</span> <span class=SpellE>newPtr</span>, <span
+class=SpellE>previousPtr</span>, <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>newPtr</span></span> = (<span class=SpellE>Spisok</span>
+*) <span class=SpellE>malloc</span>(<span class=SpellE>sizeof</span>(<span
+class=SpellE>Spisok</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>newPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;element = value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>nextPtr</span>
+= NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>workPtr</span></span> = *<span class=SpellE>firstPtr</span>;
+// </span></span><span class=Code><span style='font-size:12.0pt'>некоторому</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>рабочему</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>указателю</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                         </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// присваивается значение указателя<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                         </span>// на первый элемент
+списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>previousPtr</span> =
+NULL;<span style='mso-spacerun:yes'>  </span>// значение предыдущего указателя<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>     </span><span
+style='mso-spacerun:yes'>                    </span>// равно NULL<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>while</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>workPtr</span> != NULL &amp;&amp; value &gt; <span class=SpellE>workPtr</span>-&gt;element)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE>previousPtr</span> = <span
+class=SpellE>workPtr</span>; // происходит продвижение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                             </span>// по списку<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE>workPtr</span> = <span
+class=SpellE>workPtr</span>-&gt;<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>previousPtr</span>-&gt;<span
+class=SpellE>nextPtr</span> = <span class=SpellE>newPtr</span>; // вставка
+нового элемента<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                   </span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>//
+</span></span><span class=Code><span style='font-size:12.0pt'>в</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>список</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>nextPtr</span>
+= <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(&quot;<span
+class=SpellE>Error</span>!&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Для удаления элемента необходимо проделать обратную операцию,
+присвоив указателю узла, расположенного перед удаляемым элементом, значение
+адреса узла, расположенного в списке после удаляемого элемента. В качестве
+параметров функция получает указатель на первый элемент списка, а также
+значение, определяющее удаляемый элемент.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция удаления
+элемента из списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>deleteElement</span>(<span
+class=SpellE>SpisokPtr</span> *<span class=SpellE>firstPtr</span>, <span
+class=SpellE>int</span> <span class=SpellE>value</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>SpisokPtr</span> <span class=SpellE>newPtr</span>, <span
+class=SpellE>predPtr</span>, <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (*<span class=SpellE>firstPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>workPtr</span></span> = *<span class=SpellE>firstPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>predPtr</span></span> = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>//пока не конец списка или не найден
+искомый элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>while</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>workPtr</span> != NULL &amp;&amp; value &gt; <span class=SpellE>workPtr</span>-&gt;element)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>predPtr</span></span> = <span class=SpellE>workPtr</span>;
+//</span></span><span class=Code><span style='font-size:12.0pt'>перемещение</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>по</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>списку</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>workPtr</span></span> = <span class=SpellE>workPtr</span>-&gt;<span
+class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (<span
+class=SpellE>predPtr</span><span class=GramE> !</span>= <span class=GramE>NULL)</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>// если удаляемый элемент находится не в
+начале списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>predPtr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>-&gt;<span
+class=SpellE>nextPtr</span> = <span class=SpellE>workPtr</span>-&gt;<span
+class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>workPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>predPtr</span></span> = *<span class=SpellE>firstPtr</span>;
+// </span></span><span class=Code><span style='font-size:12.0pt'>если</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>в</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>начале</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>*<span
+class=SpellE>firstPtr</span> = (*<span class=SpellE>firstPtr</span><span
+class=GramE>)-</span>&gt;<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>predPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(&quot;<span
+class=SpellE>Error</span>!&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272295"></a><a
+name="_Toc265340335"></a><a name="_Toc263373106"><span style='mso-bookmark:
+_Toc265340335'><span style='mso-bookmark:_Toc266272295'>9.2.2. Двусвязные
+списки</span></span></a></p>
+
+<p class=P>Двусвязный список представляет собой последовательность связанных
+узлов, каждый из которых, в отличие от однонаправленного списка, содержит поле
+данных и два указателя, один из которых содержит адрес памяти, где хранится
+следующий элемент списка, а второй – адрес памяти, где хранится предыдущий
+элемент списка. Это дает возможность перемещаться по списку как с начала в
+хвост, так и с хвоста в начало. </p>
+
+<p class=P>На рис 9.3 изображен двусвязный список, каждый узел которого
+включает в себя поле данных типа <span lang=EN-US style='mso-ansi-language:
+EN-US'>char</span>, указатель на следующий элемент – <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>nextPtr</span></span> и указатель на
+предыдущий элемент – <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>predPtr</span></span>. Указатель на начало списка – <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>HeadPtr</span></span>, на конец – <span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>LastPtr</span></span>.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:534pt;height:117.75pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image005.png"
+  o:title="104"/>
+</v:shape><![endif]--><![if !vml]><img width=712 height=157
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.3.
+Двусвязный список</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272296"></a><a
+name="_Toc265340336"></a><a name="_Toc263373107"><span style='mso-bookmark:
+_Toc265340336'><span style='mso-bookmark:_Toc266272296'>9.2.3. Циклические
+списки</span></span></a></p>
+
+<p class=P><span class=GramE>Циклические связные списки отличаются от обычных
+только одним: последний узел ссылается не в <span lang=EN-US style='mso-ansi-language:
+EN-US'>NULL</span>, а на первый узел данного списка, то есть на «начало»
+списка.</span> Пустой циклический список, таким образом, содержит единственный
+узел, который указывает сам на себя. При добавлении элементов, последний узел
+будет указывать на первый узел (рис. 9.4). </p>
+
+<p class=P>Циклические списки во многом значительно упрощают разработку
+алгоритмов.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:519.75pt;height:136.5pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image007.png"
+  o:title="104-2"/>
+</v:shape><![endif]--><![if !vml]><img width=693 height=182
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:207.0pt;border-collapse:collapse;mso-yfti-tbllook:480;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=320 style='width:240.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  page-break-after:avoid'><span style='font-size:14.0pt'>а) однонаправленный
+  связный циклический список<o:p></o:p></span></p>
+  </td>
+  <td width=16 style='width:11.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:35.45pt;
+  mso-pagination:none;page-break-after:avoid'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=360 style='width:270.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  page-break-after:avoid'><span style='font-size:14.0pt'>б) двусвязный
+  циклический список<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.4.
+Циклические списки</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272297"></a><a
+name="_Toc265340337"></a><a name="_Toc263373108"><span style='mso-bookmark:
+_Toc265340337'><span style='mso-bookmark:_Toc266272297'><span style='mso-ansi-language:
+RU'>9.3. Стек</span></span></span></a><span style='mso-bookmark:_Toc266272297'><span
+style='mso-ansi-language:RU'>и</span></span><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Стек представляет собой упорядоченный набор элементов, доступ к которым
+осуществляется только с одного конца, называемого вершиной стека. Проще говоря,
+стек – это вид связного списка, вставку и удаление элементов которого можно
+совершить только с одного конца – из вершины стека. Стек организован по
+принципу <span lang=EN-US style='mso-ansi-language:EN-US'>LIFO</span> (<span
+lang=EN-US style='mso-ansi-language:EN-US'>Last</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>Input</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>First</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>Output</span>) – “последним вошел,
+первым вышел”. Стек, аналогично списку, состоит из связных узлов, каждый из
+которых представляет собой поле данных и указатель, содержащий адрес следующего
+элемента. Указатель последнего элемента имеет значение <span lang=EN-US
+style='mso-ansi-language:EN-US'>NULL</span>, чтобы тем самым обозначить конец
+стека (рис. 9.5).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:437.25pt;height:200.25pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image009.png"
+  o:title="105"/>
+</v:shape><![endif]--><![if !vml]><img width=583 height=267
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.5.
+Стек</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Над стеком выполняются две основные операции: занести элемент данных
+в стек – функция <b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>PUSH</span>, </b>и извлечь элемент данных из
+вершины стека – функция <b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>POP</span>. </b></p>
+
+<p class=P>Ниже приведено программное описание стека. Он содержит два поля:
+поле данных типа <span lang=EN-US style='mso-ansi-language:EN-US'>char</span> и
+указатель на структуру того же типа, т.е. на следующий элемент стека.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Stack<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>char</span> letter;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Stack *<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Функция помещения элемента в стек, в качестве параметров получает
+указатель на первый элемент или нулевой указатель, если стек не создан, и
+переменную, которую необходимо поместить в стек. Далее происходит выделение
+динамической памяти для нового элемента. И этот элемент вставляется в начало
+стека путем присваивания указателю на следующий элемент указателя на начало
+стека, а указателю на начало стека, соответственно значения указателя на новый
+элемент. </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>typedef</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Stack *<span class=SpellE>StackPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+push(<span class=SpellE>StackPtr</span> *<span class=SpellE>beginPtr</span>,
+char value)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>StackPtr</span> <span
+class=SpellE>newPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>//выделение памяти под элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>newPtr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> = (Stack *) <span
+class=SpellE>malloc</span>(<span class=SpellE>sizeof</span>(Stack));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>newPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;letter = value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>nextPtr</span>
+= *<span class=SpellE>beginPtr</span>; // </span></span><span class=Code><span
+style='font-size:12.0pt'>помещение</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>элемента</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>*<span
+class=SpellE>beginPtr</span> = <span class=SpellE>newPtr</span>;<span
+style='mso-spacerun:yes'>          </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>в</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>стек</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(&quot;Ошибка
+выделения памяти!!!&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Функция <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>po</span><span class=GramE>р</span></span> получает в качестве
+параметров указатель на начало стека, а возвращает значение, которое оттуда
+извлекает, т.е. элемент данных, который находился в вершине стека. Для удаления
+элемента рабочему указателю присваивается значения указателя на начало стека. В
+свою очередь, значению указателя на начало стека присваивается значение
+указателя на следующий элемент стека, а динамическая <span class=GramE>память</span>
+выделенная под удаляемый элемент освобождается при помощи функции <span
+lang=EN-US style='mso-ansi-language:EN-US'>free</span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>char</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+pop(<span class=SpellE>StackPtr</span> *<span class=SpellE>beginPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>char</span> <span class=SpellE>popValue</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>StackPtr</span> <span class=SpellE>tempPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>tempPtr</span></span> = *<span class=SpellE>beginPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>popValue</span></span> = (*<span class=SpellE>beginPtr</span>)-&gt;letter;
+// </span></span><span class=Code><span style='font-size:12.0pt'>присваивание</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>значения</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// возвращаемого элемента<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// переопределение указателя на начало стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>*<span
+class=SpellE>beginPtr</span> = (*<span class=SpellE>beginPtr</span><span
+class=GramE>)-</span>&gt;<span class=SpellE>NextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>free(</span><span class=SpellE>tempPtr</span>);<span
+style='mso-spacerun:yes'>                  </span>//</span></span><span
+class=Code><span style='font-size:12.0pt'>освобождение</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>памяти</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>return</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>popValue</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>При использовании стека в программе, следует очистить его, когда в
+нем уже не будет надобности, это сэкономит машинные ресурсы.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272298"></a><a
+name="_Toc265340338"></a><a name="_Toc263373109"><span style='mso-bookmark:
+_Toc265340338'><span style='mso-bookmark:_Toc266272298'><span style='mso-ansi-language:
+RU'>9.4. Очереди</span></span></span></a><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Очередь – это также подвид списка, это набор данных, доступ к
+которым осуществляется с двух концов. Запись осуществляется с конца очереди,
+называемого хвостом, а удаление из начала очереди. Принцип организации очереди
+– <span lang=EN-US style='mso-ansi-language:EN-US'>FIFO</span> (<span
+lang=EN-US style='mso-ansi-language:EN-US'>First</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>Input</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>First</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>Output</span>) – «Первым вошел,
+первым вышел<span class=GramE>» -- </span>противоположен принципу организации
+стека. </p>
+
+<p class=P>Структура очереди не отличается от структуры односвязного списка или
+стека. Она состоит из поля данных, в данном случае, элемента типа <span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>int</span></span>
+и указателя на следующий элемент очереди (рис. 9.6):</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Queue<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> element;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Queue *<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:568.5pt;height:90.75pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image011.png"
+  o:title="107"/>
+</v:shape><![endif]--><![if !vml]><img width=758 height=121
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.6.
+Очередь</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Различие заключается в функциях обработки. Основными функциями при
+работе с очередью являются функция добавления и удаления элементов. Добавление
+новых элементов осуществляется только в конец очереди. Функция получает в
+качестве параметров, указатели на начало и конец очереди, а также вставляемый
+элемент. При добавлении сначала под новый элемент выделяется память, а потом он
+вставляется в конец очереди: если очередь еще не создана, то указателям на
+начало и конец очереди присваивается значение указателя на новый элемент.
+Следует заметить, что при процедуре добавления, после того, как вставлен первый
+элемент, значение головного указателя изменяться не будет. <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=P><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>typedef</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>struct</span> queue *<span class=SpellE>QueuePtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>insertElement</span>(<span class=SpellE>QueuePtr</span> *<span
+class=SpellE>firstPtr</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>                  
+</span><span class=SpellE>QueuePtr</span> *<span class=SpellE>endPtr</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>                  
+</span><span class=SpellE><span class=GramE>int</span></span> value)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>QueuePtr</span> <span class=SpellE>newPtr</span>, <span
+class=SpellE>previousPtr</span>, <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>выделение</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>памяти</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>newPtr</span></span> = (Queue *) <span
+class=SpellE>malloc</span>(<span class=SpellE>sizeof</span>(Queue));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>newPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;element = value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>nextPtr</span>
+= NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>if(</span>(*<span class=SpellE>endPtr</span>) == NULL)<span
+style='mso-spacerun:yes'>  </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>если</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>очереди</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>еще</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>нет</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>*<span class=SpellE>firstPtr</span> = <span
+class=SpellE>newPtr</span>;<span style='mso-spacerun:yes'>  </span>//
+указателям на начало и конец<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                           </span>// очереди
+присваивается значение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>*<span class=SpellE>endPtr</span> = <span
+class=SpellE>newPtr</span>;<span style='mso-spacerun:yes'>    </span>//
+указателя на новый элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>(*<span class=SpellE>endPtr</span>)-&gt;<span
+class=SpellE>nextPtr</span> = <span class=SpellE>newPtr</span>; // иначе
+элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                   </span>//
+присоединяется к концу<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>(*<span class=SpellE>endPtr</span>) = <span
+class=SpellE>newPtr</span>;<span style='mso-spacerun:yes'>          </span>//
+очереди и<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                   </span>//
+переопределяется<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                 </span><span
+style='mso-spacerun:yes'>                  </span>// указатель на конец<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>}<span style='mso-tab-count:4'>                   </span><span
+style='mso-spacerun:yes'>    </span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(&quot;<span
+class=SpellE>Error</span>!&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='font-size:10.0pt;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Функция удаления элемента из очереди
+аналогична функции удаления элемента из стека</span><span style='font-size:
+10.0pt;mso-no-proof:yes'>.<o:p></o:p></span></p>
+
+<p class=P><span style='font-size:10.0pt;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>deleteElement</span>(<span class=SpellE>QueuePtr</span> *<span
+class=SpellE>firstPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>QueuePtr</span> <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (*<span class=SpellE>firstPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>workPtr</span></span> = *<span class=SpellE>firstPtr</span>;
+// </span></span><span class=Code><span style='font-size:12.0pt'>рабочему</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>указателю</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>присваивается</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                         </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// адрес начала очереди<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// указателю на начало присваивается
+значение указателя<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// на следующий элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>(*<span class=SpellE>firstPtr</span>) = (*<span
+class=SpellE>firstPtr</span>)-&gt;<span class=SpellE>nextPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>free</span>(<span
+class=SpellE>workPtr</span>);<span style='mso-spacerun:yes'>   
+</span>//элемент из начала очереди удаляется<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(“<span
+class=SpellE>Error</span>!”);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272299"></a><a
+name="_Toc265340339"></a><a name="_Toc263373110"><span style='mso-bookmark:
+_Toc265340339'><span style='mso-bookmark:_Toc266272299'><span style='mso-ansi-language:
+RU'>9.5. Деревья</span></span></span></a><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272300"></a><a
+name="_Toc265340340"></a><a name="_Toc263373111"><span style='mso-bookmark:
+_Toc265340340'><span style='mso-bookmark:_Toc266272300'>9.5.1. Понятие графа</span></span></a></p>
+
+<p class=P>Граф – набор точек на плоскости, называемых вершинами или узлами, некоторые
+из которых соединены отрезками, называемыми дугами или ребрами графа. Если
+направление ребра не имеет значения, то граф называется неориентированным или
+ненаправленным, если же имеет, то граф называется ориентированным или
+направленным. Пример ориентированного графа представлен на рис. 9.7.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:246pt;height:177pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image013.png"
+  o:title="109"/>
+</v:shape><![endif]--><![if !vml]><img width=328 height=236
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.7.
+Пример ориентированного графа</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Графы в памяти можно представлять в виде матрицы смежности (рис.
+9.8), под которой понимается квадратная матрица порядка <span lang=EN-US
+style='mso-ansi-language:EN-US'>n</span> с элементами <span class=GramE>а</span><span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>ij</span></span>,
+где <span class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>aij</span></span>
+= 1, если существует ребро (<span lang=EN-US style='mso-ansi-language:EN-US'>Vi</span>,
+<span class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>Vj</span></span>),
+если связи нет, то <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>aij</span></span> = 0.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.65pt'>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>1</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>2</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>3</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>4</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.65pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>5</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:6.85pt'>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>1</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:6.85pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:10.7pt'>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>2</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:10.7pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:14.55pt'>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>3</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:14.55pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:16.6pt'>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>4</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.6pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>1</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:16.8pt'>
+  <td width=34 valign=top style='width:25.5pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-12.3pt;text-align:center;
+  page-break-after:avoid'><span lang=EN-US style='mso-ansi-language:EN-US'>V</span>5</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=34 valign=top style='width:25.5pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+  <td width=42 valign=top style='width:31.65pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.8pt'>
+  <p class=MsoNormal align=center style='margin-right:-4.8pt;text-align:center;
+  page-break-after:avoid'>0</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.8.
+Матрица смежности ориентированного графа</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Дерево – это специальный вид направленного графа. Дерево является
+нелинейной структурой. Оно состоит из множества связных элементов, называемых
+узлами. Дерево имеет одну вершину, которая является началом всего дерева и
+называется корнем дерева. </p>
+
+<p class=P>Каждый указатель связи в корневом узле ссылается на дочерний узел
+или узел-потомок. Каждый узел дерева является корнем поддерева, которое
+определяется данным узлом и всеми потомками этого узла (рис. 9.9).</p>
+
+<p class=P>Узел<span class=GramE> В</span> называется предком или родителем
+узла Е, а узел Е – потомком узла В, если элемент не имеет потомков, то он
+называется листом, например Е, <span lang=EN-US style='mso-ansi-language:EN-US'>F</span>,
+<span lang=EN-US style='mso-ansi-language:EN-US'>G</span>. Узел <span
+lang=EN-US style='mso-ansi-language:EN-US'>D</span><span lang=EN-US> </span>есть
+корень поддерева, содержащего узлы <span lang=EN-US style='mso-ansi-language:
+EN-US'>D</span>, <span lang=EN-US style='mso-ansi-language:EN-US'>G</span>.
+Узел <span lang=EN-US style='mso-ansi-language:EN-US'>F</span> является корнем
+поддерева без потомков. </p>
+
+<p class=P>Частным случаем деревьев являются бинарные деревья.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:183.75pt;height:126.75pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image015.gif"
+  o:title="110-1"/>
+</v:shape><![endif]--><![if !vml]><img width=245 height=169
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image015.gif" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.9.
+Представление дерева</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272301"></a><a
+name="_Toc265340341"></a><a name="_Toc263373112"><span style='mso-bookmark:
+_Toc265340341'><span style='mso-bookmark:_Toc266272301'>9.5.2. Бинарные деревья</span></span></a></p>
+
+<p class=P>Бинарные деревья – это деревья, состоящие из узлов, каждый из
+которых имеет 0, 1 или 2 потомков. Таким образом, каждый из узлов бинарного
+дерева состоит из 3 полей: поля данных и 2 указателей на левое и правое
+поддеревья. Указатели листовых элементов имеют значение <span lang=EN-US
+style='mso-ansi-language:EN-US'>NULL</span>. </p>
+
+<p class=P>На рис. 9.10 представлено бинарное дерево, каждый узел которого
+включает поле данных типа <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>int</span></span>, указатель на левое поддерево <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>leftPtr</span></span> и указатель на
+правое поддерево <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>rightPtr</span></span>. Указатель на корень дерева – <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>rootPtr</span></span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:449.25pt;height:310.5pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image016.png"
+  o:title="110-2"/>
+</v:shape><![endif]--><![if !vml]><img width=599 height=414
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image017.jpg" v:shapes="_x0000_i1033"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.10.
+Бинарное дерево</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В программировании большое значение имеют деревья бинарного поиска.
+Они имеют свою характерную особенность, заключающуюся в том, что, если
+указатель на левое поддерево отличен от <span lang=EN-US style='mso-ansi-language:
+EN-US'>NULL</span>, то значение в корне левого поддерева меньше значения в
+данном корневом узле, и, если указатель на правое поддерево отличен от <span
+lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>, значение в корне
+правого поддерева больше данного значения (рис. 9.11).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:529.5pt;height:357.75pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image018.png"
+  o:title="111"/>
+</v:shape><![endif]--><![if !vml]><img width=706 height=477
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image019.jpg" v:shapes="_x0000_i1034"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.11.
+Бинарное дерево двоичного поиска</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Бинарные деревья поиска очень важны в качестве структур данных, так
+как они позволяют хранить большие объемы данных и в то же время обеспечивают
+быстрый и эффективный доступ к ним. Время поиска в бинарном дереве по сравнению
+с линейным поиском уменьшается с <span lang=EN-US style='mso-ansi-language:
+EN-US'>n</span> до <span lang=EN-US style='mso-ansi-language:EN-US'>log</span><sub>2</sub><span
+lang=EN-US style='mso-ansi-language:EN-US'>n</span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Структура, описывающая бинарное дерево.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>Tree</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> root;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *<span class=SpellE>leftPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>Tree</span> *<span
+class=SpellE>rightPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>К бинарным деревьям применим ряд примитивных операций:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает
+значение информационного поля узла <span class=SpellE>inp</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+info(<span class=SpellE>struct</span> Tree *<span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>return</span> <span
+class=SpellE>inp</span>-&gt;<span class=SpellE>root</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает
+указатель на правое поддерево узла <span class=SpellE>inp</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree *<span class=SpellE>rightS</span>(<span class=SpellE>struct</span> Tree *<span
+class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>return</span> <span
+class=SpellE>inp</span>-&gt;<span class=SpellE>rightPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает
+указатель на левое поддерево узла <span class=SpellE>inp</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree *<span class=SpellE>leftS</span>(<span class=SpellE>struct</span> Tree *<span
+class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>return</span> <span
+class=SpellE>inp</span>-&gt;<span class=SpellE>leftPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает
+указатель на корневой узел<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// (</span></span><span class=Code><span
+style='font-size:12.0pt'>узел</span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>-</span></span><span
+class=Code><span style='font-size:12.0pt'>отца</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>) </span></span><span
+class=Code><span style='font-size:12.0pt'>для</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>узла</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE><span class=GramE>inp</span></span><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree *father(<span class=SpellE>struct</span> Tree *<span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>inp</span> == head)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>return</span> head;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *p = head, *q;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>do</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>q = p;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>if</span> ((p) &amp;&amp; (info(p) &lt;= info(<span class=SpellE>inp</span>)))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>p = <span
+class=SpellE><span class=GramE>rightS</span></span><span class=GramE>(</span>p);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>p = <span
+class=SpellE><span class=GramE>leftS</span></span><span class=GramE>(</span>p);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>while</span> (info(p) != info(<span class=SpellE>inp</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>return</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>q</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает указатель
+на узел-брата для узла <span class=SpellE>inp</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// т.е. указатель на
+отличный от <span class=SpellE>inp</span> корень поддерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>с</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>тем</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>же</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>узлом</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>-</span></span><span
+class=Code><span style='font-size:12.0pt'>отцом</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree *brother(<span class=SpellE>struct</span> Tree *<span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *<span class=SpellE>fath</span>
+= father(<span class=SpellE>inp</span>);<span style='mso-tab-count:1'>    </span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>rightS</span>(<span class=SpellE>fath</span>)
+== <span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>return</span> <span class=SpellE>rightS</span>(<span class=SpellE>fath</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>return</span> <span
+class=SpellE>leftS</span>(<span class=SpellE>fath</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает 1,
+если <span class=SpellE>inp</span> указывает на корень<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>левого</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>поддерева</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>, </span></span><span
+class=Code><span style='font-size:12.0pt'>иначе</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> 0<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>isLeft</span>(<span class=SpellE>struct</span> Tree *<span
+class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *<span class=SpellE>fath</span>
+= father(<span class=SpellE>inp</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>leftS</span>(<span class=SpellE>fath</span>)
+== <span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>return</span> 1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>return</span> 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Возвращает 1,
+если <span class=SpellE>inp</span> указывает на корень<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>правого</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>поддерева</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>, </span></span><span
+class=Code><span style='font-size:12.0pt'>иначе</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> 0<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>isRight</span>(<span class=SpellE>struct</span> Tree *<span
+class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *<span class=SpellE>fath</span>
+= father(<span class=SpellE>inp</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>if</span> (<span class=SpellE>rightS</span>(<span class=SpellE>fath</span>)
+== <span class=SpellE>inp</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>return</span> 1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>return</span> 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Основными функциями при работе с деревьями являются функции вставки
+узлов, трех обходов и удаления узлов дерева.</p>
+
+<p class=P>С помощью описанной ниже функции можно создать бинарное дерево
+двоичного поиска, представленное на рис. 9.11. Функция получает в качестве
+одного из параметров указатель на начало дерева.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция
+добавления узла в бинарное дерево двоичного поиска<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>typedef</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree *<span class=SpellE>TreePtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>insertTree</span>(<span class=SpellE>TreePtr</span> *<span
+class=SpellE>RootPtr</span>, <span class=SpellE>int</span> value)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>TreePtr</span> <span
+class=SpellE>newPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (*<span
+class=SpellE>RootPtr</span> == NULL) //если указатель на корень пуст<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>//выделение памяти под новый элемент<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>newPtr</span> = (<span
+class=SpellE>Tree</span> *) <span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(<span class=SpellE>Tree</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>if</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>newPtr</span> != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;root = value;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>leftPtr</span>
+= NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>newPtr</span></span>-&gt;<span class=SpellE>rightPtr</span>
+= NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>*<span class=SpellE>RootPtr</span> = <span
+class=SpellE>newPtr</span>; // присваивание указателю <span class=GramE>на</span>
+пустое<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                       </span>// поддерево значения
+указателя<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>              </span><span
+style='mso-spacerun:yes'>         </span>// на новый элемент<span
+style='mso-spacerun:yes'>     </span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>if</span> (value &lt; info(*<span class=SpellE>RootPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// иначе, если вставляемый элемент
+меньше корня<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>// поддерева, рекурсивно перемещаемся в
+левое поддерево<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>insertTree</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&amp;((*<span
+class=SpellE>RootPtr</span>)-&gt;<span class=SpellE>leftPtr</span>), value);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=GramE><span class=Code><span style='font-size:12.0pt'>е</span></span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>lse</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>     </span><span
+style='mso-spacerun:yes'> </span><span class=GramE>if</span> (value &gt; info(*<span
+class=SpellE>RootPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// если больше – то <span
+class=GramE>в</span> правое<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span><span class=SpellE>insertTree</span>(&amp;((*<span
+class=SpellE>RootPtr</span>)-&gt;<span class=SpellE>rightPtr</span>), <span
+class=SpellE>value</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span>// при вводе повторяющегося элемента<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span>// выводится сообщение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span><span class=SpellE>printf</span>(&quot;%<span
+class=SpellE>d</span> дубль&quot;, <span class=SpellE>value</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Существует три вида обхода дерева:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Симметричный
+обход.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><![endif]>Прямой
+обход (сверху вниз).</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Обратный
+обход (снизу вверх).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Отличаются они лишь порядком прохождения дерева.</p>
+
+<p class=P>Симметричный обход осуществляется согласно следующим шагам:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+левого поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обработка
+значения в корне поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+правого поддерева.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция,
+осуществляющая симметричный обход дерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>inOrder</span>(<span
+class=SpellE>TreePtr</span> <span class=SpellE>RootPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (<span
+class=SpellE>RootPtr</span><span class=GramE> !</span>= <span class=GramE>NULL)<span
+style='mso-spacerun:yes'>            </span>// если дерево существует</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>inOrder</span>(<span
+class=SpellE>leftS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>      </span>// обход левого поддерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(“%<span
+class=SpellE>d</span> ”, <span class=SpellE>info</span>(<span class=SpellE>RootPtr</span>));
+//печать корня<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>inOrder</span>(<span
+class=SpellE>rightS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>     </span>// обход правого поддерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Таким образом, можно увидеть, что значения в корне не будут
+обрабатываться до тех пор, пока не будут обработаны его значения в левом
+поддереве. То есть сначала <span class=GramE>выводится</span> значение левого
+потомка, потом значение корневого элемента данного поддерева, а потом значение
+правого потомка.</p>
+
+<p class=P>На рис. 9.12 приведен результат симметричного обхода дерева,
+изображенного на рис. 9.11, кружочками обведены значения, которые выводятся на
+печать</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:447.75pt;height:46.5pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image020.png"
+  o:title="114"/>
+</v:shape><![endif]--><![if !vml]><img width=597 height=62
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image021.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.12.
+Симметричный обход дерева</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Прямой обход осуществляется согласно следующим шагам:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo5;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обработка
+значения в корне поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo5;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+левого поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo5;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+правого поддерева.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция,
+осуществляющая прямой обход дерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>preOrder</span>(<span
+class=SpellE>TreePtr</span> <span class=SpellE>RootPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (<span
+class=SpellE>RootPtr</span><span class=GramE> !</span>= <span class=GramE>NULL)<span
+style='mso-spacerun:yes'>             </span>// если дерево существует</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(“%<span
+class=SpellE>d</span> ”, <span class=SpellE>info</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>  </span>// печать корня<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>preOrder</span>(<span
+class=SpellE>leftS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>      </span>// рекурсивный вызов <span class=GramE>для</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                   </span>// обхода
+левого поддерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>preOrder</span>(<span
+class=SpellE>rightS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>     </span>// обход правого поддерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Значение в каждом корне обрабатывается, когда обход дерева проходит
+через этот узел, после чего обрабатывается значения в левом, а потом в правом
+поддеревьях. То есть печатается значение корня, затем значение корня левого
+поддерева, а потом правого. </p>
+
+<p class=P>На рис. 9.13 приведен результат прямого обхода дерева, приведенного
+на рис. 9.11.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:478.5pt;height:48.75pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image022.png"
+  o:title="115-1"/>
+</v:shape><![endif]--><![if !vml]><img width=638 height=65
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image023.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.13.
+Прямой обход дерева</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Обратный обход осуществляется по правилу:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+левого поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обход
+правого поддерева;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>обработка
+значения в корне поддерева.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция,
+осуществляющая обратный обход дерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>postOrder</span>(<span
+class=SpellE>TreePtr</span> <span class=SpellE>RootPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (<span
+class=SpellE>RootPtr</span><span class=GramE> !</span>= <span class=GramE>NULL)<span
+style='mso-spacerun:yes'>           </span>// если дерево существует</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>postOrder</span>(<span
+class=SpellE>leftS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>   </span>// с помощью <span class=GramE>рекурсивного</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                 </span>// вызова
+функции обходится<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                 </span>// левое
+поддерево<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>postOrder</span>(<span
+class=SpellE>rightS</span>(<span class=SpellE>RootPtr</span>));<span
+style='mso-spacerun:yes'>  </span>// -- правое поддерево<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(“%<span
+class=SpellE>d</span>”, <span class=SpellE>info</span>(<span class=SpellE>RootPtr</span>));
+// вывод на печать значения<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span><span
+class=GramE>}<span style='mso-spacerun:yes'>                             
+</span>// корня поддерева</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Значение в корне поддерева не обрабатывается до тех пор, пока не
+обработаны узлы-потомки в его поддеревьях. То есть, сначала выводится значения
+корня левого поддерева, затем значение корня правого поддерева, а потом
+значение самого корня. На рис. 9.14 приведен результат обратного обхода дерева,
+изображенного на рис. 9.11. </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:467.25pt;height:47.25pt'>
+ <v:imagedata src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image024.png"
+  o:title="115-2"/>
+</v:shape><![endif]--><![if !vml]><img width=623 height=63
+src="9%20ДИНАМИЧЕСКИЕ%20СТРУКТУРЫ%20ДАННЫХ.files/image025.jpg" v:shapes="_x0000_i1037"><![endif]></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис. 9.14.
+Обратный обход дерева</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Удаление элементов из дерева осуществляется по особому правилу. </p>
+
+<p class=P>Для того чтобы удалить узел, сначала его необходимо найти. Так как
+бинарные деревья двоичного поиска имеют свое правило построения, для поиска
+используется это же правило. Удаляемый элемент сравнивается с корнем, если они
+равны, то удаляемый узел найден, если же удаляемый элемент меньше корня, то
+далее поиск происходит в левом поддереве корня, если больше – то в правом. </p>
+
+<p class=P>Когда удаляемый узел найден, надо рассмотреть три случая:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Удаляемый
+узел является листом.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Удаляемый
+узел имеет одного потомка или левого или правого.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Удаляемый
+узел имеет двух потомков.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В первом случае значение указателя на данный узел присваивается
+некоторому рабочему указателю, а самому указателю на узел присваивается
+значение <span lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>. После
+чего память, на которую указывает рабочий указатель, освобождается.</p>
+
+<p class=P>Во втором случае, если удаляемый узел имеет одного из потомков:
+правого или левого, при удалении узла, потомок занимает его место в дереве,
+т.е. указатель в его родительском узле устанавливается на этот узел-потомок.</p>
+
+<p class=P>В третьем случае, когда удаляется узел с двумя потомками, его
+необходимо заменить одним из узлов его поддеревьев. Замещающий узел – это узел
+с наибольшим значением в поддереве, но меньше значения в удаляемом узле (т.е.
+наибольший узел в левом поддереве удаляемого узла) или это узел с наименьшим
+значением в поддереве, больше значения удаляемого узла (т.е. наименьший узел в
+правом поддереве удаляемого узла).</p>
+
+<p class=P>В представленной ниже функции удаления замещающим узлом является
+наибольший узел левого поддерева удаляемого корня.</p>
+
+<p class=P>Этот узел находится путем обхода левого поддерева удаляемого узла
+справа до тех пор, пока указатель <span class=GramE>на</span> правый
+узел-потомок не окажется нулевым. Тут тоже следует рассматривать два случая:
+замещающий узел окажется либо листом, либо будет иметь левого потомка. Если
+замещающий узел является листом, то он занимает место удаляемого узла, а
+соответствующему на него указателю родительского узла устанавливается в
+значение <span lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>. Если у
+замещающего узла есть левый узел-потомок, то после того, как он займет место
+удаляемого узла, его узел-потомок занимает его место, путем установления
+указателя в родительском узле замещающего узла <span class=GramE>на</span>
+левый узел-потомок замещающего узла.</p>
+
+<p class=P>Ниже приведены две функции, предназначенные для удаления узла из
+дерева. Функция <span lang=EN-US style='mso-ansi-language:EN-US'>del</span>
+является вспомогательной, она используется в случае, когда удаляемый узел имеет
+потомков.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Функция</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>удаления</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>delNode</span>(<span class=SpellE>int</span> x, <span
+class=SpellE>TreePtr</span> *<span class=SpellE>rootPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>TreePtr</span> <span class=SpellE>workPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>TreePtr</span> <span class=SpellE>previousPtr</span> = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> ((*<span class=SpellE>rootPtr</span>)
+== NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span>(&quot;Удаляемого
+элемента в дереве <span class=SpellE>нет\n</span>&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>else</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>if</span> (x &lt; info(*<span class=SpellE>rootPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// если элемент меньше корня - поиск
+в левом поддереве<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>delNode</span></span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>(</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>x,
+&amp;((*<span class=SpellE>rootPtr</span>)-&gt;<span class=SpellE>leftPtr</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=GramE>if</span> (x &gt; info(*<span class=SpellE>rootPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// если больше корня - пои<span
+class=GramE>ск в пр</span>авом поддереве<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>delNode</span></span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>(</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>x,
+&amp;((*<span class=SpellE>rootPtr</span>)-&gt;<span class=SpellE>rightPtr</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// рабочему указателю присваивается
+значение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span>// указателя на найденный узел<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>workPtr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> = *<span
+class=SpellE>rootPtr</span>; <o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>if</span> ((<span class=SpellE>rightS</span>(<span class=SpellE>workPtr</span>)
+== NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>          </span></span></span><span
+class=GramE><span class=Code><span style='font-size:12.0pt'>&amp;&amp; (<span
+class=SpellE>leftS</span>(<span class=SpellE>workPtr</span>) == NULL))</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>          </span>// если найденный узел – лист,
+указатель обнуляется<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>          </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>*<span
+class=SpellE>rootPtr</span> = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>        </span><span
+class=GramE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>          </span><span
+class=GramE>if</span> (<span class=SpellE>rightS</span>(<span class=SpellE>workPtr</span>)
+== NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>            </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// если есть левый потомок, указателю<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span>// родительского узла присваивается
+значение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span>// указателя <span class=GramE>на</span>
+левый потомок<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span>(*<span class=SpellE>rootPtr</span>)
+= <span class=SpellE>leftS</span>(<span class=SpellE>workPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>          </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>else</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>            </span><span
+class=GramE>if</span> (<span class=SpellE>leftS</span>(<span class=SpellE>workPtr</span>)
+== NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>            </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// если есть правый потомок,
+указателю<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span>// родительского узла присваивается
+значение<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span>// указателя <span class=GramE>на</span>
+правый потомок<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>              </span>(*<span class=SpellE>rootPtr</span>)
+= <span class=SpellE>rightS</span>(<span class=SpellE>workPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>            </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>else</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>              </span><st1:place
+w:st="on"><st1:State w:st="on"><span class=GramE>del</span></st1:State></st1:place><span
+class=GramE>(</span><span class=SpellE>leftS</span>(<span class=SpellE>workPtr</span>),
+<span class=SpellE>previousPtr</span>, &amp;(*<span class=SpellE>rootPtr</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>         </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>delete</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(<span class=SpellE>workPtr</span>);<span
+style='mso-spacerun:yes'>   </span>//удаляется узел<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// вспомогательная
+функция для удаления узла<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>с</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>двумя</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>потомками</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <st1:place
+w:st="on"><st1:State w:st="on">del</st1:State></st1:place>(<span class=SpellE>TreePtr</span>
+<span class=SpellE>workPtr</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>TreePtr</span> <span class=SpellE>previousPtr</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>TreePtr</span> *<span class=SpellE>rootPtr</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>TreePtr</span> <span class=SpellE>ptr</span> = <span class=SpellE>workPtr</span>;<span
+style='mso-spacerun:yes'>    </span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// поиск наибольшего узла в левом
+поддереве удаляемого узла<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>if</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>rightS</span>(<span class=SpellE>workPtr</span>) != NULL)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>previousPtr</span></span> = <span class=SpellE>workPtr</span>;<span
+style='mso-spacerun:yes'>     </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>сохраняется</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>значение</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                         </span><span
+style='mso-spacerun:yes'>      </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>предыдущего</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>указателя</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><st1:place
+w:st="on"><st1:State w:st="on"><span class=GramE>del</span></st1:State></st1:place><span
+class=GramE>(</span><span class=SpellE>rightS</span>(<span class=SpellE>workPtr</span>),
+<span class=SpellE>previousPtr</span>, &amp;(*<span class=SpellE>rootPtr</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><span
+style='mso-spacerun:yes'>                         </span>// если замещающий
+узел найден<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// указателю родительского узла замещающего
+корня<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// присваивается значение указателя на
+левое поддерево<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>previousPtr</span>-&gt;<span
+class=SpellE>rightPtr</span> = <span class=SpellE>leftS</span>(<span
+class=SpellE>Ptr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>//замещающий узел перемещается на место <span
+class=GramE>удаляемого</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>ptr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>-&gt;<span
+class=SpellE>rightPtr</span> = <span class=SpellE>rightS</span>(*<span
+class=SpellE>rootPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>ptr</span></span>-&gt;<span class=SpellE>leftPtr</span>
+= <span class=SpellE>leftS</span>(*<span class=SpellE>rootPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>workPtr</span></span> = *<span class=SpellE>rootPtr</span>;<span
+style='mso-spacerun:yes'>               </span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>*<span
+class=SpellE>rootPtr</span> = <span class=SpellE>ptr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Прошивка</i></b><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>.<o:p></o:p></span></i></b></p>
+
+<p class=P>Поскольку бинарное дерево с <span lang=EN-US style='mso-ansi-language:
+EN-US'>n</span> узлами имеет <span lang=EN-US style='mso-ansi-language:EN-US'>n</span>+1
+нулевых указателей, половина выделенной для указателей памяти тратится впустую.
+Эту память можно использовать для повышения эффективности прохождения бинарного
+дерева, т.е. хранить в пустых указателях адреса узлов-приемников, которые надо
+посетить при заданном порядке обхода. Такие указатели называются нитями, а
+процесс проведения таких нитей называется прошивкой.</p>
+
+<p class=P>Бинарное дерево называется симметрично прошитым, если при
+симметричном обходе каждый левый пустой указатель указывает на своего
+предшественника, а каждый правый – на преемника.</p>
+
+<p class=P>Структура, описывающая прошиваемое дерево, видоизменится:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Tree<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> root;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>unsigned</span> char <span class=SpellE>rSign</span>, <span
+class=SpellE>lSign</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *<span class=SpellE>leftPtr</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt'> </span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Tree</span></span><span
+class=Code><span style='font-size:12.0pt'> *</span></span><span class=SpellE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>rightPtr</span></span></span><span
+class=Code><span style='font-size:12.0pt'>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span lang=EN-US
+style='mso-ansi-language:EN-US'>rSign</span></span></span> и <span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>lSign</span></span>
+– поля признаков, они равны 0, когда соответственно правый и левый указатели
+пустые; 1 – когда указатели ссылаются соответственно на правое и левое
+поддеревья; 2 – когда указатели являются нитями.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция
+симметричной прошивки бинарного дерева<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>symmetricThreading</span>(<span
+class=SpellE>struct</span> <span class=SpellE>Tree</span> **<span class=SpellE>h</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (*<span
+class=SpellE>h</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// Если левый указатель не является нитью<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>if</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+((*h)-&gt;<span class=SpellE>lSign</span> != 2)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>symmetricThreading</span></span><span
+class=GramE>(</span>&amp;(*h)-&gt;<span class=SpellE>leftPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// Если правый указатель не является
+нитью<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>if</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+((*h)-&gt;<span class=SpellE>rSign</span> != 2)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>symmetricThreading</span></span><span
+class=GramE>(</span>&amp;(*h)-&gt;<span class=SpellE>rightPtr</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// Если левый указатель является
+пустым<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (!((*<span
+class=SpellE>h</span>)-&gt;<span class=SpellE>leftPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>(*h)-&gt;<span
+class=SpellE>lSign</span> = 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>leftThreading</span></span><span class=GramE>(</span>h);<span
+style='mso-spacerun:yes'>           </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>делаем</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>его</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>нитью</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>// Если правый указатель является пустым<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (!((*<span
+class=SpellE>h</span>)-&gt;<span class=SpellE>rightPtr</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span>(*h)-&gt;<span
+class=SpellE>rSign</span> = 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>rightThreading</span></span><span class=GramE>(</span>h);<span
+style='mso-spacerun:yes'>          </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>делаем</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>его</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>нитью</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция установки
+указателя-нити на предшественника<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>leftThreading</span>(<span class=SpellE>struct</span> Tree **h)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *p = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for</span> (p = *h; (p != head) &amp;&amp; <span class=SpellE>isLeft</span>(p);
+p = father(p));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>(*<span class=SpellE>h</span>)-&gt;<span
+class=SpellE>leftPtr</span> = <span class=SpellE>father</span>(<span
+class=SpellE>p</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функция установки
+указателя-нити на преемника<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>rightThreading</span>(<span class=SpellE>struct</span> Tree **h)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> Tree *p = NULL;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for</span> (p = *h; (p != head) &amp;&amp; <span class=SpellE>isRight</span>(p);
+p = father(p));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>(*h)-&gt;<span
+class=SpellE>rightPtr</span> = <span class=GramE>father(</span>p);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+</div>
+
+</body>
+
+</html>

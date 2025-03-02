@@ -1,0 +1,11 @@
+﻿  lex.yy.c
+lex.yy.c(844): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+lex.yy.c(1010): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+lex.yy.c(1197): error C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fileno. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2459): note:  см. объявление "fileno"
+lex.yy.c(1391): warning C4013: exit: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1454): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1454): warning C4312: приведение типов: преобразование из "int" в "void *" большего размера
+lex.yy.c(1472): warning C4013: realloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1472): warning C4312: приведение типов: преобразование из "int" в "void *" большего размера
+lex.yy.c(1482): warning C4013: free: нет определения; предполагается "extern" с возвратом типа "int"

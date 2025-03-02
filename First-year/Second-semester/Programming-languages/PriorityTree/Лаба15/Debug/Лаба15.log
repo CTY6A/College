@@ -1,0 +1,11 @@
+﻿  Лаба15.c
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(15): warning C4047: функция: "tree *" отличается по уровням косвенного обращения от "tree **"
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(15): warning C4024: rec: различные типы для формального и фактического параметров 3
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(23): warning C4028: формальный параметр 3 отличается от объявления
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(37): warning C4133: функция: несовместимые типы - из "free **" в "tree **"
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(38): warning C4133: функция: несовместимые типы - из "free **" в "tree **"
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(53): warning C4133: функция: несовместимые типы - из "free *" в "tree *"
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(54): warning C4133: функция: несовместимые типы - из "free *" в "tree *"
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(56): warning C4033: "rab" должен возвращать значение
+c:\users\user\desktop\лаба15\лаба15\лаба15.c(57): warning C4716: rab: должна возвращать значение
+  Лаба15.vcxproj -> C:\Users\User\Desktop\Лаба15\Debug\Лаба15.exe

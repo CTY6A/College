@@ -1,0 +1,1902 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="11%20ДИРЕКТИВЫ%20ПРЕПРОЦЕССОРА.files/filelist.xml">
+<title>11. Директивы препроцессора</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="metricconverter"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2011-03-30T14:13:00Z</o:Created>
+  <o:LastSaved>2011-03-30T14:13:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3537</o:Words>
+  <o:Characters>20167</o:Characters>
+  <o:Lines>168</o:Lines>
+  <o:Paragraphs>47</o:Paragraphs>
+  <o:CharactersWithSpaces>23657</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+span.CourierNew
+	{mso-style-name:"Стиль Courier New полужирный подчеркивание";
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	font-weight:bold;
+	text-decoration:underline;
+	text-underline:single;}
+span.CourierNew0
+	{mso-style-name:"Стиль Courier New полужирный";
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	font-weight:bold;}
+span.2CourierNew
+	{mso-style-name:"Стиль Заголовок 2 + Courier New полужирный подчеркивание Знак Знак";
+	mso-style-parent:"";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-style:italic;
+	mso-no-proof:no;
+	text-decoration:underline;
+	text-underline:single;}
+span.CourierNew1
+	{mso-style-name:"Стиль Courier New полужирный Красный подчеркивание";
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	text-decoration:underline;
+	text-underline:single;}
+p.H1, li.H1, div.H1
+	{mso-style-name:_H1;
+	mso-style-parent:"Заголовок 1";
+	mso-style-link:"_H1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:no-line-numbers;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.P, li.P, div.P
+	{mso-style-name:_P;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Code
+	{mso-style-name:_Code;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Lucida Console";
+	mso-ascii-font-family:"Lucida Console";
+	mso-hansi-font-family:"Lucida Console";}
+p.H2, li.H2, div.H2
+	{mso-style-name:_H2;
+	mso-style-parent:"Заголовок 2";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.H3, li.H3, div.H3
+	{mso-style-name:_H3;
+	mso-style-parent:"Заголовок 3";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-hyphenate:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.H10
+	{mso-style-name:"_H1 Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:_H1;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	text-transform:uppercase;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:615523011;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1530859920 68747289 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:1274555965;
+	mso-list-type:hybrid;
+	mso-list-template-ids:865118468 68747289 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1660380691;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1416759768 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l2:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:1897203367;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1352085262 107408758 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l3:level1
+	{mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=H1 style='mso-outline-level:2'><a name="_Toc266272308"></a><a
+name="_Toc265340348"></a><a name="_Toc263373119"><span style='mso-bookmark:
+_Toc265340348'><span style='mso-bookmark:_Toc266272308'>11. Директивы пр</span></span></a><span style='mso-bookmark:_Toc263373119'><span style='mso-bookmark:
+_Toc265340348'><span style='mso-bookmark:_Toc266272308'>епроцессора</span></span></span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272309"></a><a
+name="_Toc265340349"></a><a name="_Toc263373120"><span style='mso-bookmark:
+_Toc265340349'><span style='mso-bookmark:_Toc266272309'><span style='mso-ansi-language:
+RU'>11.1. Основные понятия</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Препроцессор (макропроцессор) – это программный модуль,
+обрабатывающий исходный текст программы до того, как он пройдёт <span
+class=GramE>через</span> компилятор. Языка программирования Си предполагает,
+что любой транслятор с этого языка содержит препроцессор.</p>
+
+<p class=P>Препроцессорная обработка (<span class=SpellE>макрообработка</span>)
+— это преобразование текста путем замены препроцессорных переменных их
+значениями и выполнения препроцессорных операторов (директив препроцессора).</p>
+
+<p class=P>Директива препроцессора – это любая строка, начинающаяся с символа #
+(до символа # в строке могут содержаться только пробелы). Синтаксис этих строк
+не связан с остальным языком: они могут появляться<span
+style='mso-spacerun:yes'>  </span>в любом месте и их влияние распространяется
+(независимо от области действия) до конца исходного программного файла.</p>
+
+<p class=P><span class=SpellE>Макрообработка</span> состоит в последовательном
+просмотре (сканировании) исходного текста и выделении в нем лексем
+(макроопределении). Если выделенная лексема является препроцессорной
+переменной, она <span class=GramE>заменяется на свое</span> значение – это называется
+макрорасширением. Если встречается препроцессорная директива, то она
+выполняется. Лексемы, не являющиеся препроцессорными переменными или
+директивами, переносятся в выходной текст без изменения. Результатом такой
+обработки является текст, не содержащий препроцессорных директив и
+препроцессорных переменных. После <span class=SpellE>макрообработки</span>
+должен быть получен синтаксически правильный текст на Си.</p>
+
+<p class=P>Препроцессор позволяет выполнить следующие действия:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>включить
+в компилируемый файл другие файлы;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>определить
+символические константы и макросы;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>задать
+режим условной компиляции программного кода и условного выполнения директив
+препроцессора;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>задавать
+номера строк;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>e.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>выводить
+сообщения об ошибках;</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>f.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>использовать
+дополнительные команды при помощи директивы <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>pragma</span></span></span>. Количество и функции команд зависят
+от установленного пакета Си.</p>
+
+<p class=P>Фактически препроцессор расширяет возможности языка Си, реализуя
+такие функции, которые в других языках входят в состав самого языка.</p>
+
+<p class=P>Директивы препроцессора можно условно разделить на следующие группы:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><i style='mso-bidi-font-style:
+normal'><span style='mso-list:Ignore'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></i><![endif]><i style='mso-bidi-font-style:normal'>Включение
+файлов (</i><span class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span class=SpellE>include</span></span></span><i
+style='mso-bidi-font-style:normal'>);<o:p></o:p></i></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><i style='mso-bidi-font-style:
+normal'><span style='mso-list:Ignore'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></i><![endif]><i style='mso-bidi-font-style:normal'>Определения
+символических констант и макросов (</i><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span><span class=CourierNew0><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>,
+</span></span><span class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span class=SpellE>undef</span></span></span><i
+style='mso-bidi-font-style:normal'>);<o:p></o:p></i></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></i><![endif]><i style='mso-bidi-font-style:normal'>Условная</i><i
+style='mso-bidi-font-style:normal'><span style='mso-ansi-language:EN-US'> </span>компиляция</i><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'> (</span></i><span class=CourierNew><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>#if</span></span><span class=CourierNew0><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#<span
+class=SpellE>endif</span></span></span><span class=CourierNew0><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#<span
+class=SpellE>ifdef</span></span></span><span class=CourierNew0><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#<span
+class=SpellE>ifndef</span></span></span><span class=CourierNew0><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#else</span></span><span
+class=CourierNew0><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#<span
+class=SpellE>elif</span>);</span></span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></i></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></i><![endif]><span class=SpellE><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>Прочие</span></i></span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'> <span class=SpellE>директивы</span> (</span></i><span class=CourierNew><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US'>#error</span></span><span
+class=CourierNew0><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#line</span></span><span
+class=CourierNew0><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>, </span></span><span
+class=CourierNew><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>#<span
+class=SpellE>pragma</span></span></span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>);<o:p></o:p></span></i></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><i style='mso-bidi-font-style:
+normal'><span style='mso-list:Ignore'>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></i><![endif]><i style='mso-bidi-font-style:normal'>Операции
+препроцессора </i><span class=CourierNew0><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#</span></span><i
+style='mso-bidi-font-style:normal'> и </i><span class=CourierNew0><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>##</span></span><i
+style='mso-bidi-font-style:normal'>.<o:p></o:p></i></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272310"></a><a
+name="_Toc265340350"></a><a name="_Toc263373121"><span style='mso-bookmark:
+_Toc265340350'><span style='mso-bookmark:_Toc266272310'><span lang=EN-US>11.2.
+Директива </span></span></span></a><span style='mso-bookmark:_Toc263373121'><span
+style='mso-bookmark:_Toc265340350'><span style='mso-bookmark:_Toc266272310'><span
+class=2CourierNew><span style='font-size:14.0pt;mso-bidi-font-size:18.0pt'>#include</span></span></span></span></span><span
+class=2CourierNew><span style='font-size:14.0pt;mso-bidi-font-size:18.0pt'> <o:p></o:p></span></span></p>
+
+<p class=P>Директива <span class=CourierNew><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span> применяется для включения копии
+указанного в директиве файла в том месте, где находится эта директива. </p>
+
+<p class=P>Существует 3 формы директивы <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span>:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span class=Code><span
+style='font-size:12.0pt;mso-fareast-font-family:"Lucida Console";mso-bidi-font-family:
+"Lucida Console"'><span style='mso-list:Ignore'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span></span><![endif]><span class=Code><span style='font-size:
+12.0pt'>#<span class=SpellE>include</span> &lt;<span class=SpellE>имя_файла</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span class=Code><span
+style='font-size:12.0pt;mso-fareast-font-family:"Lucida Console";mso-bidi-font-family:
+"Lucida Console"'><span style='mso-list:Ignore'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span></span><![endif]><span class=Code><span style='font-size:
+12.0pt'>#<span class=SpellE>include</span> &quot;<span class=SpellE>имя_файла</span>&quot;<o:p></o:p></span></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span class=Code><span
+style='font-size:12.0pt;mso-fareast-font-family:"Lucida Console";mso-bidi-font-family:
+"Lucida Console"'><span style='mso-list:Ignore'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span></span><![endif]><span class=Code><span style='font-size:
+12.0pt'>#<span class=SpellE>include</span> <span class=SpellE>идентификатор_макроса</span><o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Последняя форма предполагает, что макрос, идентификатор которого
+используется в этой форме директивы, предварительно определен и использует одну
+из первых двух форм директивы <span class=CourierNew><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span>.</p>
+
+<p class=P>Различие между первыми двумя формами директивы заключается в методе
+поиска препроцессором включаемого файла. <span class=GramE>Если имя файла
+заключено в угловые скобки (&lt; &gt;), как это делается для включения
+заголовочных файлов стандартной библиотеки, то последовательность поиска
+препроцессором заданного файла в каталогах определяется заданными каталогами включения
+(<span class=SpellE>include</span> <span class=SpellE>directories</span>.</span>
+В <span class=SpellE>Borland</span> C++ 3.1 установить данную директорию можно
+через меню: <span class=SpellE><span class=GramE>Options</span></span><span
+class=GramE>-&gt;<span class=SpellE>Directori<span lang=EN-US style='mso-ansi-language:
+EN-US'>es</span></span>).</span></p>
+
+<p class=P>Если же имя файла заключено в кавычки, препроцессор ищет файл в
+директории, указанной (для <span class=SpellE>Borland</span> C++ 3.1) через
+меню: <span lang=EN-US style='mso-ansi-language:EN-US'>File</span>-&gt;<span
+class=SpellE>Change</span> <span lang=EN-US style='mso-ansi-language:EN-US'>dir</span>.
+Если же указан полный путь к файлу, то поиск производится по указанному адресу.</p>
+
+<p class=P>Обработка директивы <span class=CourierNew><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span> препроцессором сводится к тому, что
+директива убирается из текста и на ее место заносится копия указанного файла.</p>
+
+<p class=P>Директива <span class=CourierNew><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span> обычно используется для включения
+стандартных заголовочных файлов библиотек и для включения заголовочных файлов в
+файлы их реализации. Директива <span class=CourierNew><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>include</span></span></span> используется также при работе с
+программами, состоящими из нескольких исходных файлов, которые должны
+компилироваться вместе.</p>
+
+<p class=P>Рассмотрим примеры директив.</p>
+
+<p class=P>Следующая директива включает файл <span class=SpellE><b
+style='mso-bidi-font-weight:normal'>stdio.h</b></span>, который ищется в
+стандартном каталоге включаемых файлов:</p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+&lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Следующая директива включает пользовательскую библиотеку <span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>MyBibl</span></b></span><b style='mso-bidi-font-weight:
+normal'>.<span class=SpellE>h</span></b>, расположенную в каталоге, указанном
+через меню <span lang=EN-US style='mso-ansi-language:EN-US'>File</span>-&gt;<span
+class=SpellE>Change</span> <span lang=EN-US style='mso-ansi-language:EN-US'>dir</span>:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+&quot;<span class=SpellE>MyBibl.h</span>&quot;<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Следующие директивы включают файл <b style='mso-bidi-font-weight:
+normal'>C:\Test\my.h</b>, <span class=GramE>который</span> ищется в каталоге <b
+style='mso-bidi-font-weight:normal'>C:\Test</b>:</p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define <span class=SpellE>myincl</span>
+&quot;C:\Test\my.h&quot;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+<span class=SpellE>myincl</span><o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Замечание: Включения с помощью #<span class=SpellE>include</span>
+могут быть вложенными.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272311"></a><a
+name="_Toc265340351"></a><a name="_Toc263373122"><span style='mso-bookmark:
+_Toc265340351'><span style='mso-bookmark:_Toc266272311'><span style='mso-ansi-language:
+RU'>11.3. Директивы препроцессора </span></span></span></a><span
+style='mso-bookmark:_Toc263373122'><span style='mso-bookmark:_Toc265340351'><span
+style='mso-bookmark:_Toc266272311'><span class=2CourierNew><span
+style='font-size:14.0pt;mso-bidi-font-size:18.0pt'>#define</span></span></span></span></span><span
+style='mso-bookmark:_Toc263373122'><span style='mso-bookmark:_Toc265340351'><span
+style='mso-bookmark:_Toc266272311'><span class=GramE><span style='mso-ansi-language:
+RU'> и</span></span></span></span></span><span style='mso-bookmark:_Toc263373122'><span
+style='mso-bookmark:_Toc265340351'><span style='mso-bookmark:_Toc266272311'><span
+style='mso-ansi-language:RU'> </span></span></span></span><span
+style='mso-bookmark:_Toc263373122'><span style='mso-bookmark:_Toc265340351'><span
+style='mso-bookmark:_Toc266272311'><span class=2CourierNew><span
+style='font-size:14.0pt;mso-bidi-font-size:18.0pt'>#undef</span></span></span></span></span><span
+style='mso-bookmark:_Toc266272311'></span><span style='mso-bookmark:_Toc265340351'></span><span
+style='mso-bookmark:_Toc263373122'></span><span class=2CourierNew><span
+style='font-size:14.0pt;mso-bidi-font-size:18.0pt;font-weight:normal;
+mso-bidi-font-weight:bold'><o:p></o:p></span></span></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272312"></a><a
+name="_Toc265340352"></a><a name="_Toc263373123"><span style='mso-bookmark:
+_Toc265340352'><span style='mso-bookmark:_Toc266272312'>11.3.1. Символические
+константы</span></span></a></p>
+
+<p class=P>Директива препроцессора <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span><b style='mso-bidi-font-weight:normal'>
+</b>создает символические константы или макросы без параметров, обозначаемые
+идентификаторами, и макросы – операции, обозначаемые символьными строками. Формат
+директивы препроцессора <span class=CourierNew><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span> при объявлении символической
+константы:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>идентификатор_<span class=GramE>константы</span></span> <span
+class=SpellE>замещающий_текст</span><o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Приведенная форма директивы создает макрос без параметров,
+называемый обычно символической константой. После появления этой строки в файле
+все встретившиеся далее в тексте программы имена, совпавшие с элементом
+директивы <span class=SpellE><span style='font-size:12.0pt;font-family:"Lucida Console"'>идентификатор_константы</span></span>,
+будут автоматически заменены на указанный в директиве <span class=SpellE><span
+style='font-size:12.0pt;font-family:"Lucida Console"'>замещающий_те<span
+class=GramE>кст</span></span></span><span class=GramE> пр</span>ежде, чем
+начнется компиляция программы. Например, после задания директивы</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+PI 3.14159<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P style='text-indent:0cm'>все последующие вхождения в те<span
+class=GramE>кст пр</span>ограммы символической константы PI будут заменены на
+численную константу 3.14159. Замена идентификатора константы не производится в
+комментариях и строках символов. Если замещающий текст в директиве не задан, то
+во всем тексте идентификаторы константы просто стираются. После замены всех
+символических констант их значениями исходный те<span class=GramE>кст пр</span>ограммы
+опять просматривается препроцессором в поисках необходимости новых замен. Таким
+образом, можно использовать вложенные определения символических констант.</p>
+
+<p class=P>Если замещающий те<span class=GramE>кст ср</span>авнительно длинный,
+его можно перенести на следующую строку, введя символ обратного слеша
+&quot;\&quot;. Например, при запуске программы:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+DIGIT 2\<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>3<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>printf</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(“\<span class=SpellE>n%d</span>”,
+DIGIT);<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P style='text-indent:0cm'>на экран будет выведено: 23</p>
+
+<p class=P>Замечание: если значение символической константы велико и его часть
+требуется перенести на следующую строку, то при разрыве этого значения между
+знаком ”\” и символом на следующей строке не должно быть непредусмотренных пробелов.</p>
+
+<p class=P>Предупреждение: в конце директив препроцессора не ставится точка с
+запятой.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=P>Например, если создать следующую символическую константу:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+LENGTH 12;<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>а затем попробовать её применить при
+объявлении массива,</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>array</span>[LENGTH];<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>то, расширяясь, выражение будет выглядеть
+как</p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>array</span>[12;]<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>что синтаксически неправильно.</p>
+
+<p class=P>Символические константы дают возможность программисту присвоить
+константе имя и использовать ее далее в программе. Если возникнет необходимость
+изменить значение константы во всей программе, для этого достаточно будет
+внести только одно изменение в директиву препроцессора <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span> и перекомпилировать программу;
+значение константы будет изменено по всей программе автоматически.</p>
+
+<p class=P>Предупреждение: Учтите, что все, что находится справа от
+идентификатора символической константы, является замещающим ее текстом.
+Например, после выполнения директивы <b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;font-family:"Lucida Console"'>#<span class=SpellE>define</span></span></b><span
+style='font-size:12.0pt;font-family:"Lucida Console"'> PI =3.14159</span>,
+препроцессор заменит все имена <b style='mso-bidi-font-weight:normal'>PI</b> на
+текст =3.14159.</p>
+
+<p class=P>Возможен другой метод использования именованных констант. Он
+заключается в использовании ключевого слова <span class=SpellE>const</span>.
+Например:</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>const</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>int</span>
+PI=3.14159;<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>Константные переменные являются данными определенного типа и их
+имена видны отладчику. А если используется символическая константа, то после
+того, как символическая константа была заменена на соответствующий текст,
+только этот текст и будет виден отладчику. Следовательно, символическую
+константу нельзя будет просматривать с помощью окна отладчика просмотра
+значений переменных <span class=SpellE><b style='mso-bidi-font-weight:normal'>watch</b></span>.</p>
+
+<p class=P>Ниже приведены примеры определения с помощью директивы<b
+style='mso-bidi-font-weight:normal'> </b><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span> символических констант:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// определение
+строки текста:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+ANYKEY &quot;Нажмите любую клавишу&quot;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// идентификатор
+DELETE в тексте просто удалится:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define DELETE<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>определение</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>директивы</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> #<span
+class=GramE>include</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define GETSTD #include &lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Хороший стиль программирования: для наглядности программного кода
+разумно использовать прописные (большие) буквы для именованных констант, чтобы
+отличать их от переменных Си.</p>
+
+<p class=P>Итак, какие <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>преимущества</i></b> в применении
+символических констант:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>при
+использовании символических констант программы становятся <span class=GramE>более
+удобочитаемыми</span> (определенному числу или строке ставиться в соответствие
+осмысленное название);</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>именованные
+константы позволяют легко модифицировать программы, заменяя значение константы
+только в одном месте (где она определена), нежели в каждом выражении, где она
+встречается.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l3 level1 lfo4;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>символические
+константы не требуют выделения памяти.</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Недостаток</i></b>: символические константы не существуют как
+переменные, поэтому их нельзя просматривать при помощи отладчика.</p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272313"></a><a
+name="_Toc265340353"></a><a name="_Toc263373124"><span style='mso-bookmark:
+_Toc265340353'><span style='mso-bookmark:_Toc266272313'>11.3.2. Макросы с
+параметрами</span></span></a></p>
+
+<p class=P>Формат директивы <span class=CourierNew><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>define</span></span></span>, определяющей макрос с параметрами:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>идентификатор_макрос<span class=GramE>а</span></span><span
+class=GramE>(</span>параметры) <span class=SpellE>замещающий_текст</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P>Предупреждение: между идентификатором макроса и открывающейся
+скобкой не должно быть пробела.</p>
+
+<p class=P>Вызов макроса осуществляется выражением:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>идентификатор_макрос<span
+class=GramE>а</span></span></span></span><span class=GramE><span class=Code><span
+style='font-size:12.0pt'>(</span></span></span><span class=Code><span
+style='font-size:12.0pt'>параметры)<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>Макрос, определяемый директивой препроцессора <span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman"'>#<span class=SpellE>define</span></span></span>,
+это символическое имя некоторого набора операторов. Как и в случае
+символических констант, идентификатор макроса <span class=GramE>заменяется на</span>
+замещающий текст до начала компиляции программы. Но сначала в замещающий текст
+подставляются значения параметров, а затем уже этот расширенный макрос
+подставляется в текст вместо идентификатора макроса и списка его параметров.</p>
+
+<p class=P>Например, следующий макрос с одним параметром определяет площадь круга,
+воспринимая передаваемый в него параметр как радиус:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define CIRC(x) (3.14 * (x) *(x))<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P>Везде в тексте файла, где появится идентификатор <b
+style='mso-bidi-font-weight:normal'>CIRC(A)</b>, значение параметра <b
+style='mso-bidi-font-weight:normal'>A </b>будет использовано для замещения.
+Например, оператор с макросом в тексте программы</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = CIRC(4);<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>примет вид:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14 * (4) *
+(4));<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>Поскольку это выражение состоит только из констант, его значение
+будет вычислено во время компиляции и полученный результат будет присвоен
+переменной S во время выполнения программы.</p>
+
+<p class=P>Если вызов имеет вид</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = CIRC(<span
+class=SpellE>a</span> + <span class=SpellE>b</span>);<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>то после расширения макроса тест будет иметь
+вид:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14 * (<span
+class=SpellE>a</span> + <span class=SpellE>b</span>) * (<span class=SpellE>a</span>
++ <span class=SpellE>b</span>));<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>В данном случае параметр макроса является выражением, содержащим
+переменные <span class=SpellE>a</span> и <span class=SpellE>b</span>. Поэтому
+вычисления будут осуществляться не во время компиляции, а во время выполнения
+программы.</p>
+
+<p class=P>Следует обратить внимание на круглые скобки вокруг каждого включения
+параметра <span class=SpellE>x</span> в тексте рассмотренного макроса и вокруг
+всего выражения. При вызове типа CIRC(4) они кажутся излишними. Но во втором
+примере вызова при отсутствии скобок расширение привело бы к оператору:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = 3.14 * <span
+class=SpellE>a</span> + <span class=SpellE>b</span> * <span class=SpellE>a</span>
++ <span class=SpellE>b</span>;<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>Тогда в соответствии со старшинством операций сначала выполнилось бы
+умножение 3.14 * <span class=SpellE>a</span>, затем <span class=SpellE>b</span>
+* <span class=SpellE>a</span>, а затем результаты этих умножений сложились бы
+друг с другом и с <span class=SpellE>b</span>. Конечно, результат вычислений
+был бы неверным.</p>
+
+<p class=P>Хороший стиль программирования: При объявлении макроса заключите в
+скобки параметры в замещающем тексте и сам замещающий текст. Это избавит от
+возможных неприятностей, связанных с неверной последовательностью вычислений
+при расширении макроса.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Пример_1</i></b>: макрос, определяющий площадь эллипса через значения
+его полуосей может быть определен директивой</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define Ell(x, y) (3.14 * (x) * (y))<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Вызов этого макроса может иметь вид:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = <span
+class=SpellE>Ell</span>(R1, R2);<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>С точки зрения получаемых результатов вычислений макросы
+эквивалентны функциям. Например, вычисление площади круга можно было бы
+оформить функцией:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>double</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>circ</span>(<span
+class=SpellE>double</span> <span class=SpellE>x</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>return</span> 3.14 * <span
+class=SpellE>x</span> * <span class=SpellE>x</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P style='text-indent:0cm'>и вызвать ее оператором:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = <span
+class=SpellE>circ</span>(<span class=SpellE>a</span> + <span class=SpellE>b</span>);<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>Пример_2</i></b>: следующим образом можно создать элемент связанного
+списка, используя<b style='mso-bidi-font-weight:normal'> </b><span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman"'>#<span class=SpellE>define</span></span></span><b
+style='mso-bidi-font-weight:normal'>:<o:p></o:p></b></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define <span class=GramE>PTRSTRUCT(</span>name) <span
+class=SpellE>typedef</span> <span class=SpellE>struct</span> name<span
+style='mso-spacerun:yes'>  </span>*<span class=SpellE>name##Ptr</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define <span class=GramE>STRUCT(</span>name) <span
+class=SpellE>struct</span> name \<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>                      
+</span>{ \<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                         </span><span class=SpellE><span
+class=GramE>int</span></span> value; \<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                         </span><span class=SpellE><span
+class=GramE>struct</span></span> name *next; \<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>           </span><span
+style='mso-spacerun:yes'>            </span></span></span><span class=Code><span
+style='font-size:12.0pt'>}; \<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>        </span>PTRSTRUCT(<span class=SpellE>name</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>и работать с
+ним:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>STRUCT(</span></span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>MyStruct</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>MyStruct</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>     </span>My;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>MyStructPtr</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>MyPtr</span></span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> = &amp;My;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>My.value</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> =
+5;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%d</span>”, <span class=SpellE>My.value</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%d</span>”, (*<span class=SpellE>MyPtr</span>).value);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>При этом на экран будет выведено: <o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>5<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>5<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-no-proof:yes'>Пример_3</span></i></b><span
+style='mso-no-proof:yes'>: использование макросов вместо стандартных функций:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define <span class=GramE>READ(</span><span
+class=SpellE>val</span>) <span class=SpellE>scanf</span>(&quot;%d&quot;, &amp;<span
+class=SpellE>val</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>При использовании в тексте программы </span><span
+class=Code><span style='font-size:12.0pt'>READ(<span class=SpellE>y</span>);</span></span><span
+style='mso-no-proof:yes'>, макрос расширится до </span><span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>scanf</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(&quot;%<span class=SpellE>d</span>&quot;,&amp;<span
+class=SpellE>y</span>);</span></span><span style='mso-no-proof:yes'>.</span> </p>
+
+<p class=P>Таким образом, возникает вопрос, что выгоднее использовать: макросы
+или функции?</p>
+
+<p class=P><span class=GramE>Вызов функции сопряжен с дополнительными расходами
+и увеличивает время выполнения программы (если программа использует функцию, то
+в выполняемую программу помещается только одна копия функции.</span> Каждый
+раз, при вызове функции, программа помещает параметры в стек и затем выполняет
+переход к коду функции. <span class=GramE>После завершения функции, программа
+удаляет параметры из стека и переходит обратно к оператору, который следует
+непосредственно за вызовом функции.).</span> Это соображение работает в пользу
+использования макросов. С другой стороны, макрос расширяется во всех местах
+текста, где используется его вызов. Если таких ме<span class=GramE>ст в пр</span>ограмме
+много, то это увеличивает размер текста и, соответственно размер выполняемого
+модуля. Так что функции позволяют сократить объем выполняемого файла, а макросы
+– увеличить скорость выполнения. Правда, макросы тоже могут быть связаны с
+дополнительными накладными расходами. В приведенном примере “с вычислением
+площади круга” значение параметра (<span class=SpellE>a</span> + <span
+class=SpellE>b</span>) вычисляется дважды, в то время<span class=GramE>,</span>
+как в функции это вычисление осуществляется только один раз. Конечно, для таких
+простых вычислений это не существенно. Но если в качестве параметра передается
+сложное выражение, обращающееся в свою очередь к каким-нибудь сложным функциям,
+то эти дополнительные накладные расходы могут стать заметными и увеличить
+вычисления.</p>
+
+<p class=P>Недостатком макросов является отсутствие встроенного контроля
+согласования типов фактических и формальных параметров. Отсутствие
+соответствующих предупреждений компилятора может приводить к ошибкам программы,
+которые трудно отлавливать. Однако это является иногда и преимуществом.
+Например, если необходимо создать “универсальную функцию”, подобную шаблонным
+функциям в C++. Опишем пример работы подобной “универсальной функции”. Создаем
+макрос – суммирование двух элементов:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><a name="#154"><span class=Code><span style='font-size:12.0pt'>#</span></span></a><span
+class=SpellE><span style='mso-bookmark:"\#154"'><span class=Code><span
+style='font-size:12.0pt'>define</span></span></span></span><span
+style='mso-bookmark:"\#154"'><span class=Code><span style='font-size:12.0pt'>
+SUM(<span class=SpellE>x</span>, у) ((<span class=SpellE>х</span>) + (у))<o:p></o:p></span></span></span></p>
+
+<p class=P><span style='mso-bookmark:"\#154"'><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></span></p>
+
+<span style='mso-bookmark:"\#154"'></span>
+
+<p class=P><span style='mso-no-proof:yes'>Вызываем его в главной программе,
+передавая макросу в качестве фактических параметров константы </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>int</span><span
+style='mso-no-proof:yes'>, </span><span lang=EN-US style='mso-ansi-language:
+EN-US;mso-no-proof:yes'>float</span><span style='mso-no-proof:yes'> и </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>char</span><span
+style='mso-no-proof:yes'> типов:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&quot;3 + 5 =
+%d\n&quot;, SUM(3, 5));<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&quot;3.4 + 5.7 =
+%0.1f\n&quot;, SUM(3.4, 5.7));<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&quot;’a’ + ‘0’ =
+‘%c’\n&quot;, SUM(‘a’, ‘0’));<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>После выполнения программы на экране
+будет отображено следующее:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>3 + 5 = 8<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>3.4 + 5.7 = 9.1<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>'a'+’0’ = 'q’<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Но самый существенный недостаток макросов – возможность появления
+побочных эффектов, если в качестве аргумента в макрос передается некоторое
+выражение. Например, если описанный выше макрос <b style='mso-bidi-font-weight:
+normal'>CIRC</b>, вычисляющий площадь круга, вызвать следующим образом:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = CIRC(<span
+class=SpellE>a++</span>);<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P style='text-indent:0cm'>предполагая рассчитать площадь и затем
+операцией постфиксного инкремента увеличить радиус на 1. Макрос будет расширен
+следующим образом:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14 * (<span
+class=SpellE>a++</span>) * (<span class=SpellE>a++</span>));<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>Теперь выведем на экран полученную площадь S и переменную <span
+class=SpellE>a</span><span style='mso-spacerun:yes'>  </span>(допустим до этого
+<span class=SpellE>a</span> == 2):</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%f\n%d</span>”, S, a);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>получим:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>12.56<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>4<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>При этом площадь вычислена верно, но
+постфиксный инкремент вычислялся два раза. В результате значение радиуса a
+увеличилось не на 1, а на 2.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Если мы попробуем вывести следующим
+образом<span style='mso-spacerun:yes'>  </span>(до этого </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>a</span><span
+style='mso-no-proof:yes'> == 2):<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%f\n%d</span>”, CIRC(a++), a);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>то получим:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>18.84<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>2<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В этом случае один инкремент произошел прямо при подсчёте площади
+круга.</p>
+
+<p class=P>Если же этот макрос вызвать следующим образом:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = CIRC(++<span
+class=SpellE>a</span>);<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P style='text-indent:0cm'>предполагая увеличить радиус на 1 и
+вычислить площадь круга с таким увеличенным радиусом. Макрос будет расширен
+следующим образом:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14159 * (++<span
+class=SpellE>a</span>) * (++<span class=SpellE>a</span>));<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Теперь выведем на экран полученную площадь S и переменную <span
+class=SpellE>a</span> (допустим до этого <span class=SpellE>a</span> == 1):</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%f\n%d</span>”, S, a);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>получим:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>28.56<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>3<o:p></o:p></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P><span style='mso-no-proof:yes'>При этом макрос расширился до:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14159 * (<span
+class=SpellE>a</span> + 2) * (<span class=SpellE>a</span> + 2));<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P><span style='mso-no-proof:yes'>Если мы попробуем вывести следующим
+образом (до этого </span><span lang=EN-US style='mso-ansi-language:EN-US;
+mso-no-proof:yes'>a</span><span style='mso-no-proof:yes'> == 1):<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“\<span
+class=SpellE>n%f\n%d</span>”, CIRC(a++), a);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>то получим:<o:p></o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>18.84<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>1<o:p></o:p></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P><span style='mso-no-proof:yes'>При этом макрос расширился до:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>S = (3.14159 * (<span
+class=SpellE>a</span> + 1) * (<span class=SpellE>a</span> + 2));<o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P>Всех этих побочных эффектов не будет, если вместо макроса
+использовать описанную выше функцию <span class=SpellE>circ</span>.</p>
+
+<p class=P>При выборе реализации вычислений функцией или макросом надо
+обеспечивать компромисс между скоростью вычислений и затратами памяти. Для
+небольших функций, возможно, наилучшим решением является применение
+встраиваемых функций. Для них проблемы оптимальной реализации решает компилятор.</p>
+
+<p class=P>Хороший стиль программирования: Избегайте применения сложных
+макросов с параметрами, так как они могут приводить к нежелательным побочным
+эффектам. Вместо макросов в этих случаях лучше использовать встраиваемые
+функции <span class=SpellE><b style='mso-bidi-font-weight:normal'>inline</b></span>.</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'>Преимущества </b>макросов с
+параметрами перед функциями:</p>
+
+<p class=P>1. экономия времени выполнения.</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'>Недостатки</b>:</p>
+
+<p class=P>2. увеличение объема программного кода;</p>
+
+<p class=P>3. неправильная интерпретация изменяющихся параметров;</p>
+
+<p class=P>4. отсутствие контроля согласования типов.</p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272314"></a><a
+name="_Toc265340354"></a><a name="_Toc263373125"><span style='mso-bookmark:
+_Toc265340354'><span style='mso-bookmark:_Toc266272314'>11.3.3. Директива #</span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc263373125'><span style='mso-bookmark:
+_Toc265340354'><span style='mso-bookmark:_Toc266272314'>undef</span></span></span></span><span
+style='mso-bookmark:_Toc266272314'></span><span style='mso-bookmark:_Toc265340354'></span><span
+style='mso-bookmark:_Toc263373125'></span></p>
+
+<p class=P>Определения символических констант и макросов могут быть
+аннулированы при помощи директивы препроцессора <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>undef</span></span></span>, имеющей вид:</p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>undef</span>
+идентификатор<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Директива отменяет определение
+символической константы или макроса с указанным идентификатором. Таким образом,
+область действия символической константы или макроса начинается с места их
+определения и заканчивается явным их аннулированием директивой </span><span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>#undef</span></span><span style='mso-no-proof:yes'> или
+концом файла. После аннулирования соответствующий идентификатор может быть
+снова использован в директиве </span><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#define</span></span><span
+style='mso-no-proof:yes'>.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Например, возможен следующий код:<o:p></o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>MyConst</span> 128<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Здесь константа <span
+class=SpellE>MyConst</span> равна 128<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>. . .<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>undef</span>
+<span class=SpellE>MyConst</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Здесь константу <span
+class=SpellE>MyConst</span> использовать нельзя<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>. . .<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>MyConst</span> 64<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Здесь константа <span
+class=SpellE>MyConst</span> равна 64.<o:p></o:p></span></span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272315"></a><a
+name="_Toc265340355"></a><a name="_Toc263373126"><span style='mso-bookmark:
+_Toc265340355'><span style='mso-bookmark:_Toc266272315'><span style='mso-ansi-language:
+RU'>11.4. Условная компиляция</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Условная компиляция дает возможность программисту управлять
+выполнением директив препроцессора и компиляцией программного кода. Каждая
+условная директива препроцессора вычисляет значение целочисленного константного
+выражения. Операции преобразования типов, операция <span class=SpellE><b
+style='mso-bidi-font-weight:normal'>sizeof</b></span>, константы перечислимого
+типа и переменные не могут участвовать в выражениях, вычисляемых в директивах
+препроцессора, так как эти операции и <span class=SpellE>иницилизация</span>
+переменных происходят на этапе компиляции или выполнения программы, в то время<span
+class=GramE>,</span> как обработка директив препроцессора происходит перед
+компиляцией. Поэтому, при условной компиляции используются операции сравнения
+(&gt;, &lt;, &gt;=, &lt;=, ==), операции логического <span class=GramE>И(</span>&amp;&amp;),
+ИЛИ(||) и отрицания(!) в сочетании с константными переменными или
+символическими константами, определёнными с помощью директивы <span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman"'>#<span class=SpellE>define</span></span></span></p>
+
+<p class=P>Условная директива препроцессора <span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman"'>#<span
+class=SpellE>if</span></span></span> во многом похожа <span class=GramE>на</span>
+оператор <span class=SpellE><b style='mso-bidi-font-weight:normal'>if</b></span>.
+Ее синтаксис имеет вид:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>if</span>
+условие<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>фрагмент кода<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'>Предупреждение:</span></b><span style='mso-no-proof:yes'> в условии могут
+содержаться только константные величины – либо символические константы,
+определённые с помощью оператора </span><span class=CourierNew1><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt;font-weight:normal;
+mso-bidi-font-weight:bold;mso-no-proof:yes'>#define</span></span>, либо
+константные переменные.</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'>Предупреждение:</b> между #<span
+class=SpellE>if</span> и #<span class=SpellE>endif</span> фигурные скобки не
+ставятся.</p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'>Предупреждение:</b> не
+забывайте закрывать каждый #<span class=SpellE>if</span> <span class=GramE>соответствующим</span>
+#<span class=SpellE>endif</span>.</p>
+
+<p class=P>В этой записи условие является целочисленным выражением. Если это
+выражение возвращает не нуль (истинно), то фрагмент кода, заключенный между
+директивой <span class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold'>#<span class=SpellE>if</span></span></span> и директивой <span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold'>#<span class=SpellE>endif</span></span></span> компилируется. Если же
+выражение возвращает нуль (ложно), то этот фрагмент игнорируется и
+препроцессором, и компилятором.</p>
+
+<p class=P>В условиях, помимо обычных выражений, можно использовать конструкцию</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>defined</span></span></span><span
+class=Code><span style='font-size:12.0pt'> идентификатор<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>defined</span></span><span style='mso-no-proof:yes'>
+возвращает 1, если ранее указанный идентификатор был</span> определен
+директивой <span class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold'>#<span class=SpellE>define</span></span></span>, и возвращает 0 в
+противном случае. Например, возможен следующий код:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>if</span>
+<span class=SpellE>defined</span> <span class=SpellE>Debug</span> &amp;&amp;<span
+class=GramE> !</span><span class=SpellE>defined</span> <span class=SpellE>MyConst</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='font-size:12.0pt;font-family:"Lucida Console";
+mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='font-size:12.0pt;font-family:"Lucida Console";
+mso-no-proof:yes'>фрагмент кода<o:p></o:p></span></p>
+
+<p class=P><span style='font-size:12.0pt;font-family:"Lucida Console";
+mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Фрагмент кода будет выполняться, если
+ранее была объявлена директива<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>Debug</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>и не было
+директивы<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>MyConst</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>или эта
+директива была отменена директивой<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>undef</span>
+<span class=SpellE>MyConst</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Конструкция </span><span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>#if defined</span></span><span style='mso-no-proof:yes'>
+может быть заменена эквивалентной ей директивой </span><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#ifdef</span></span><span
+style='mso-no-proof:yes'>, а конструкция </span><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#if !defined</span></span><span
+style='mso-no-proof:yes'> – директивой </span><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#ifndef</span></span><span
+style='mso-no-proof:yes'>. <o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Например, тексты<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>ifdef</span>
+<span class=SpellE>Size</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>и<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#if defined Size<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=CourierNew0><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P style='text-indent:0cm'>эквивалентны<span lang=EN-US
+style='mso-ansi-language:EN-US'>.<o:p></o:p></span></p>
+
+<p class=P>Оператор <span class=CourierNew><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:
+normal;mso-bidi-font-weight:bold'>#<span class=SpellE>if</span> <span
+class=SpellE>defined</span></span></span> часто используется при включении
+заголовочных файлов, для исключения повторной вставки кода заголовочного файла.
+Например:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>if</span><span
+class=GramE> !</span><span class=SpellE>defined</span>(MYLIB_H)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>#<span class=SpellE>define</span> MYLIB_H<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>/* Текст объявляемых заголовков */<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>#include &quot;<span
+class=SpellE>MyBibl.h</span>&quot;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'> </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#<span class=SpellE>endif</span><span
+style='mso-spacerun:yes'>    </span>/* </span></span><span class=GramE><span
+class=Code><span style='font-size:12.0pt'>Конец</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span>MYLIB</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>_H */<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>В первый раз, когда константа MYLIB_H
+ещё не объявлена </span><span class=CourierNew0><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:
+normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>!defined</span></span><span
+style='mso-no-proof:yes'>(MYLIB_H) возвращает 1 и операторы между </span><span
+class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>#if </span></span><span style='mso-no-proof:yes'>и </span><span
+class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>#endif</span></span><span class=CourierNew0><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+mso-no-proof:yes'> </span></span><span style='mso-no-proof:yes'>выполняются. В
+том числе оператором </span><span class=CourierNew0><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#define</span></span><span
+style='mso-no-proof:yes'> MYLIB_H объявляется MYLIB_H. Поэтому при достижении
+препроцессором следующего вхождения этой директивы вложенное в неё содержимое
+будет игнорироваться.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Можно использовать более сложные
+конструкции условных директив препроцессора при помощи директив </span><span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'>#elif</span></span><span style='mso-no-proof:yes'>
+(эквивалент else if в обычной структуре if) и </span><span class=CourierNew><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;mso-no-proof:yes'>#else</span></span><span
+style='mso-no-proof:yes'> (эквивалент else в структуре if). Например, в коде<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>if</span>
+условие 1<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>фрагмент кода 1<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>elif</span>
+условие 2<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>фрагмент кода 2<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>фрагмент кода 3<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=P>фрагмент кода 1 будет компилироваться, если выполняется условие 1,
+фрагмент кода 2 будет компилироваться, если выполняется условие 2 и не
+выполняется условие 1, а фрагмент кода 3 будет компилироваться, если не
+выполняется ни одно из предыдущих условий.</p>
+
+<p class=P>Условная компиляция может быть полезна во многих случаях. Например,
+нередко в процессе отладки приложения в него полезно ввести различные фрагменты
+кода, обеспечивающие вывод отладочной информации и позволяющие следить за ходом
+выполнения программы. Если эти фрагменты кода используются только при отладке и
+не нужно, чтобы они оставались в окончательном варианте программы, то в разных
+местах приложения следует ввести конструкции вида</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>ifdef</span>
+<span class=SpellE>Debug</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>операторы отладки<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>endif</span><o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Тогда, если в начале программы вы
+введете директиву<o:p></o:p></span></p>
+
+<p class=P><span class=CourierNew0><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>Debug</span><o:p></o:p></span></span></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:
+yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=P style='text-indent:0cm'>операторы отладки будут компилироваться и
+выполняться. Но когда вы уберете или закомментируете эту директиву <span
+class=CourierNew><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold'>#<span class=SpellE>define</span></span></span>, определяющую введенный
+вами идентификатор <span class=SpellE>Debug</span>, все операторы отладки
+исчезнут из текста.</p>
+
+<p class=P><span class=GramE>Конечно, можно поступить иначе: ввести переменную
+булева типа (переменная, которая может принимать два значения – “истина” и
+“ложь”.</span> В Си такого типа не существует, однако переменную можно <span
+class=GramE>создать</span> используя тип <span style='mso-no-proof:yes'>unsigned
+char или unsigned int и учитывать, что значение “<st1:metricconverter
+ProductID="0”" w:st="on">0”</st1:metricconverter> и есть “<st1:metricconverter
+ProductID="0”" w:st="on">0”</st1:metricconverter> (false), а все остальные
+значения подразумевают “<st1:metricconverter ProductID="1”" w:st="on">1”</st1:metricconverter>
+(</span><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>true</span><span
+style='mso-no-proof:yes'>). <span class=GramE>Этот же принцип использован в
+условных операторах языка Си (if; switch/case)) Debug, задать ей в начале
+выполнения приложения значение true и оформлять процесс отладки следующим
+образом:</span><o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=SpellE>Debug</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>операторы отладки<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Если в дальнейшем заменить задаваемое значение <span class=SpellE>Debug</span>
+на <span class=SpellE>false</span>, то операторы отладки перестанут
+выполняться. Отличие этого подхода от использования директив препроцессора
+заключается в том, что коды операторов отладки в этом случае останутся в тексте
+программы, увеличивая размер выполняемого модуля. А директивы условной
+компиляции просто уберут отладочный код из программы.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272316"></a><a
+name="_Toc265340356"></a><a name="_Toc263373127"><span style='mso-bookmark:
+_Toc265340356'><span style='mso-bookmark:_Toc266272316'><span style='mso-ansi-language:
+RU'>11.5. Директивы # и ##</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Ранее нами уже были рассмотрены макросы и способы их применения в
+программах на языке Си. Для расширения возможностей макросов существуют ещё две
+директивы: <span style='font-size:12.0pt;font-family:"Lucida Console"'>#</span>
+и <span style='font-size:12.0pt;font-family:"Lucida Console"'>##</span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Оператор <span style='font-size:12.0pt;font-family:"Lucida Console"'>#</span>
+превращает аргумент, которому он предшествует, в строку, заключенную в кавычки.
+Например:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>define</span>
+<span class=SpellE>mkstr</span>(<span class=SpellE>s</span>) # <span
+class=SpellE>s</span><o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Данный оператор преобразует аргумент в строку. Вызов <span
+class=SpellE><span style='font-size:12.0pt;font-family:"Lucida Console"'>mkstr</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'>(123)</span> раскроется в
+<span style='font-size:12.0pt;font-family:"Lucida Console"'>(&quot;123&quot;)</span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Оператор <span style='font-size:12.0pt;font-family:"Lucida Console"'>##</span>
+используется для конкатенации двух лексем. Например<span lang=EN-US
+style='mso-ansi-language:EN-US'>:<o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#define <span class=SpellE><span class=GramE>concat</span></span><span
+class=GramE>(</span><span class=SpellE>a,b</span>) a ## b<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Данный оператор соединяет (&quot;склеивает&quot;) свои аргументы,
+может использоваться для формирования идентификаторов. Вызов <span
+class=SpellE><span style='font-size:12.0pt;font-family:"Lucida Console"'>concat</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'>(x,4)</span> раскроется в
+<span style='font-size:12.0pt;font-family:"Lucida Console"'>(x4)</span>.</p>
+
+<p class=P>Допускается ставить по одному необязательному пробелу слева и справа
+от знака <span style='font-size:12.0pt;font-family:"Lucida Console"'>##</span>.
+При раскрытии макроопределения препроцессор удалит пробелы. Вложенные <span
+class=SpellE>маровызовы</span>, расположенные в строке макроопределения,
+раскрываются только в момент раскрытия самого макроса, а не в момент его
+определения.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

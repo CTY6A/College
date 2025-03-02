@@ -1,0 +1,2474 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/filelist.xml">
+<link rel=Edit-Time-Data href="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>3. Операторы управления вычислительным процессом</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="metricconverter"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2011-03-30T13:56:00Z</o:Created>
+  <o:LastSaved>2011-03-30T13:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3044</o:Words>
+  <o:Characters>17351</o:Characters>
+  <o:Lines>144</o:Lines>
+  <o:Paragraphs>40</o:Paragraphs>
+  <o:CharactersWithSpaces>20355</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:" Знак Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:X-NONE;
+	mso-fareast-language:X-NONE;}
+span.a
+	{mso-style-name:" Знак Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:"Основной текст с отступом 3";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-ansi-language:X-NONE;
+	mso-fareast-language:X-NONE;
+	mso-bidi-language:AR-SA;}
+p.H1, li.H1, div.H1
+	{mso-style-name:_H1;
+	mso-style-parent:"Заголовок 1";
+	mso-style-link:"_H1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:no-line-numbers;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.P, li.P, div.P
+	{mso-style-name:_P;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Code
+	{mso-style-name:_Code;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Lucida Console";
+	mso-ascii-font-family:"Lucida Console";
+	mso-hansi-font-family:"Lucida Console";}
+p.H2, li.H2, div.H2
+	{mso-style-name:_H2;
+	mso-style-parent:"Заголовок 2";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.IMG, li.IMG, div.IMG
+	{mso-style-name:_IMG;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.H3, li.H3, div.H3
+	{mso-style-name:_H3;
+	mso-style-parent:"Заголовок 3";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-hyphenate:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.TableP1, li.TableP1, div.TableP1
+	{mso-style-name:_Table_P_1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.H10
+	{mso-style-name:"_H1 Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:_H1;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	text-transform:uppercase;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:655770307;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-30639574 48118190 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	mso-ansi-font-weight:normal;}
+@list l1
+	{mso-list-id:1073433631;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1084985356 -697379672 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l2
+	{mso-list-id:1829832015;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2128657282 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=H1 style='mso-outline-level:2'><a name="_Toc266272238"></a><a
+name="_Toc265340278"></a><a name="_Toc263373049"><span style='mso-bookmark:
+_Toc265340278'><span style='mso-bookmark:_Toc266272238'>3. Операторы управления
+вычислительным процессом</span></span></a></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272239"></a><a
+name="_Toc265340279"></a><a name="_Toc263373050"><span style='mso-bookmark:
+_Toc265340279'><span style='mso-bookmark:_Toc266272239'><span style='mso-ansi-language:
+RU'>3.1. Оператор </span><span lang=EN-US>if</span></span></span></a><span
+style='mso-bookmark:_Toc266272239'></span><span style='mso-bookmark:_Toc265340279'></span><span
+style='mso-bookmark:_Toc263373050'></span><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>if</span>
+имеет следующую полную форму записи:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_2;</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Выражение – это некоторое условие, которое возвращает одно из двух
+значений: ноль («ложь»), не ноль – («истина»). </p>
+
+<p class=P>Данный оператор предоставляет программисту возможность выполнить
+один из двух участков вычислений в зависимости от того, является выражение
+истинным или ложным (рис.3.1).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:321pt;
+ height:338.25pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image001.png" o:title="30"/>
+</v:shape><![endif]--><![if !vml]><img width=428 height=451
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt'>Рис.3.1. Схема работы оператора </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>if</span><span
+style='font-size:14.0pt'>...</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>else</span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Например,</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=SpellE>a</span>&gt;=<span
+class=SpellE>b</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(“Число <span
+class=SpellE>a</span> не меньше числа <span class=SpellE>b.\n</span>”);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span> (“Число <span
+class=SpellE>a</span> меньше числа <span class=SpellE>b.\n</span>”);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Схема на рисунке 3.1 иллюстрирует работу оператора <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span>/<span lang=EN-US style='mso-ansi-language:
+EN-US'>else</span>. Если выражение дает результат «истина», то выполняется
+оператор 1, иначе оператор 2. Проследим выполнение нашего примера программы:
+если компилятор определит истинность выражения, то на экран выведется сообщение
+«Число <span class=SpellE><span class=Code><span style='font-size:12.0pt'>a</span></span></span>
+не меньше числа <span class=SpellE><span class=Code><span style='font-size:
+12.0pt'>b</span></span></span>.». Если условие будет ложным, то на экране
+появится - «Число <span class=SpellE><span class=Code><span style='font-size:
+12.0pt'>a</span></span></span> меньше числа <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>b</span></span></span>.».</p>
+
+<p class=P>Если операторная часть выражения оператора <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span> или <span lang=EN-US
+style='mso-ansi-language:EN-US'>else</span> содержит не один оператор, а
+несколько, то необходимо заключать их в фигурные скобки.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'><span style='mso-spacerun:yes'> 
+</span>(выражение)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_3;</span></span><i style='mso-bidi-font-style:
+normal'><span style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></i></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В данном случае если выражение будет истинным, то выполнятся
+оператор 1 и оператор 2, иначе выполнится оператор 3.</p>
+
+<p class=P>Существует сокращенная форма оператора <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span> без ветви <span lang=EN-US
+style='mso-ansi-language:EN-US'>else</span> (рис.3.2):</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор;</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Lucida Console";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='font-size:12.0pt;font-family:"Lucida Console";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:246pt;height:243pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image003.png" o:title="31"/>
+</v:shape><![endif]--><![if !vml]><img width=328 height=324
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image004.jpg" v:shapes="_x0000_i1028"><![endif]><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt'>Рис.3.2. Схема работы оператора <span class=SpellE>if</span>
+без ветви <span class=SpellE>else</span><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Например, </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=SpellE>a</span>&gt;=<span
+class=SpellE>b</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(“Число <span
+class=SpellE>a</span> не меньше числа <span class=SpellE>b.\n</span>”);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><span style='mso-spacerun:yes'> </span></p>
+
+<p class=P>Если в результате проверки выражения возвращается «истина», то
+оператор выполняется, после чего выполнение передается следующей строке
+программы; если же результатом проверки будет «ложь», то выполнение оператора
+будет пропущено. Т.е. в нашем примере компилятор определит, является ли
+выражение истинным «число <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>a</span></span></span> больше или равно числу <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>b</span></span></span>»,
+и если данное выражение истинно, то на экране появится сообщение «Число <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>a</span></span></span>
+не меньше числа <span class=SpellE><span class=Code><span style='font-size:
+12.0pt'>b</span></span></span>». Если выражение ложно, то на экран ничего не
+выведется. </p>
+
+<p class=P>Для наглядного иллюстрирования работы данного оператора <span
+lang=EN-US style='mso-ansi-language:EN-US'>if</span> с единичным выбором на
+рис.3.2 изображена схема его<span style='mso-spacerun:yes'>  </span>работы. </p>
+
+<p class=P>Вложенные операторы <span lang=EN-US style='mso-ansi-language:EN-US'>if</span>/<span
+lang=EN-US style='mso-ansi-language:EN-US'>else</span> служат для проверки
+составных условий, при этом одни операторы <span lang=EN-US style='mso-ansi-language:
+EN-US'>if</span>/<span lang=EN-US style='mso-ansi-language:EN-US'>else</span>
+помещаются внутрь других операторов <span lang=EN-US style='mso-ansi-language:
+EN-US'>if</span>/<span lang=EN-US style='mso-ansi-language:EN-US'>else</span>.
+Если использовать несколько вложенных операторов <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span>, то следует тщательно следить, какому
+из них соответствует ветвь <span lang=EN-US style='mso-ansi-language:EN-US'>else</span>.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение 1)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор 1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>else</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (выражение 2)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span>оператор 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (выражение 3)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>оператор 3;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>else</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span>оператор 4;</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Схема на рисунке 3.3 демонстрирует работу вложенного оператора <span
+lang=EN-US style='mso-ansi-language:EN-US'>if</span>/<span lang=EN-US
+style='mso-ansi-language:EN-US'>else</span>. При выполнении программы
+компилятор будет проверять выражение за выражением до тех пор, пока одно из них
+не возвратит условие «истина». Как только это произойдет, все остальные
+операторы <span lang=EN-US style='mso-ansi-language:EN-US'>else</span> и
+связанные с ними действия будут пропущены. В том случае, если ни одно из
+выражений не будет истинным, то ни один из операторов не будет выполнен, кроме
+оператора 4.<span style='mso-spacerun:yes'>     </span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:486pt;height:307.5pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image005.png" o:title="if-else"/>
+</v:shape><![endif]--><![if !vml]><img width=648 height=410
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image006.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt'>Рис.3.3. Схема работы вложенного оператора<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span>/<span
+class=SpellE>else</span><o:p></o:p></span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272240"></a><a
+name="_Toc265340280"></a><a name="_Toc263373051"><span style='mso-bookmark:
+_Toc265340280'><span style='mso-bookmark:_Toc266272240'><span style='mso-ansi-language:
+RU'>3.2. Операции отношения</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Операции отношения (сравнения) и логические операции используются
+для формирования логических выражений,<span style='mso-spacerun:yes'> 
+</span>имеющих только два значения: 0 – если выражение «ложь» и не ноль, если
+выражение «истина».</p>
+
+<p class=P>Язык Си поддерживает следующие операции отношения (таблица 3.1), которые
+условно можно разделить на 2 группы в зависимости от их взаимного приоритета<span
+class=GramE>:</span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>&lt;</span></span>, <span
+class=Code><span style='font-size:12.0pt'>&lt;=</span></span>, <span
+class=Code><span style='font-size:12.0pt'>&gt;</span></span>, <span class=Code><span
+style='font-size:12.0pt'>&gt;=</span></span> (более высокий приоритет)</p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>==</span></span>, <span
+class=Code><span style='font-size:12.0pt'>!=</span></span> (более низкий
+приоритет)</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Таблица 3.1.
+Представление операций отношения и равенства</p>
+
+<p class=IMG><b style='mso-bidi-font-weight:normal'><span style='color:navy'><o:p>&nbsp;</o:p></span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.55pt'>
+  <td width=96 valign=top style='width:71.75pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><span style='font-size:14.0pt'>Операция<o:p></o:p></span></p>
+  </td>
+  <td width=124 valign=top style='width:92.8pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><span style='font-size:14.0pt'>Выражение<o:p></o:p></span></p>
+  </td>
+  <td width=205 valign=top style='width:153.9pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><span style='font-size:14.0pt'>Что обозначает<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:83.7pt'>
+  <td width=96 valign=top style='width:71.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:83.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>&gt;<o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>&gt;=<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>&lt;<o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>&lt;=<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>==<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>!=<o:p></o:p></span></p>
+  </td>
+  <td width=124 valign=top style='width:92.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:83.7pt'>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a&gt;b<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a&gt;=b<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a&lt;b<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a&lt;=b<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a==b<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='margin-left:.2pt;text-align:center;
+  text-indent:-.2pt'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a!=b<o:p></o:p></span></p>
+  </td>
+  <td width=205 valign=top style='width:153.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:83.7pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> больше </span><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> больше или равно </span><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> меньше<span
+  style='mso-spacerun:yes'>  </span></span><span lang=EN-US style='font-size:
+  14.0pt;mso-ansi-language:EN-US'>b</span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> меньше или равно </span><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> равно </span><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>a</span><span style='font-size:14.0pt'> не равно </span><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Однако следует отметить, что все данные операции выполняются слева
+направо.</p>
+
+<p class=P><span style='mso-spacerun:yes'> </span>Как операторы отношения, так
+и логические операторы имеют более низкий приоритет по сравнению с
+арифметическими операторами. </p>
+
+<p class=P>Например, выражение<span style='mso-spacerun:yes'> 
+</span>15&gt;10+9 в результате даст результат «ложь», так как данное выражение
+будет вычисляться как<span style='mso-spacerun:yes'>  </span>15&gt;(10+9).<span
+style='mso-spacerun:yes'>   </span><b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=P>Распространенными ошибками при работе с операциями отношения
+являются:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>использование<span
+style='mso-spacerun:yes'>  </span>операции присваивания <span class=Code><span
+style='font-size:12.0pt'>=</span></span> вместо операции равно <span
+class=Code><span style='font-size:12.0pt'>==</span></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><![endif]>разделение
+символов в операциях пробелами <span class=Code><span style='font-size:12.0pt'>&gt;=</span></span>
+<span class=GramE>вместо</span> <span class=Code><span style='font-size:12.0pt'>&gt;=</span></span><b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>написание
+символа в операции в обратном порядке <span class=Code><span style='font-size:
+12.0pt'>=!</span></span> вместо<span class=GramE> <span class=Code><span
+style='font-size:12.0pt'>!</span></span></span><span class=Code><span
+style='font-size:12.0pt'>=</span></span><b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272241"></a><a
+name="_Toc265340281"></a><a name="_Toc263373052"><span style='mso-bookmark:
+_Toc265340281'><span style='mso-bookmark:_Toc266272241'><span style='mso-ansi-language:
+RU'>3.3. Логические операции</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Рассматривая операции отношения, мы проверяли одно простое выражение
+(некоторое условие). В языке Си существуют логические операции, с помощью
+которых можно формировать сложные условие путем объединения более простых.
+Логические операции всегда дают значение 0 – «ложь» или 1 –«истина». </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=371 colspan=2 valign=top style='width:278.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>Логические операции<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:13.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>Операция<o:p></o:p></span></p>
+  </td>
+  <td width=203 valign=top style='width:152.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>Действие<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:42.7pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>&amp;&amp;<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>||<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>!<o:p></o:p></span></p>
+  </td>
+  <td width=203 valign=top style='width:152.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:42.7pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>И<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>ИЛИ<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>НЕ<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Например, мы хотим выполнить оператор или блок <span class=GramE>операторов</span>
+только если два простых выражения истинны одновременно. Здесь можно применить
+логическую операцию &amp;&amp;:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=SpellE>a</span>&gt;=60
+&amp;&amp; <span class=SpellE>a</span>&lt;=130)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(“<span
+class=GramE>Число</span> а находится в диапазоне от 60 до <st1:metricconverter
+ProductID="130”" w:st="on">130”</st1:metricconverter>);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><span style='mso-spacerun:yes'> </span></p>
+
+<p class=P>Во фрагменте кода программы оператор <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span> содержит два простых выражения. <span
+lang=BE style='mso-ansi-language:BE'>С</span>начала оцениваются два простых
+выражения, так как приоритет операций <span class=Code><span style='font-size:
+12.0pt'>&lt;=</span></span> и <span class=Code><span style='font-size:12.0pt'>&gt;=</span></span>
+выше, чем операции <span class=Code><span style='font-size:12.0pt'>&amp;&amp;</span></span>.
+Затем рассматривается объединенное выражение. Это выражение является истинным
+только тогда, когда оба простых выражения истинны. И если это так, то на экран
+выведется<span style='mso-spacerun:yes'>  </span>текст “<span class=GramE>Число</span>
+<span class=Code><span style='font-size:12.0pt'>а</span></span> находится в
+диапазоне от 60 до <st1:metricconverter ProductID="130”" w:st="on">130”</st1:metricconverter>.
+Если же оба или хотя бы одно из простых выражений ложно, то программа игнорирует
+вывод и переходит к оператору, следующему за <span lang=EN-US style='mso-ansi-language:
+EN-US'>if</span>. В таблице 3.2 приводится таблица истинности операции <span
+class=Code><span style='font-size:12.0pt'>&amp;&amp;</span></span>.</p>
+
+<span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RU;mso-fareast-language:
+RU;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Таблица 3.2.
+Таблица истинности операции <span style='font-size:12.0pt;font-family:"Lucida Console"'>&amp;&amp;<o:p></o:p></span></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>Выражение 1<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>Выражение 2<o:p></o:p></span></p>
+  </td>
+  <td width=148 valign=top style='width:111.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>Выражение 1 </span><span
+  class=Code><span style='font-size:12.0pt;mso-bidi-font-size:14.0pt'>&amp;&amp;</span></span><span
+  style='mso-bidi-font-size:14.0pt'> Выражение 2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=148 valign=top style='width:111.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=148 valign=top style='width:111.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:18.0pt'>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=148 valign=top style='width:111.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:14.0pt'>
+  <td width=136 valign=top style='width:102.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=136 valign=top style='width:102.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=148 valign=top style='width:111.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
+  <p class=TableP1><span style='mso-bidi-font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Рассмотрим теперь операцию <span class=Code><span style='font-size:
+12.0pt'>||</span></span> (<span class=GramE>логическое</span> ИЛИ). Допустим,
+что мы хотим обеспечить истинность хотя бы одного из простых выражений.
+Например,</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (а &lt;= <span class=GramE>10</span>
+|| а &gt;=100)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(“<span
+class=GramE>Число</span> а попадает в один из интервалов”);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Этот оператор <span lang=EN-US style='mso-ansi-language:EN-US'>if</span>
+также состоит из двух простых выражений, вычисляемых в первую очередь. Затем
+рассматривается объединенное выражение. В результате сообщение «<span
+class=GramE>Число</span> <span class=Code><span style='font-size:12.0pt'>а</span></span>
+попадает в один из интервалов» выводится, если оба или одно из простых
+выражений истинно. В таблице 3.3 приводится таблица истинности операции <span
+class=Code><span style='font-size:12.0pt'>||</span></span>.</p>
+
+<p class=P><span style='mso-spacerun:yes'> </span></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Таблица
+3.3.<span style='mso-spacerun:yes'>  </span>Таблица истинности операции <span
+class=Code><span style='font-size:12.0pt'>||</span></span></p>
+
+<p class=IMG><b style='mso-bidi-font-weight:normal'><span style='color:navy'><o:p>&nbsp;</o:p></span></b></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:16.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>Выражение 1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>Выражение 2<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>Выражение 1 </span><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Lucida Console";mso-ansi-language:EN-US'>||</span><span
+  style='font-size:14.0pt'> Выражение 2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:16.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:16.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:16.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:16.0pt'>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:3.6pt'><span
+  style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Операция<span class=GramE> <span class=Code><span style='font-size:
+12.0pt'>!</span></span></span> (логическое отрицание) имеет в качестве операнда
+только одно выражение. Данная операция помещается перед выражением, когда мы
+хотим выбрать ветвь программы с ложным первоначальным условием. </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>if</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (!(<span class=SpellE>a</span> == <span
+class=SpellE>b</span>))<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(“Неверно,
+что число <span class=SpellE>a</span> равно числу <span class=SpellE>b.\n</span>”);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Заключение условия <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>a</span></span></span><span class=Code><span
+style='font-size:12.0pt'> == <span class=SpellE>b</span></span></span><span
+style='mso-spacerun:yes'>  </span>в скобки производится, так как логическая
+операция отрицания имеет более высокий приоритет,<span
+style='mso-spacerun:yes'>  </span>чем операция равенства.<span
+style='mso-spacerun:yes'>  </span></p>
+
+<span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RU;mso-fareast-language:
+RU;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Таблица 3.4.
+Таблица истинности операции<span class=GramE> <span style='font-size:12.0pt;
+font-family:"Lucida Console"'>!</span></span></p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:18.75pt'>
+  <td width=144 valign=top style='width:108.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>Выражение<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>!Выражение<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:7.3pt'>
+  <td width=144 valign=top style='width:108.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:7.3pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:7.3pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:10.0pt'>
+  <td width=144 valign=top style='width:108.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:10.0pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:10.0pt'>
+  <p class=MsoBodyTextIndent3 align=center style='margin-left:0cm;text-align:
+  center'><span lang=X-NONE style='font-size:14.0pt'>0<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272242"></a><a
+name="_Toc265340282"></a><a name="_Toc263373053"><span style='mso-bookmark:
+_Toc265340282'><span style='mso-bookmark:_Toc266272242'><span lang=EN-US>3.4.
+Операция запятая</span></span></span></a></p>
+
+<p class=P>Запятая может быть использована в качестве операции, а может
+применяться как разделитель. </p>
+
+<p class=P>Несколько выражений, разделенных запятыми, вычисляются слева
+направо. Например, выражение <span class=Code><span style='font-size:12.0pt'>(x=3,
+3*<span class=SpellE>x</span>)</span></span> будет иметь результат 9, однако
+переменная <span class=SpellE><span class=Code><span style='font-size:12.0pt'>х</span></span></span>
+примет значение 3.</p>
+
+<p class=P>Операция<span class=GramE> <span class=Code><span style='font-size:
+12.0pt'>,</span></span></span><span style='font-size:16.0pt;mso-bidi-font-size:
+10.0pt'> </span>(запятая) позволяет вводить составные выражения и в операторах
+цикла <span lang=EN-US style='mso-ansi-language:EN-US'>for</span>, при этом
+первым будет выполняться выражение, стоящее слева, затем следующее. </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (i=0, sum=0; <span class=SpellE>i</span>&lt;=100;
+<span class=SpellE>i++</span>)<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Рассмотрим использование запятой в качестве разделителя.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>разделение начальных значений элементов массивов
+и компонентов структур при их инициализации.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>Massiv</span>[5]
+= {1, 2, 3, 4, 5};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>использование в списках формальных и фактических
+параметров при работе с функциями.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+print(char value, <span class=SpellE>int</span> x);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l2 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>использование для описания определенных объектов
+(например, переменных) одного типа</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+x, y;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>float</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+a, b, c, f1, f2;</span></span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Lucida Console";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Следует обратить внимание на то, что запятую-операцию стоит отделять
+от запятой-разделителя с помощью круглых скобок.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>i</span> = 1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+m[3] = {<span class=SpellE>i</span>, (<span class=SpellE>i</span> = 2, <span
+class=SpellE>i</span> * <span class=SpellE>i</span>), <span class=SpellE>i</span>};</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Lucida Console";mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В данном примере запятая в круглых скобках выступает в роли знака
+операции. Операция «<span style='font-size:12.0pt;font-family:"Lucida Console"'>=</span>»
+имеет более высокий приоритет, чем операция «запятая». Поэтому вначале <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>i</span></span></span>
+получает значение 2, затем вычисляется произведение <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>i</span></span></span><span
+class=Code><span style='font-size:12.0pt'> * <span class=SpellE>i</span></span></span>,
+и этот результат служит значением выражения в скобках. Однако значением
+переменной <span class=SpellE><span class=Code><span style='font-size:12.0pt'>i</span></span></span>
+остается 2. Значения <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>m</span></span></span><span class=Code><span
+style='font-size:12.0pt'>[0]</span></span>, <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>m</span></span></span><span
+class=Code><span style='font-size:12.0pt'>[1]</span></span>, <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>m</span></span></span><span
+class=Code><span style='font-size:12.0pt'>[2]</span></span> будут соответственно
+1, 4, 2.</p>
+
+<p class=P>В приведённом примере видна ещё одна особенность операции запятая:
+выражения, являющиеся «аргументами» этой операции, вычисляются в порядке их
+записи независимо от приоритетов операций. Так, в приведённом примере наивысший
+приоритет – у операции умножения, но оно выполняется только после операции
+присваивания, имеющей более низкий приоритет.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272243"></a><a
+name="_Toc265340283"></a><a name="_Toc263373054"><span style='mso-bookmark:
+_Toc265340283'><span style='mso-bookmark:_Toc266272243'><span style='mso-ansi-language:
+RU'>3.5. Операция условия</span></span></span></a><span class=GramE><span
+style='mso-bookmark:_Toc263373054'><span style='mso-bookmark:_Toc265340283'><span
+style='mso-bookmark:_Toc266272243'><span style='mso-ansi-language:RU'> ?</span></span></span></span></span><span
+style='mso-bookmark:_Toc263373054'><span style='mso-bookmark:_Toc265340283'><span
+style='mso-bookmark:_Toc266272243'><span style='mso-ansi-language:RU'>:</span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Существует более короткий путь записи оператора <span lang=EN-US
+style='mso-ansi-language:EN-US'>if</span>...<span lang=EN-US style='mso-ansi-language:
+EN-US'>else</span> – эту альтернативу представляют в виде<span class=GramE> <span
+class=Code><span style='font-size:12.0pt'>?:</span></span>. </span>Данный
+оператор позволяет создавать простые условные однострочные выражения, в которых
+выполняется одно из двух действий в зависимости от заданного условия.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>выражение<span class=GramE> ?</span> оператор 1: оператор 2;</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>(<span class=SpellE>a</span>&gt;=<span
+class=SpellE>b</span>)<span class=GramE> ?</span> <span class=SpellE>printf</span>(“Число
+<span class=SpellE>a</span> не меньше числа <span class=SpellE>b.\n</span> ”) :<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>         </span><span class=SpellE>printf</span>(“Число
+<span class=SpellE>a</span> меньше числа <span class=SpellE>b.\n</span> ”);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В данном примере, если число <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>a</span></span></span> &gt;= числа <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>b</span></span></span>, условие
+«истина», то на экране появится – «Число <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>a</span></span></span> не меньше числа <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>b</span></span></span>.»,
+иначе «Число <span class=SpellE><span class=Code><span style='font-size:12.0pt'>a</span></span></span>
+меньше числа <span class=SpellE><span class=Code><span style='font-size:12.0pt'>b</span></span></span>.».<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272244"></a><a
+name="_Toc265340284"></a><a name="_Toc263373055"><span style='mso-bookmark:
+_Toc265340284'><span style='mso-bookmark:_Toc266272244'><span style='mso-ansi-language:
+RU'>3.6. Оператор безусловного перехода </span><span lang=EN-US>goto</span></span></span></a><span
+style='mso-bookmark:_Toc266272244'></span><span style='mso-bookmark:_Toc265340284'></span><span
+style='mso-bookmark:_Toc263373055'></span><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Результатом применения оператора <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>goto</span></span> является передача
+управления первому оператору программы после метки.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>goto</span></span></span><span
+class=Code><span style='font-size:12.0pt'> метка;<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Метка представляет собой некоторый идентификатор, после которого
+следует двоеточие. Метка не должна выходить за пределы той функции, где
+находится<span style='mso-spacerun:yes'>  </span>оператор <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>goto</span></span>, который на нее
+ссылается.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'>void</span></span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'> main()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE><span class=GramE>int</span></span>
+<span class=SpellE>i</span>=1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'>start</span></span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=GramE>if</span> (<span
+class=SpellE>i</span>&gt;5)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE><span class=GramE>goto</span></span>
+finish;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span>&quot;<span style='mso-spacerun:yes'>  </span>%d<span
+style='mso-spacerun:yes'>  </span>&quot;, <span class=SpellE>i</span>++);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE><span class=GramE>goto</span></span>
+start;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'>finish</span></span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho";mso-ansi-language:
+EN-US'>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE><span class=GramE>putchar</span></span><span
+class=GramE>(</span>'\n');<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=SpellE><span
+class=Code><span style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>return</span></span></span><span
+class=Code><span style='font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>
+0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt;mso-fareast-font-family:
+"MS Mincho"'>}</span></span><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;font-family:
+"Lucida Console";mso-fareast-font-family:"MS Mincho";mso-no-proof:yes'><o:p></o:p></span></i></b></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Результат работы программы: 1 2 3 4 5 </p>
+
+<p class=P>Приведенный программный код показывает работу оператора <span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>goto</span></span>.
+Цикл, основанный на операторе <span class=SpellE><span lang=EN-US
+style='mso-ansi-language:EN-US'>goto</span></span>, выполняется пять раз, и при
+этом каждый раз выводится значение счетчика. После инициализации переменной <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>i</span></span></span>
+значением 1 программа проверяет ее, определяя, не больше ли она 5 (метка <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>start</span></span></span>
+пропускается, так как она не выполняет никаких действий). Если значение
+переменной больше 5, то управление передается первому оператору, расположенному
+за меткой <span class=SpellE><span class=Code><span style='font-size:12.0pt'>finish</span></span></span>.
+Если же значение меньше или равно 5, то выполняется тело цикла (состоящее из
+вызова функции <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>printf</span></span>), после чего управление передается первому
+оператору после метки <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>start</span></span></span>, т.е. в данном случае –
+оператору <span lang=EN-US style='mso-ansi-language:EN-US'>if</span>.</p>
+
+<p class=P>При разработке программ оператор <span class=SpellE><span
+lang=EN-GB style='mso-fareast-font-family:"MS Mincho";mso-ansi-language:EN-GB'>goto</span></span>
+использовать не рекомендуется, так как при его наличии программы становятся
+неструктурированными, их сложнее отлаживать и модифицировать.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272245"></a><a
+name="_Toc265340285"></a><a name="_Toc263373056"><span style='mso-bookmark:
+_Toc265340285'><span style='mso-bookmark:_Toc266272245'><span style='mso-ansi-language:
+RU'>3.7. Оператор </span><span lang=EN-US>switch</span></span></span></a><span
+style='mso-bookmark:_Toc266272245'></span><span style='mso-bookmark:_Toc265340285'></span><span
+style='mso-bookmark:_Toc263373056'></span><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>switch</span>
+называют оператором с множественным выбором. Он используется, когда необходимо
+проверить выражение или переменную на равенство целому ряду константных
+целочисленных значений, которые они могут принимать.</p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>break</span>
+по своей сути аналогичен <span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>goto</span></span>, но в отличие от последнего, не позволяет выполнять
+произвольных переходов, ограничивая их точкой окончания языковой конструкции,
+внутри которой он применяется. С точки зрения программной логики работы
+оператора <span lang=EN-US style='mso-ansi-language:EN-US'>switch</span><span
+lang=EN-US> </span>оператор <span lang=EN-US style='mso-ansi-language:EN-US'>break</span>
+обязательно должен завершать группу операторов.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>switch</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (целое выражение)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>case</span> константа_1:
+операторы_1; <span class=SpellE>break</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>case</span> константа_2:
+операторы_2; <span class=SpellE>break</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>case</span> <span
+class=SpellE>константа_n</span>: <span class=SpellE>операторы_n</span>; <span
+class=SpellE>break</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>default</span>:
+операторы_n+1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console";mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Сначала вычисляется целое выражение, и результат сравнивается со
+значениями константа_1, константа_2, ..., константа_<span lang=EN-US
+style='mso-ansi-language:EN-US'>n</span>. Если где-то будет совпадение, то
+выполняется группа операторов, имеющих соответствующую метку. Если же значение
+целого выражения не совпало ни с одной из констант, то выполняется группа
+операторов, помеченная ключевым словом <span lang=EN-US style='mso-ansi-language:
+EN-US'>default</span>. При отсутствии ключевого слова <span lang=EN-US
+style='mso-ansi-language:EN-US'>default</span> и несовпадении значения
+выражения ни с одной из констант, операторы в конструкции <span lang=EN-US
+style='mso-ansi-language:EN-US'>switch</span> не выполняются.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Пример<span lang=EN-US style='mso-ansi-language:EN-US'>.<o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>char</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+c='a';<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>clrscr</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>switch</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+(c)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'm' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'h' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'e' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'a' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case 't'</span> : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'z' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'v' : <span class=SpellE>printf</span>(&quot;c \n&quot;);
+break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>case</span> 'b' : <span class=SpellE>printf</span>(&quot;c
+\n&quot;); break;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>default :</span> <span class=SpellE>printf</span>(&quot;The end
+\n&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Вышеприведенный фрагмент кода программы и схема на рисунке 3.4
+иллюстрируют работу оператора <span lang=EN-US style='mso-ansi-language:EN-US'>switch</span>.
+Если выражение совпадет с константой (<span lang=EN-US style='mso-ansi-language:
+EN-US'>case</span> ‘<span lang=EN-US style='mso-ansi-language:EN-US'>a</span>’
+совпадает с выражением), то на экран выведется сообщение «с», как в данном
+примере. Если же совпадения не последует, то по умолчанию на экране появится «<span
+lang=EN-US style='mso-ansi-language:EN-US'>The</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>end</span>». </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:484.5pt;height:555pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image007.png" o:title="switch"/>
+</v:shape><![endif]--><![if !vml]><img width=646 height=740
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image008.jpg" v:shapes="_x0000_i1030"><![endif]><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис.3.4.
+Схема работы оператора <span class=SpellE>switch</span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272246"></a><a
+name="_Toc265340286"></a><a name="_Toc263373057"><span style='mso-bookmark:
+_Toc265340286'><span style='mso-bookmark:_Toc266272246'><span style='mso-ansi-language:
+RU'>3.8. Операторы цикла</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272247"></a><a
+name="_Toc265340287"></a><a name="_Toc263373058"><span style='mso-bookmark:
+_Toc265340287'><span style='mso-bookmark:_Toc266272247'>3.8.1. Оператор </span></span></a><span
+style='mso-bookmark:_Toc263373058'><span style='mso-bookmark:_Toc265340287'><span
+style='mso-bookmark:_Toc266272247'><span lang=EN-US style='mso-ansi-language:
+EN-US'>for</span></span></span></span></p>
+
+<p class=P>Язык Си имеет несколько операторов для организации циклов. Отличие
+цикла <span lang=EN-US style='mso-ansi-language:EN-US'>for</span> от циклов <span
+class=SpellE>while</span> и <span lang=EN-US style='mso-ansi-language:EN-US'>do</span>..<span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span> состоит в том, что в
+нем, как правило, число повторений заранее известно, т.е. можно удобно задавать
+начальные значения и изменять параметры цикла.</p>
+
+<p class=P>Цикл <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>for</span></i></b>
+(цикл с параметром) обычно используется в тех случаях, когда нужно точно
+определить необходимое количество повторений.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение 1; выражение 2; выражение
+3) оператор;<o:p></o:p></span></span></p>
+
+<p class=P><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>выражение 1 – задает начальное значение параметра цикла;</p>
+
+<p class=P>выражение 2 – условие продолжение цикла (если истина – продолжение,
+если ложь – выход из цикла);</p>
+
+<p class=P>выражение 3 – модификатор счетчика повторений цикла.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Пример<span lang=EN-US style='mso-ansi-language:EN-US'>.<o:p></o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>i</span>=0; <span class=SpellE>i</span>&lt;=10; <span
+class=SpellE>i</span>++)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>printf</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(“%<span class=SpellE>d</span> \<span
+class=SpellE>n</span>”,<span class=SpellE>i</span>);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Данный фрагмент программы и схема на рисунке 3.5 иллюстрируют работу
+оператора <span lang=EN-US style='mso-ansi-language:EN-US'>for</span>. Когда
+программа в своем выполнении доходит до цикла <span lang=EN-US
+style='mso-ansi-language:EN-US'>for</span>, первым выполняется инициализирующее
+выражение, в котором обычно устанавливается счетчик цикла. Затем условное
+выражение, которое также называется условием прекращения цикла; пока оно равно
+истине, цикл не прекращается. Каждый раз после всех строк тела цикла
+выполняется модифицирующее выражение, в котором происходит изменение счетчика.
+Как только условное выражение даст ложь, все строки тела цикла будут пропущены
+и управление будет передано следующей за циклом команде (т.е. выход из цикла).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:285.75pt;height:396pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image009.png" o:title="41"/>
+</v:shape><![endif]--><![if !vml]><img width=381 height=528
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image010.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис 3.5.
+Схема работы оператора <span class=SpellE>for</span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Если тело цикла содержит более одного оператора, используются
+фигурные скобки.<span style='mso-spacerun:yes'>       </span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение 1; выражение 2; выражение
+3)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор 1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор <span class=SpellE>n</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Для повышения эффективности использования оператора <span
+lang=EN-US style='mso-ansi-language:EN-US'>for</span><span lang=EN-US> </span>можно
+использовать следующие приёмы.</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Значение
+счетчика наращивания можно увеличивать или уменьшать; </p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>i</span>=0; <span class=SpellE>i</span>&lt;=10; <span
+class=SpellE>i</span>++)</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> </span>или<span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>for (<span class=SpellE>i</span>=10;
+<span class=SpellE>i</span>&gt;=0; <span class=SpellE>i</span>--)</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>В
+качестве условий продолжения цикла можно использовать арифметические выражения</p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>i</span>=</span></span><span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>х</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>; <span
+class=SpellE>i</span>&lt;=5*</span></span><span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>х</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>; <span
+class=SpellE>i</span>=</span></span><span class=Code><span style='font-size:
+12.0pt'>у</span></span><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>/</span></span><span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>х</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>)</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'> </span>или<span style='mso-ansi-language:
+EN-US'> </span><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>for (<span class=SpellE>i</span>=4; <span
+class=SpellE>i</span>&lt;=40; <span class=SpellE>i</span>=i+5)</span></span><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>i</span>=20; <span class=SpellE>i</span>&gt;=2; <span
+class=SpellE>i</span>-=2)</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> </span>или<span style='mso-ansi-language:EN-US'> </span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for
+(<span class=SpellE>i</span>=5; <span class=SpellE>i</span>&lt;=25; <span
+class=SpellE>i</span>+=5)</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span lang=EN-US
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Возможна
+инициализация нескольких переменных внутри<span style='mso-spacerun:yes'> 
+</span>цикла</p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span style='font-family:
+"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>int</span> <span class=SpellE>i</span>=0, sum=0; <span
+class=SpellE>i</span>&lt;=100; <span class=SpellE>i</span>++)<o:p></o:p></span></span></p>
+
+<p class=P style='margin-left:35.45pt;text-indent:0cm'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Все
+три выражения в операторе <span lang=EN-US style='mso-ansi-language:EN-US'>for</span><span
+style='mso-spacerun:yes'>  </span>являются необязательными, т.е. их можно
+опускать. Выражение 1 может быть пропущено, если переменная инициализируется в
+другом месте программы, выражение 3 опускается, если нет необходимости в
+приращении или данные операторы находятся в теле самой структуры. Например,<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><o:p></o:p></i></b></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> i=0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (; <span class=SpellE>i</span>&lt;=100;
+<span class=SpellE>i++</span>)</span></span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Lucida Console";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'><span class=SpellE><span class=GramE><span
+lang=EN-US style='mso-ansi-language:EN-US'>или</span></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=SpellE>int</span> i=0; <span
+class=SpellE>i</span>&lt;=100;)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>i</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>++;</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Lucida Console";mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Не вызовет ошибки даже следующая запись </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>for</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (<span class=GramE> ;</span> ; )<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Она задаёт бесконечный цикл.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>В
+качестве индексов можно использовать переменные типа <span lang=EN-US
+style='mso-ansi-language:EN-US'>char</span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>for</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> (<span
+class=SpellE>i</span>=’a’; <span class=SpellE>i</span>&lt;=’z’; <span
+class=SpellE>i</span>++)<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Ниже рассмотрен<span style='mso-spacerun:yes'>  </span>несложный
+пример использования оператора <span lang=EN-US style='mso-ansi-language:EN-US'>for</span>.<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><o:p></o:p></i></b></p>
+
+<p class=P>Данная программа использует оператор <span lang=EN-US
+style='mso-ansi-language:EN-US'>for</span> для суммирования всех четных чисел
+от 2 до 100.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+&lt;<span class=SpellE>stdio.h</span>&gt; // директива для подключения к
+программе<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>main</span>()<span
+style='mso-spacerun:yes'>        </span>// описаний сре<span class=GramE>дств
+вв</span>ода-вывода<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> Summa=0, <span
+class=SpellE>i</span>;<span style='mso-spacerun:yes'>   </span>// инициализация
+переменных<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>for</span> (i=2; <span
+class=SpellE>i</span>&lt;=50; i=i+2) // условие приращения и повторения<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Summa = Summa + <span
+class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;</span></span><span
+class=Code><span style='font-size:12.0pt'>Сумма</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>равна</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>: %d\n&quot;,
+Summa);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Сумма равна: 650.</p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272248"></a><a
+name="_Toc265340288"></a><a name="_Toc263373059"><span style='mso-bookmark:
+_Toc265340288'><span style='mso-bookmark:_Toc266272248'>3.8.2. Оператор </span></span></a><span
+style='mso-bookmark:_Toc263373059'><span style='mso-bookmark:_Toc265340288'><span
+style='mso-bookmark:_Toc266272248'><span lang=EN-US style='mso-ansi-language:
+EN-US'>while</span></span></span></span></p>
+
+<p class=P>Оператор цикла <span class=SpellE>while</span> применяется, когда
+число повторений неизвестно, но имеется условие, в случае истинности которого
+нужно выполнить тело цикла. Оператор называется циклом с предусловием, т.к. в
+данном случае программа проверяет истинность условия цикла до того, как начать
+следующую итерацию, поэтому, в зависимости от условия входа в цикл и его
+истинности до выполнения оператора <span lang=EN-US style='mso-ansi-language:
+EN-US'>while</span>, цикл может выполниться несколько раз или не выполниться
+вообще.</p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>while</span>
+имеет следующую форму записи </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>while</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор;</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Пример.<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p></o:p></i></b></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>k</span> = 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>while</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+(k&lt;=100)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>k = k * 2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>“%d \n”, k);</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Lucida Console";mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                                          
+</span><o:p></o:p></span></p>
+
+<p class=P>Данный фрагмент программы и схема на рисунке 3.6 иллюстрируют работу
+оператора <span class=SpellE>while</span>.<span style='mso-spacerun:yes'> 
+</span>Программа<span style='mso-spacerun:yes'>  </span>показывает изменение
+переменной <span class=SpellE><span class=Code><span style='font-size:12.0pt'>k</span></span></span>
+в зависимости от заданного условия. В данном случае при входе в программу
+переменная <span class=Code><span style='font-size:12.0pt'>k=2</span></span>,
+затем она умножается на 2, принимая следующие значения 2,4,8,32,64,128. Однако<span
+class=GramE>,</span> когда ее значение становится 128, условие (<span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>k</span></span></span><span
+class=Code><span style='font-size:12.0pt'>&lt;=100</span></span>) нарушается. В
+результате выполнение цикла завершается и за ним выполняется следующий
+оператор, а именно вывод на экран данной переменной (в итоге выводится 128).</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:240pt;height:221.25pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image011.png" o:title="44"/>
+</v:shape><![endif]--><![if !vml]><img width=320 height=295
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image012.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис.3.6.
+Схема работы оператора <span class=SpellE>while</span></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=H3 style='mso-outline-level:4'><a name="_Toc266272249"></a><a
+name="_Toc265340289"></a><a name="_Toc263373060"><span style='mso-bookmark:
+_Toc265340289'><span style='mso-bookmark:_Toc266272249'>3.8.3. Оператор </span></span></a><span
+style='mso-bookmark:_Toc263373060'><span style='mso-bookmark:_Toc265340289'><span
+style='mso-bookmark:_Toc266272249'><span lang=EN-US style='mso-ansi-language:
+EN-US'>do</span>...</span></span></span><span style='mso-bookmark:_Toc263373060'><span
+style='mso-bookmark:_Toc265340289'><span style='mso-bookmark:_Toc266272249'><span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span></span></span></span></p>
+
+<p class=P>Данный оператор похож <span class=GramE>на</span> оператор <span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span>. Однако в операторе <span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span> условие продолжения
+цикла проверяется в начале цикла до выполнения его тела. В свою очередь
+оператор <span lang=EN-US style='mso-ansi-language:EN-US'>do</span>...<span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span> проверяет условное
+выражение после выполнения тела цикла и поэтому гарантированно, что цикл
+выполнится хотя бы один раз (рис.3.7).</p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>do</span>...<span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span> имеет следующую форму
+записи:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>do</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>while</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P style='text-indent:0cm'>или</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>do</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>оператор_2;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>оператор_n</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>while</span></span></span><span
+class=Code><span style='font-size:12.0pt'> (выражение);</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Если<span style='mso-spacerun:yes'>  </span>в теле цикла <span
+lang=EN-US style='mso-ansi-language:EN-US'>do</span>...<span lang=EN-US
+style='mso-ansi-language:EN-US'>while</span> имеется только один оператор, то
+фигурные скобки можно опустить. Однако<span class=GramE>,</span> чтобы избежать
+ошибок, обычно фигурные скобки ставятся. Если же операторов несколько, то
+фигурные скобки применяют обязательно.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span lang=EN-US
+style='mso-ansi-language:EN-US'>Пример</span></span></span><span class=GramE><span
+lang=EN-US style='mso-ansi-language:EN-US'>.</span></span><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#include &lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>i</span> =
+1;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>do</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>“%d”,
+<span class=SpellE>i</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>while</span> (++<span
+class=SpellE>i</span> &lt;= 5);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Данная программа и схема на рисунке 3.7 иллюстрируют работу
+оператора <span lang=EN-US style='mso-ansi-language:EN-US'>do</span>...<span
+lang=EN-US style='mso-ansi-language:EN-US'>while</span>.<span
+style='mso-spacerun:yes'>  </span>Программа используется для вывода чисел от 1
+до 5. Стоит заметить, что к переменной <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>i</span></span></span> была применена операция <span
+class=SpellE>преинкремента</span> (наращивание переменной на 1 до ее
+использования), а также во избежание ошибки, даже при наличии только одного
+оператора, поставлены фигурные скобки. При выполнении программы получится
+следующий результат: 1 2 3 4 5.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:196.5pt;height:267pt'>
+ <v:imagedata src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image013.png" o:title="45"/>
+</v:shape><![endif]--><![if !vml]><img width=262 height=356
+src="3%20ОПЕРАТОРЫ%20УПРАВЛЕНИЯ.files/image014.jpg" v:shapes="_x0000_i1027"><![endif]><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Рис.3.7.
+Схема работы оператора <span class=SpellE>do..while</span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272250"></a><a
+name="_Toc265340290"></a><a name="_Toc263373061"><span style='mso-bookmark:
+_Toc265340290'><span style='mso-bookmark:_Toc266272250'><span style='mso-ansi-language:
+RU'>3.9. Оператор </span><span lang=EN-US>break</span></span></span></a><span
+style='mso-bookmark:_Toc266272250'></span><span style='mso-bookmark:_Toc265340290'></span><span
+style='mso-bookmark:_Toc263373061'></span><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>break</span>,
+упомянутый нами ранее, используется не только при записи конструкции <span
+lang=EN-US style='mso-ansi-language:EN-US'>switch</span>, но и при оформлении
+циклов. Несколько подробнее рассмотрим его с этих позиций.</p>
+
+<p class=P>Оператор <span lang=EN-US style='mso-ansi-language:EN-US'>break</span>
+прекращает выполнение оператора цикла и передает управление следующему за ним
+(за циклом) оператору. Необходимость в использовании данного оператора
+прерывания в теле цикла возникает, когда условие продолжения итераций нужно
+проверять не в начале и не в конце, а в середине тела цикла.<span
+style='color:red'><o:p></o:p></span></p>
+
+<p class=P>Наиболее подходящей в этом случае является такая структура записи
+тела цикла:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span>операторы<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>if</span> (выражение) <span
+class=SpellE>break</span>; // Аналог оператора </span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>goto</span></span></span><span class=Code><span
+style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>операторы<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><span style='mso-spacerun:yes'> </span></p>
+
+<p class=P>Итак, <i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>break</span></i> позволяет выходить из цикла
+еще до того, как условие цикла станет ложным. В данном случае не указывается
+точный адрес перехода. Управление передается строке, следующей за циклом.<span
+style='color:red'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>main</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> <span
+class=SpellE>x</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>for</span> (x=1; <span
+class=SpellE>x</span>&lt;=10; <span class=SpellE>x++</span>) // счетчик
+наращивается;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (x==8) <span
+class=SpellE>break</span>; // цикл <span class=GramE>прерывается</span> только
+если <span class=SpellE>х</span> == 8;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span> (&quot;%<span
+class=SpellE>d</span> &quot;, <span class=SpellE>x</span>); // печатает цифры
+до 8;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(&quot;\<span
+class=SpellE>n</span> Выход из цикла произошел на шаге <span class=SpellE>x</span>
+== %<span class=SpellE>d\n</span>&quot;, <span class=SpellE>x</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В результате работы программы получим следующее:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG>1 2 3 4 5 6 7</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Выход из цикла произошел на шаге <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>х</span></span></span><span
+class=Code><span style='font-size:12.0pt'> == 8</span></span>.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272251"></a><a
+name="_Toc265340291"></a><a name="_Toc263373062"><span style='mso-bookmark:
+_Toc265340291'><span style='mso-bookmark:_Toc266272251'><span style='mso-ansi-language:
+RU'>3.10. Оператор </span><span lang=EN-US>continue</span></span></span></a><span
+style='mso-bookmark:_Toc266272251'></span><span style='mso-bookmark:_Toc265340291'></span><span
+style='mso-bookmark:_Toc263373062'></span><span style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Еще одну возможность влиять на выполнение операторов тела цикла
+обеспечивает оператор <span lang=EN-US style='mso-ansi-language:EN-US'>continue</span>.
+Данный оператор является противоположным уже рассмотренному нами оператору <span
+lang=EN-US style='mso-ansi-language:EN-US'>break</span>.<b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><o:p></o:p></i></b></p>
+
+<p class=P><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Continue</span><i style='mso-bidi-font-style:
+normal'> –</i></b> заставляет пропустить программу все оставшиеся операторы
+тела цикла, в котором он находится, но сам цикл при этом не завершается. Если
+условие остаётся истинным, то цикл будет продолжен.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Пример.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>main</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> <span
+class=SpellE>x</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>for</span>(x=1; <span
+class=SpellE>x</span>&lt;=10; <span class=SpellE>x++</span>)<span
+style='mso-spacerun:yes'>  </span>// счетчик наращивается;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>if</span> (x==8)<span
+style='mso-spacerun:yes'>           </span>// пропускает в цикле оставшийся
+код,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE>continue</span>;<span
+style='mso-spacerun:yes'>         </span>// только если <span class=SpellE>х</span>
+== 8;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>printf</span> (&quot;%<span
+class=SpellE>d</span> &quot;, <span class=SpellE>x</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(&quot;Продолжение
+при значении переменной, равной 8\n&quot;);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}</span></span><span
+style='font-size:12.0pt;font-family:"Lucida Console"'><o:p></o:p></span></p>
+
+<p class=P><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В результате работы программы получим следующее:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=IMG>1 2 3 4 5 6 7 9 10</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Продолжение следует при значении переменной, равной 8.</p>
+
+<p class=P>Допускается также совместное использование операторов <span
+lang=EN-US style='mso-ansi-language:EN-US'>break</span> и <span lang=EN-US
+style='mso-ansi-language:EN-US'>continue</span>.</p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-bidi-font-weight:
+bold'>Continue</span><span style='mso-bidi-font-weight:bold'> не рекомендуется использовать
+в циклах </span><span lang=EN-US style='mso-ansi-language:EN-US;mso-bidi-font-weight:
+bold'>while</span><span style='mso-bidi-font-weight:bold'> и </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-bidi-font-weight:bold'>do</span><span
+lang=EN-US style='mso-bidi-font-weight:bold'> </span><span style='mso-bidi-font-weight:
+bold'>до модификации значений переменных, входящих в выражение условия
+продолжения цикла, поскольку это может привести к образованию бесконечного
+цикла.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

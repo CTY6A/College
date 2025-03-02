@@ -1,0 +1,26 @@
+%option noyywrap
+%{
+int nAdmin = 0, nAll = 0;
+%}
+
+%%
+
+Admin:[[:print:]]*\n            {
+       				   ++nAdmin ; ++nAll; 
+       				 }
+		
+[[:alnum:]]+:[[:print:]]*\n  {
+				++nAll;
+				} 
+
+%%
+
+int main()
+{
+  yylex();
+  if (nAll > 0)	
+  	printf("Admin: %d. All: %d. Percentage ratio: %d%%", nAdmin, nAll , nAdmin*100/nAll);
+  else
+	printf("0 users");
+  getchar();
+}

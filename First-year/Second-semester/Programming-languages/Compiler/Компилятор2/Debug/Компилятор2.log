@@ -1,0 +1,6 @@
+﻿  lex.yy.c
+lex.yy.c(1421): warning C4013: exit: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1484): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1502): warning C4013: realloc: нет определения; предполагается "extern" с возвратом типа "int"
+lex.yy.c(1512): warning C4013: free: нет определения; предполагается "extern" с возвратом типа "int"
+  Компилятор2.vcxproj -> C:\Users\User\Desktop\Компилятор2\Debug\Компилятор2.exe

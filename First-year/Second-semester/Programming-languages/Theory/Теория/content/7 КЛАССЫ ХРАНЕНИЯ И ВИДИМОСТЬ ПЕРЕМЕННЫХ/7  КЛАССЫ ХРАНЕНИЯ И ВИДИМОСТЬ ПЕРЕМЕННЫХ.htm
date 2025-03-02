@@ -1,0 +1,1190 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="7%20%20КЛАССЫ%20ХРАНЕНИЯ%20И%20ВИДИМОСТЬ%20ПЕРЕМЕННЫХ.files/filelist.xml">
+<title>7. Классы хранения и видимость переменных</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2011-03-30T14:05:00Z</o:Created>
+  <o:LastSaved>2011-03-30T14:05:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1711</o:Words>
+  <o:Characters>9757</o:Characters>
+  <o:Lines>81</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11446</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+p.H1, li.H1, div.H1
+	{mso-style-name:_H1;
+	mso-style-parent:"Заголовок 1";
+	mso-style-link:"_H1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:no-line-numbers;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.P, li.P, div.P
+	{mso-style-name:_P;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Code
+	{mso-style-name:_Code;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Lucida Console";
+	mso-ascii-font-family:"Lucida Console";
+	mso-hansi-font-family:"Lucida Console";}
+p.H2, li.H2, div.H2
+	{mso-style-name:_H2;
+	mso-style-parent:"Заголовок 2";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.IMG, li.IMG, div.IMG
+	{mso-style-name:_IMG;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.H10
+	{mso-style-name:"_H1 Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:_H1;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	text-transform:uppercase;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1829832015;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2128657282 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=H1 style='mso-outline-level:2'><a name="_Toc266272273"></a><a
+name="_Toc265340313"></a><a name="_Toc263373084"><span style='mso-bookmark:
+_Toc265340313'><span style='mso-bookmark:_Toc266272273'>7. Классы хранения и
+видимость переменных</span></span></a></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272274"></a><a
+name="_Toc265340314"></a><a name="_Toc263373085"><span style='mso-bookmark:
+_Toc265340314'><span style='mso-bookmark:_Toc266272274'><span style='mso-ansi-language:
+RU'>7.1. Общие сведения</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>В программе, написанной на Си, переменные относятся к одному из <i
+style='mso-bidi-font-style:normal'>четырех классов хранения</i>:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>автоматический класс хранения (<span lang=EN-US
+style='mso-ansi-language:EN-US'>auto</span>)</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>регистровый класс (<span lang=EN-US
+style='mso-ansi-language:EN-US'>register</span>)</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>статический класс (<span lang=EN-US
+style='mso-ansi-language:EN-US'>static</span>)</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>внешний класс (<span lang=EN-US
+style='mso-ansi-language:EN-US'>extern</span>)</p>
+
+<p class=P>Каждый из приведенных классов имеет свои преимущества. Грамотное определение
+метода хранения переменной – необходимое условие правильности написания любой
+программы.</p>
+
+<p class=P>Если класс памяти не указан, то он определяется по умолчанию из
+контекста объявления, однако это будет не всегда оптимальный вариант. </p>
+
+<p class=P><span style='mso-no-proof:yes'>Объекты классов auto и register имеют
+локальное время жизни. Спецификаторы static и extern определяют объекты с
+глобальным временем жизни. <o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>При объявлении переменной может быть
+использован любой из четырех спецификаторов класса памяти, а если он не указан,
+то подразумевается класс памяти auto</span>.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272275"></a><a
+name="_Toc265340315"></a><a name="_Toc263373086"><span style='mso-bookmark:
+_Toc265340315'><span style='mso-bookmark:_Toc266272275'><span style='mso-ansi-language:
+RU'>7.2. Автоматический класс хранения (</span><span lang=EN-US>auto</span></span></span></a><span
+style='mso-bookmark:_Toc263373086'><span style='mso-bookmark:_Toc265340315'><span
+style='mso-bookmark:_Toc266272275'><span style='mso-ansi-language:RU'>)</span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Автоматические переменные создаются при входе в блок (блок в Си –
+последовательность операторов, заключенная в фигурные скобки), определены только
+в этом блоке и при выходе из него теряются в памяти машины. Как только
+происходит выход из блока, в котором была определена эта переменная, область
+памяти считается свободной, в нее записываются другие данные. Поэтому при каждом
+вызове функции такая переменная до её явной инициализации будет иметь
+неопределённое значение, т.е. значение может варьироваться в зависимости от
+того, какие данные были записаны в отведённый для неё участок памяти до его
+выделения под переменную. Автоматические переменные не инициализируются
+самостоятельно при объявлении (т.е. им не присваивается никакого значения),
+поэтому это необходимо делать самостоятельно. </p>
+
+<p class=P>Рассмотрим часть программы:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> f1(<span class=SpellE>void</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>auto</span> <span class=SpellE>int</span> x = 10;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+f2(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> x = 35;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>“x=%d”,
+x);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>return</span> 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='font-family:"Century Gothic"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В ней в двух функциях <span lang=EN-US style='mso-ansi-language:
+EN-US'>f</span>1, <span lang=EN-US style='mso-ansi-language:EN-US'>f</span>2
+объявлены переменные с одинаковыми именами. Необходимо понимать, что друг к
+другу они не имеют никакого отношения. При компиляции же будет выдана ошибка,
+т.к. функция <span lang=EN-US style='mso-ansi-language:EN-US'>main</span>
+вообще не видит ни одной объявленной переменной <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>x</span></span></span>. В функции <span
+lang=EN-US style='mso-ansi-language:EN-US'>f</span>1 переменная <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>x</span></span></span>
+объявлена как <span class=SpellE><span class=Code><span style='font-size:12.0pt'>auto</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>int</span> <span
+class=SpellE>x</span></span></span><span style='font-family:"Century Gothic"'>,
+</span>а в <span lang=EN-US style='mso-ansi-language:EN-US'>f</span>2 – <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>x</span></span></span><span
+style='font-family:"Century Gothic"'>. </span>Такие объявления эквивалентны<span
+style='font-family:"Century Gothic"'> </span>– любая локальная переменная по
+умолчание относится к автоматическому классу памяти, поэтому спецификатор
+класса <span lang=EN-US style='mso-ansi-language:EN-US'>auto</span> можно
+опустить.</p>
+
+<p class=P>Возможна ситуация, когда глобальная и локальная переменная имеют
+одно и то же имя, например:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>#<span class=SpellE>include</span>
+&lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>num</span> =
+10;<span style='mso-spacerun:yes'>          </span>// объявление глобальной
+переменной<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+write(void);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// вывод значения глобальной переменной<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>printf</span>(&quot;\<span
+class=SpellE>nnum=%d</span>&quot;, <span class=SpellE>num</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> <span
+class=SpellE>num</span> = 20;<span style='mso-spacerun:yes'>         </span>//
+объявление локальной переменной<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                        </span>// с тем же именем, что
+и <span class=GramE>глобальная</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=SpellE><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>printf</span></span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>(</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&quot;\<span
+class=SpellE>nnum</span>=%d&quot;, num);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>write(</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+write(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\<span
+class=SpellE>nnum</span>=%d&quot;, num);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Результатом выполнения этой программы будет</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span lang=EN-US style='mso-ansi-language:EN-US'>num</span>=</span>10</p>
+
+<p class=P><span class=GramE><span lang=EN-US style='mso-ansi-language:EN-US'>num</span>=</span>20</p>
+
+<p class=P><span class=GramE><span lang=EN-US style='mso-ansi-language:EN-US'>num</span>=</span>10</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Когда объявляется локальная переменная <span lang=EN-US
+style='mso-ansi-language:EN-US'>num</span> в функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>main</span>, глобальная переменная с тем же
+именем <span lang=EN-US style='mso-ansi-language:EN-US'>num</span> скрывается.
+Она становится временно, до выхода из блока, недоступной. При выходе же из <span
+lang=EN-US style='mso-ansi-language:EN-US'>main</span> – при выполнении блока
+функции <span lang=EN-US style='mso-ansi-language:EN-US'>write</span>,
+глобальная переменная с именем <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>num</span></span></span> становится опять доступной.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272276"></a><a
+name="_Toc265340316"></a><a name="_Toc263373087"><span style='mso-bookmark:
+_Toc265340316'><span style='mso-bookmark:_Toc266272276'><span style='mso-ansi-language:
+RU'>7.3. Регистровый класс хранения (</span></span></span></a><span
+style='mso-bookmark:_Toc263373087'><span style='mso-bookmark:_Toc265340316'><span
+style='mso-bookmark:_Toc266272276'><span lang=EN-JM style='mso-ansi-language:
+EN-JM'>register</span></span></span></span><span style='mso-bookmark:_Toc263373087'><span
+style='mso-bookmark:_Toc265340316'><span style='mso-bookmark:_Toc266272276'><span
+style='mso-ansi-language:RU'>)</span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>В чем несомненный минус использования стека для хранения информации?
+Дело в том, что стек представляет собой специальный участок оперативной памяти,
+работа с которым осуществляется с использованием двух операций: <span
+lang=EN-US style='mso-ansi-language:EN-US'>push</span> (помещения данных в стек)
+и <span lang=EN-US style='mso-ansi-language:EN-US'>pop</span> (извлечения
+данных из стека). С одной стороны каждая из этих операций состоит из нескольких
+действий, с другой – работает с оперативной памятью, скорость доступа к которой
+ниже, чем скорость доступа к элементам памяти, расположенным внутри процессора.
+Значительно лучше было бы хранить переменные прямо в процессоре, а точнее – в
+его регистрах, это позволило бы сэкономить несколько тактов. В ситуациях, когда
+с переменной нужно проводить простые действия (например – побитовый сдвиг),
+хранение в регистре сократило бы работу в несколько раз. Поэтому локальные (не
+глобальные) переменные, используемые в счетчиках целесообразно хранить как
+регистровые. Количество доступных регистров ограничено архитектурой процессора
+и возможностями компилятора. Если регистров не хватает, компилятор игнорирует
+спецификатор <span lang=EN-US style='mso-ansi-language:EN-US'>register</span> и
+переменная объявляется как автоматическая. По этой же причине без надобности
+регистры занимать не рекомендуется. Регистры не адресуются, поэтому к
+регистровым переменным неприменима операция взятия адреса.</p>
+
+<p class=P>Пример<span lang=EN-US style='mso-ansi-language:EN-US'>:<o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#include &lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>register</span> long sum = 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for</span> (register <span class=SpellE>int</span> <span
+class=SpellE>i</span> = 1; <span class=SpellE>i</span> &lt;= 100; <span
+class=SpellE>i</span>++)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>sum</span> = sum + <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\<span
+class=SpellE>nsum</span>[100]=%d&quot;, sum);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Данная программа вычисляет и выводит на консоль сумму первых ста элементов
+арифметической прогрессии (1, 2, 3, 4,…).</p>
+
+<p class=P>Время жизни и область видимости регистровых переменных совпадает с
+аналогичными параметрами для автоматического класса памяти.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272277"></a><a
+name="_Toc265340317"></a><a name="_Toc263373088"><span style='mso-bookmark:
+_Toc265340317'><span style='mso-bookmark:_Toc266272277'><span style='mso-ansi-language:
+RU'>7.4. Статический класс хранения (</span></span></span></a><span
+style='mso-bookmark:_Toc263373088'><span style='mso-bookmark:_Toc265340317'><span
+style='mso-bookmark:_Toc266272277'><span lang=EN-JM style='mso-ansi-language:
+EN-JM'>static</span></span></span></span><span style='mso-bookmark:_Toc263373088'><span
+style='mso-bookmark:_Toc265340317'><span style='mso-bookmark:_Toc266272277'><span
+style='mso-ansi-language:RU'>)</span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Часто приходится сталкиваться с ситуациями, когда в функцию нужно
+передать параметры, которые используются только в самой функции, чтобы не
+передавать их, и, к тому же, упростить программу можно использовать глобальные
+переменные, однако тогда существует определенная вероятность того, что значение
+ее случайно будет изменено в иных функциях. Не менее важный сдерживающий фактор
+в использовании глобальных переменных – принцип модульности современного
+программирования. Поэтому лучший выход из сложившейся ситуации – использование
+статического класса хранения. <span style='font-family:"Century Gothic"'><o:p></o:p></span></p>
+
+<p class=P>Различают локальные и глобальные переменные статического класса хранения.</p>
+
+<p class=P>Для локальных статических переменных компилятор выделяет память в
+той же области, что и глобальным переменным. Это позволяет сохранять их
+значение между вызовами функций, в которых они объявлены. Другими словами,
+время жизни таких переменных расширяется до глобального – от момента объявления
+до выхода из программы. Необходимо отметить, что переменная инициализируется
+только один раз – при первом входе в функцию, затем инициализация игнорируется.
+Локальные статические переменные уместно использовать в счетчиках, следящих за
+количеством вызовов той или иной функции.</p>
+
+<p class=P>Пример<span lang=EN-US style='mso-ansi-language:EN-US'>:<o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#<span class=GramE>include</span> &lt;<span
+class=SpellE>stdio.h</span>&gt;;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+print1(void);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+print2(void);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for</span> (<span class=SpellE>i</span> = 1; <span class=SpellE>i</span>
+&lt;= 5; <span class=SpellE>i</span>++)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\<span
+class=SpellE>n%d</span> %d&quot;, print1(), print2());<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+print1(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>static</span> <span class=SpellE>int</span> <span class=SpellE>i</span>
+= 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>i</span></span>++;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>return</span> <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+print2(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>i</span> =
+0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>i</span></span>++;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>return</span> <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Все переменные здесь носят одно и то же имя – <span class=SpellE><span
+class=Code><span style='font-size:12.0pt'>i</span></span></span>, однако
+объявлены они по-разному: в функциях<span style='mso-spacerun:yes'>  </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>main</span> и <span lang=EN-US
+style='mso-ansi-language:EN-US'>print</span>2 объявлены автоматические
+переменные, которые при вызове функции возникают и инициализируются каждый раз
+вновь, а в <span lang=EN-US style='mso-ansi-language:EN-US'>print</span>1
+переменная объявлена как статическая, она сохраняет свое значение. Это приводит
+к тому, что на экран будет выведено следующее:</p>
+
+<p class=P>1 <span class=SpellE>1</span></p>
+
+<p class=P>2 1</p>
+
+<p class=P>3 1</p>
+
+<p class=P>4 1</p>
+
+<p class=P>5 1</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Не менее полезна и глобальная статическая переменная. Крупные программные
+проекты создаются группами из десятков и даже тысяч человек. Программа – это
+уже не один файл, а множество. Необходимо заботится о надежности такой системы,
+и один из способов – «связывание» переменных в файлах. Т.е., переменная, даже
+глобальная, видна только в файле, в котором объявлена, как следствие
+уменьшается риск случайного изменения переменной функциями из других файлов.
+Правда, «связывание» чаще применяется к функциям, для ограничения их
+использования другими файлами.</p>
+
+<p class=P><span class=GramE>Необходимо сделать еще несколько замечаний по
+объявлению глобальных статических переменных: они автоматически
+инициализируются нулем, т.е., объявления <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>static</span></span></span><span class=Code><span
+style='font-size:12.0pt'> <span class=SpellE>int</span> i=0</span></span> и <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>static</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>int</span> <span
+class=SpellE>i</span></span></span> будут эквивалентны; если глобальная переменная
+объявлена без спецификатора класса хранения, то этим классом по умолчанию будет
+статический, т.е., записи <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>static</span></span></span><span class=Code><span
+style='font-size:12.0pt'> <span class=SpellE>int</span> <span class=SpellE>i</span></span></span>
+и <span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>i</span></span></span>
+– эквивалентны.</span></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272278"></a><a
+name="_Toc265340318"></a><a name="_Toc263373089"></a><a name="_Toc260130462"><span
+style='mso-bookmark:_Toc263373089'><span style='mso-bookmark:_Toc265340318'><span
+style='mso-bookmark:_Toc266272278'><span style='mso-ansi-language:RU'>7.5.
+Внешний класс хранения (</span></span></span></span></a><span style='mso-bookmark:
+_Toc260130462'><span style='mso-bookmark:_Toc263373089'><span style='mso-bookmark:
+_Toc265340318'><span style='mso-bookmark:_Toc266272278'><span lang=EN-JM
+style='mso-ansi-language:EN-JM'>extern</span></span></span></span></span><span
+style='mso-bookmark:_Toc260130462'><span style='mso-bookmark:_Toc263373089'><span
+style='mso-bookmark:_Toc265340318'><span style='mso-bookmark:_Toc266272278'><span
+style='mso-ansi-language:RU'>)</span></span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Не все переменные должны быть скрытыми для функций, находящихся в других
+файлах, в противном случае вообще программы как единого целого не существовало
+бы. Поэтому в Си введен внешний класс хранения, позволяющий объявлять в
+функциях глобальные переменные, определенные после тел функций или в других
+файлах.</p>
+
+<p class=P>Приведем пример объявления переменной после ее первого
+использования:</p>
+
+<p class=P><span style='font-family:"Century Gothic"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>#include &lt;<span class=SpellE>stdio.h</span>&gt;<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+main(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>&quot;\<span
+class=SpellE>ni</span>=%5.2f&quot;, <span class=SpellE>i</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>float</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>i</span> = 10.25;<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>При компиляции будет выдана ошибка: неопределенный символ <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>i</span></span></span>.
+<span class=GramE>И</span> правда, область видимости глобальной переменной – от
+момента объявления до окончания выполнения программы. В примере – ошибка,
+которую можно исправить путем добавления в функцию <span class=SpellE>main</span>
+перед строкой </p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>printf</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>&quot;\<span
+class=SpellE>ni</span>=%5.2f&quot;, <span class=SpellE>i</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>строки</span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'> <o:p></o:p></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>extern</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+float <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Это объявление переменной происходит без выделения памяти на нее, а
+лишь сообщает компилятору, что переменная объявлена и описана (с выделением
+памяти) после функции <span lang=EN-US style='mso-ansi-language:EN-US'>main</span>
+в нашем случае. При объявлении переменной со спецификатором класса хранения <span
+lang=EN-US style='mso-ansi-language:EN-US'>extern</span> подразумевается, что
+она уже существует, инициализировать переменную каким-либо значением нельзя.</p>
+
+<p class=P>Однако чаще всего ключевое слово <span lang=EN-US style='mso-ansi-language:
+EN-US'>extern</span> используется, если область видимости глобальной
+переменной, описанной в одном файле, нужно расширить на функцию, находящуюся в
+другом файле:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>/* исходный файл
+file1.cpp */<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>main</span></span></span><span
+class=Code><span style='font-size:12.0pt'>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>fun</span></span><span
+class=Code><span style='font-size:12.0pt'>с</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>1()</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>extern</span> double <span class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>/* </span></span><span class=Code><span
+style='font-size:12.0pt'>исходный</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>файл</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> file2.cpp */<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>double</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>i</span> = 9.36;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>funс2()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Переменная <span class=SpellE><span class=Code><span
+style='font-size:12.0pt'>i</span></span></span> описана в файле <span
+lang=EN-US style='mso-ansi-language:EN-US'>file</span>2.<span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>cpp</span></span>, по умолчанию она
+– <span lang=EN-US style='mso-ansi-language:EN-US'>static</span>, т.е. в других
+файлах не видна. Чтобы сделать ее видимой для функции <span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>func</span></span>1 объявляется <span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>i</span></span></span>
+в этой функции как <span lang=EN-US style='mso-ansi-language:EN-US'>extern</span>.
+Необходимо отметить, что для функции <span lang=EN-US style='mso-ansi-language:
+EN-US'>main</span> эта переменная по-прежнему будет недоступна. То есть, описан
+с выделением памяти один объект (в нашем случае переменная) может быть только
+единожды, объявлять же ее как внешнюю можно сколь угодно большое число раз. При
+разработке больших программных проектов обычно включают объявления <span
+lang=EN-US style='mso-ansi-language:EN-US'>extern</span> в заголовочные файлы,
+которые затем подключаются к каждому файлу исходного текста программы. Это –
+очевидное упрощение по отношению к ручному объявлению переменных,<span
+style='mso-spacerun:yes'>  </span>которое может привести к ошибкам.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272279"></a><a
+name="_Toc265340319"></a><a name="_Toc263373090"><span style='mso-bookmark:
+_Toc265340319'><span style='mso-bookmark:_Toc266272279'><span style='mso-ansi-language:
+RU'>7.6. Заключение</span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Подведем итоги.</p>
+
+<p class=P>Глобальные переменные могут объявляться со спецификаторами классов
+хранения <span lang=EN-US style='mso-ansi-language:EN-US'>static</span> и <span
+lang=EN-US style='mso-ansi-language:EN-US'>extern</span>. Локальные переменные
+– с любым из четырех спецификаторов.</p>
+
+<p class=P>Любая локальная переменная по умолчанию – <span lang=EN-US
+style='mso-ansi-language:EN-US'>auto</span>, любая глобальная – <span
+lang=EN-US style='mso-ansi-language:EN-US'>static</span>. Локальные переменные <span
+lang=EN-US style='mso-ansi-language:EN-US'>auto</span> и <span lang=EN-US
+style='mso-ansi-language:EN-US'>register</span> автоматически не инициализируются
+никакими осмысленными значениями; и локальные, и глобальные <span lang=EN-US
+style='mso-ansi-language:EN-US'>static</span> инициализируются нулем.</p>
+
+<p class=P>Переменная, объявленная глобально, видима в пределах остатка
+исходного файла, в котором она определена. Выше своего описания и в других
+исходных файлах эта переменная невидима, пока не объявлена как <span
+class=SpellE>extern</span>. В другом исходном файле может быть объявлена другая
+глобальная переменная с таким же именем и с классом хранения <span
+class=SpellE>static</span>, области видимости этих переменных не пересекаются,
+поэтому ошибок не будет. </p>
+
+<p class=P>Подводя итог, можно составить таблицу 7.1, суммирующую информацию о
+классах хранения.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P align=center style='text-align:center;text-indent:0cm'>Таблица<span
+style='mso-ansi-language:EN-US'> </span>7.1<span lang=EN-US style='mso-ansi-language:
+EN-US'>.</span> Информация о классах хранения</p>
+
+<p class=IMG><o:p>&nbsp;</o:p></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:14.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:21.4pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Класс
+  хранения<o:p></o:p></span></b></p>
+  </td>
+  <td width=171 style='width:128.25pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Место
+  хранения<o:p></o:p></span></b></p>
+  </td>
+  <td width=141 style='width:105.75pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Время
+  жизни<o:p></o:p></span></b></p>
+  </td>
+  <td width=163 style='width:122.15pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Область
+  видимости<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:59.0pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:59.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>автоматический<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US'>auto</span><span style='font-size:14.0pt'>)<o:p></o:p></span></p>
+  </td>
+  <td width=171 style='width:128.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:59.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>сегмент стека<o:p></o:p></span></p>
+  </td>
+  <td width=141 style='width:105.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:59.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>равно времени выполнения программного блока<o:p></o:p></span></p>
+  </td>
+  <td width=163 style='width:122.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:59.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>внутри блока программы, в котором <span class=GramE>объявлена</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:54.1pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:54.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>регистровый<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US'>register</span><span style='font-size:14.0pt'>)<o:p></o:p></span></p>
+  </td>
+  <td width=171 style='width:128.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>регистры процессора (если доступны)<o:p></o:p></span></p>
+  </td>
+  <td width=141 style='width:105.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+  <td width=163 style='width:122.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:60.3pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>локальный статический<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US'>static</span><span style='font-size:14.0pt'>)<o:p></o:p></span></p>
+  </td>
+  <td width=171 style='width:128.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>сегмент данных<o:p></o:p></span></p>
+  </td>
+  <td width=141 style='width:105.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>равно времени выполнения<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>всей программы<o:p></o:p></span></p>
+  </td>
+  <td width=163 style='width:122.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:60.3pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:54.8pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:54.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>глобальный статический (</span><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>static</span><span
+  style='font-size:14.0pt'>)<o:p></o:p></span></p>
+  </td>
+  <td width=171 style='width:128.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+  <td width=141 style='width:105.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+  <td width=163 style='width:122.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:54.8pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>файл, в котором глобально <span class=GramE>объявлена</span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:62.6pt'>
+  <td width=144 style='width:108.0pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:62.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>внешний<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US'>extern</span><span style='font-size:14.0pt'>)<o:p></o:p></span></p>
+  </td>
+  <td width=171 style='width:128.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:62.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+  <td width=141 style='width:105.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:62.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>--//--<o:p></o:p></span></p>
+  </td>
+  <td width=163 style='width:122.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:62.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:14.0pt'>внутри всего проекта (даже, если программа состоит
+  из нескольких файлов)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

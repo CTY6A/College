@@ -1,0 +1,2024 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="12%20ВВЕДЕНИЕ%20В%20ОБЪЕКТНО-ОРИЕНТИРОВАННОЕ%20ПРОГРАММИРОВАНИЕ.files/filelist.xml">
+<title>12. Введение в объектно-ориентированное программирование</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>5</o:TotalTime>
+  <o:Created>2011-03-30T14:20:00Z</o:Created>
+  <o:LastSaved>2011-03-30T14:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>4223</o:Words>
+  <o:Characters>24075</o:Characters>
+  <o:Lines>200</o:Lines>
+  <o:Paragraphs>56</o:Paragraphs>
+  <o:CharactersWithSpaces>28242</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+span.a
+	{mso-style-name:"Исходник Знак";
+	mso-style-parent:"";
+	mso-no-proof:yes;}
+p.H1, li.H1, div.H1
+	{mso-style-name:_H1;
+	mso-style-parent:"Заголовок 1";
+	mso-style-link:"_H1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:no-line-numbers;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.P, li.P, div.P
+	{mso-style-name:_P;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:35.45pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Code
+	{mso-style-name:_Code;
+	mso-style-parent:"";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Lucida Console";
+	mso-ascii-font-family:"Lucida Console";
+	mso-hansi-font-family:"Lucida Console";}
+p.H2, li.H2, div.H2
+	{mso-style-name:_H2;
+	mso-style-parent:"Заголовок 2";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.H10
+	{mso-style-name:"_H1 Знак";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:_H1;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	text-transform:uppercase;
+	mso-ansi-language:RU;
+	mso-fareast-language:RU;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:169833434;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1795024926 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:1159226732;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1042191326 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=H1 style='mso-outline-level:2'><a name="_Toc266272318"></a><a
+name="_Toc265340358"></a><a name="_Toc263373129"></a><a name="_Toc58077184"><span
+style='mso-bookmark:_Toc263373129'><span style='mso-bookmark:_Toc265340358'><span
+style='mso-bookmark:_Toc266272318'>12. Введение 
+в объектно-ориентированное программирование</span></span></span></a></p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272319"></a><a
+name="_Toc265340359"></a><a name="_Toc263373130"></a><a name="_Toc58077185"><span
+style='mso-bookmark:_Toc263373130'><span style='mso-bookmark:_Toc265340359'><span
+style='mso-bookmark:_Toc266272319'><span style='mso-ansi-language:RU'>12.1.
+Постановка задачи</span></span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>В качестве тривиальной задачи, приводящей к необходимости применения
+технологии объектно-ориентированного программирования (ООП), можно рассмотреть
+создание стека. Создадим простейший стек (как область памяти, допускающую лишь
+две операции над собой: поместить элемент в вершину, и взять элемент из
+вершины), основанный на статическом массиве:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span style='mso-no-proof:yes'>Пример 12.1. Реализация простейшего
+статического стека.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>stack</span>[50];<span
+style='mso-spacerun:yes'>      </span>// Массив хранит элементы стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>top</span>;<span
+style='mso-spacerun:yes'>            </span>// Номер элемента в вершине стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>/* Функция
+добавления элемента в стек */<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>push</span>(<span
+class=SpellE>int</span> <span class=SpellE>a</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>/* Функция
+извлечения элемента из стека */<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>pop</span>();<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Функция <span class=a>main()</span> использует стек, который
+реализован как статический массив, и две функции, реализующие операции над ним.
+Однако усложнение программы может вызвать некоторые трудности: так, если
+возникнет необходимость в использовании не одного, а нескольких стеков,
+придется создать много массивов, а функциям <span class=a>push()</span> и <span
+class=a>pop()</span> передавать указатель на массив, хранящий элементы
+конкретного стека. Если усложнять задачу далее, например, до стека, основанного
+на динамическом списке, получится программа, имеющая примерно такую структуру:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span style='mso-no-proof:yes'>Пример 12.2. Стек, основанный на
+связном списке.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TItem</span><span
+style='mso-spacerun:yes'>    </span>// Структура элемента списка.<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> value;<span
+style='mso-spacerun:yes'>    </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Информационное</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>поле</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>TItem</span>*
+next;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Функции</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>работы</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>с</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>элементом</span></span><span
+class=Code><span style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>списка</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TItem</span> *<span class=SpellE>create_item</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TItem</span> **item, <o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                          </span><span class=SpellE><span
+class=GramE>struct</span></span> <span class=SpellE>TItem</span> *<span
+class=SpellE>nxt</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>     </span><span
+style='mso-spacerun:yes'>                     </span><span class=SpellE><span
+class=GramE>int</span></span> num);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TItem</span> *<span class=SpellE>delete_item</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TItem</span> **item);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TList</span><span
+style='mso-spacerun:yes'>            </span>// Структура списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>struct</span> <span
+class=SpellE>TItem</span> *<span class=SpellE>front</span>;<span
+style='mso-spacerun:yes'>  </span>// Указатель на начало списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> <span
+class=SpellE>size</span>;<span style='mso-spacerun:yes'>             </span>//
+Число элементов списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функции работы со
+списком<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TList</span> *<span
+class=SpellE>create_list</span>();<span style='mso-spacerun:yes'>          
+</span>// Создание<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>delete_list</span>(<span class=SpellE>struct</span> <span
+class=SpellE>TList</span>** list); // </span></span><span class=Code><span
+style='font-size:12.0pt'>Удаление</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функции работы с
+элементами списка<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Добавление<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TItem</span> *<span class=SpellE>add_item</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TList</span> *list, <span
+class=SpellE>int</span> num);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Исключение</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>remove_item</span>(<span class=SpellE>struct</span> <span
+class=SpellE>TList</span> *list);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TStack</span><span
+style='mso-spacerun:yes'>          </span>// Структура стека.<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>struct</span> <span
+class=SpellE>TList</span> *<span class=SpellE>top</span>;<span
+style='mso-spacerun:yes'>   </span>// Указатель на вершину стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функции работы со
+стеком<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>struct</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TStack</span> *<span
+class=SpellE>create_stackt</span>();<span style='mso-spacerun:yes'>          
+</span>// Создание<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>delete_stack</span>(<span class=SpellE>struct</span> <span
+class=SpellE>TStack</span> **stack); // </span></span><span class=Code><span
+style='font-size:12.0pt'>Удаление</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Функции работы с
+элементами стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>push</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TStack</span> *<span
+class=SpellE>stack</span>, <span class=SpellE>int</span> <span class=SpellE>a</span>);<span
+style='mso-spacerun:yes'>   </span>// Добавление<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+pop(<span class=SpellE>struct</span> <span class=SpellE>TStack</span>
+*stack);<span style='mso-spacerun:yes'>            </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>Исключение</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Первый большой недостаток такой реализации стека – <i
+style='mso-bidi-font-style:normal'>засорение пространства имен</i>. Несмотря на
+то, что в остальной программе используется лишь стек, для того чтобы определить
+его, нам понадобилось создать большое количество вспомогательных функций. Это,
+в свою очередь, означает, что в остальной части программы будут доступны
+функции, в которых нам нет необходимости, а полезные имена будут заняты.
+Например, переменная <span lang=EN-US style='mso-ansi-language:EN-US'>top</span>
+имеет вполне универсальное название, и вполне возможно, что программист захочет
+использовать ее где-то еще. Это усложнит понимание программы из-за придания
+переменной еще одного смысла и может привести к ошибке неправильного ее
+использования. Засорение пространства имен чревато также тем, что программисту
+все труднее становится ориентироваться в исходном коде и придумывать новые
+идентификаторы, а это может перерасти в серьезную проблему при разработке больших
+программ.</p>
+
+<p class=P>Вторым недостатком может стать то, что в любой точке программы можно
+получить доступ непосредственно к списку, на базе которого реализован стек, или
+даже к отдельным его элементам. Это, вероятнее всего, приведет к тому, что
+всякий раз, когда возникает необходимость сделать что-то нетривиальное, вместо
+создания новой функции интерфейса «стек – программа», программист будет
+напрямую управлять списком и его элементами. В результате, программа будет
+содержать большое количество различных функций, обращающихся непосредственно к
+реализации стека, и, если возникнет необходимость изменить ее, придется
+изменить всю программу.</p>
+
+<p class=P>Третий недостаток состоит в необходимости вызывать функции инициализации
+(конструкторы) каждый раз при начале работы со стеком, и не забывать вызывать
+функции уничтожения (деструкторы) в конце. Причем вызов конструкторов или
+деструкторов несколько раз подряд чреват непредсказуемым поведением программы.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272320"></a><a
+name="_Toc265340360"></a><a name="_Toc263373131"></a><a name="_Toc58077186"><span
+style='mso-bookmark:_Toc263373131'><span style='mso-bookmark:_Toc265340360'><span
+style='mso-bookmark:_Toc266272320'><span style='mso-ansi-language:RU'>12.2.
+Решение задачи средствами Си</span></span></span></span></a><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Единственным средством, позволяющим хоть как-то решить первые две
+проблемы, является использование модульного программирования. Разобьем
+программу на две части: <i style='mso-bidi-font-style:normal'>интерфейс</i> и <i
+style='mso-bidi-font-style:normal'>реализацию</i>. Первая будет содержать те
+функции и структуры, которые необходимы для нормальной работы с объектом,
+вторая – все остальное. Вот как может выглядеть интерфейсная часть стека:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Пример 12.3. Интерфейсная часть стека.</p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TStack</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TStack</span> *<span class=SpellE>create_stackt</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>delete_stack</span>(<span class=SpellE>struct</span> <span
+class=SpellE>TStack</span> **stack);<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+push(<span class=SpellE>struct</span> <span class=SpellE>TStack</span> *stack, <span
+class=SpellE>int</span> a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+pop(<span class=SpellE>struct</span> <span class=SpellE>TStack</span> *stack);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Эти четыре функции и структура позволяют полностью управлять стеком.
+Надо заметить, что программисту удобно не знать внутренних деталей реализации:
+если стек написан одним программистом, а используется другим, <span
+style='mso-no-proof:yes'>для работы достаточно документировать его интерфейс.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Чтобы окончательно скрыть реализацию,
+разобьём проект на файлы: выделим для <i style='mso-bidi-font-style:normal'>реализации</i>
+стека файл stack.c и перенесем туда определения всех функций из примера 12.2.
+Основной файл проекта, (содержащий функцию <span class=a>main()</span>) назовем
+main.c. Теперь осталось лишь создать заголовочный файл, содержащий объявления
+функций из примера 12.3, и включить его в stack.c и main.c.</span> </p>
+
+<p class=P>Сейчас можно говорить о том, что первый недостаток (в некоторой
+степени) устранен. Стек разбит на две части: интерфейс содержит все то, что
+объявлено в <span class=SpellE>stack.h</span>, реализация, все то, что
+определено в <span class=SpellE>stack.c</span>.</p>
+
+<p class=P>Второй недостаток, заключающийся в необходимости явно вызывать
+специальные функции инициализации и <span class=SpellE>деинициализации</span>
+стека решить средствами языка Си практически невозможно.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272321"></a><a
+name="_Toc265340361"></a><a name="_Toc263373132"></a><a name="_Toc58077187"><span
+style='mso-bookmark:_Toc263373132'><span style='mso-bookmark:_Toc265340361'><span
+style='mso-bookmark:_Toc266272321'><span style='mso-ansi-language:RU'>12.3. </span></span></span></span></a><span
+class=GramE><span style='mso-bookmark:_Toc58077187'><span style='mso-bookmark:
+_Toc263373132'><span style='mso-bookmark:_Toc265340361'><span style='mso-bookmark:
+_Toc266272321'><span lang=EN-US>C</span></span></span></span></span><span
+style='mso-bookmark:_Toc58077187'><span style='mso-bookmark:_Toc263373132'><span
+style='mso-bookmark:_Toc265340361'><span style='mso-bookmark:_Toc266272321'><span
+style='mso-ansi-language:RU'>++.</span></span></span></span></span></span><span
+style='mso-bookmark:_Toc58077187'><span style='mso-bookmark:_Toc263373132'><span
+style='mso-bookmark:_Toc265340361'><span style='mso-bookmark:_Toc266272321'><span
+style='mso-ansi-language:RU'> Классы</span></span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Языки, поддерживающие концепцию объектно-ориентированного
+программирования (ООП) вводят средства, позволяющие решать вышеназванные
+проблемы. Одним из таких языков является <span lang=EN-US style='mso-ansi-language:
+EN-US'>C</span>++. Основное средство, реализованное в C++ для поддержки
+парадигмы ООП – класс.</p>
+
+<p class=P>Далее, когда речь будет идти о концепции (описании, <span
+class=GramE>спецификации) </span>стека, будем использовать термин <i
+style='mso-bidi-font-style:normal'>класс, </i>а для реального стека,
+занимающего место в динамической памяти, хранящего реальные элементы – термин <i
+style='mso-bidi-font-style:normal'>объект класса</i>. Опишем <i
+style='mso-bidi-font-style:normal'>класс</i> «стек чисел»:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span style='mso-no-proof:yes'>Пример 12.4. Класс iStack<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Класс <span
+class=SpellE>iStack</span> (стек <span class=SpellE>чисел_типа_int</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>class</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>iStack</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>public</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>iStack</span>();<span
+style='mso-spacerun:yes'>           </span>// Конструктор<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>~iStack</span>();<span
+style='mso-spacerun:yes'>          </span>// Деструктор<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+push(<span class=SpellE>int</span> a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> pop();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>private</span></span></span><span
+class=Code><span style='font-size:12.0pt'>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>struct</span> <span
+class=SpellE>TList</span> *<span class=SpellE>top</span>;<span
+style='mso-spacerun:yes'>  </span>// Указатель на вершину стека<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В первых строках содержится заголовок класса, здесь указано, что
+определяемая структура – класс, а идентификатор, который станет именем нового
+типа, – <span class=a>iStack</span>. Ключевое слово <span class=a><span
+style='font-family:"Lucida Console"'>public</span></span> говорит компилятору о
+том, что последующие объявления будут относиться к интерфейсной части класса.
+Далее идут объявления следующих функций: конструктор и деструктор, <span
+class=a>push()</span> и <span class=a>pop()</span>. Именно эти четыре функции
+были вынесены в интерфейсную часть стека (пример 12.3).</p>
+
+<p class=P>Ключевое слово <span class=a><span style='font-family:"Lucida Console"'>private</span></span>
+начинает область, <span class=GramE>члены</span> объявленные в которой
+относятся к реализации класса и не должны быть доступны извне. К таким членам
+отнесена переменная-указатель на список: имей пользователь непосредственный
+доступ к ней, он получил бы возможность обращаться к любым членам списка (т.е.
+сортировать его, извлекать элементы из середины и т.д.), а это недопустимо для
+стека.</p>
+
+<p class=P>Здесь и далее, для простоты, подразумевается, что в точке объявления
+класса доступны определенные ранее «элемент списка» и «список».<span
+style='mso-spacerun:yes'>  </span><span class=GramE>Преобразовав</span> таким
+образом стек из примера 12.2, поместим код в один файл (например, <span
+class=SpellE>stack</span>.<span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>cpp</span></span>) в таком порядке:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Подключение
+заголовочных файлов библиотек</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Определение
+типов данных «элемент списка» и «список»</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Определение
+функций работающих с элементами списка</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Определение
+функций работающих со списком</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Класс
+<span class=SpellE>iStack</span></p>
+
+<p class=P>На следующем шаге необходимо <i style='mso-bidi-font-style:normal'>определить</i>
+функции, объявленные внутри класса. Этот код следует добавить в конец файла <span
+class=SpellE>stack.cpp</span>:</p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>iStack::iStack</span></span></span><span
+class=Code><span style='font-size:12.0pt'>()<span
+style='mso-spacerun:yes'>         </span><span class=GramE>{ </span><span
+class=SpellE>top</span> = <span class=SpellE>create_list</span>();<span
+style='mso-spacerun:yes'>       </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::~iStack</span>()<span style='mso-spacerun:yes'>   </span>{
+<span class=SpellE>delete_list</span>(&amp;top);<span
+style='mso-spacerun:yes'>         </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::push</span>(<span class=SpellE>int</span> a) { <span
+class=SpellE>add_item</span>(top, a);<span style='mso-spacerun:yes'>         
+</span>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::pop</span>()<span style='mso-spacerun:yes'>       
+</span>{ return <span class=SpellE>remove_item</span>(top);<span
+style='mso-spacerun:yes'>   </span>}<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В части кода, использующей объекты, изменились имена функций
+инициализации и <span class=SpellE>деинициализации</span>. Их пришлось
+переименовать так, чтобы компилятор мог определить, какая именно из <span
+class=GramE>функций</span> объявленных в классе конструктор, а какая деструктор
+(для автоматического их вызова). В C++ конструктор и деструктор должны
+называться так же, как и класс, а деструктор, кроме того, должен иметь тильду
+“~” перед идентификатором (как в примере 13.3). </p>
+
+<p class=P>Кроме того, перед каждым именем функции обязательно ставить имя
+класса и оператор разрешения области видимости<span class=GramE> “::”. </span>Таким
+образом, функция, ранее объявленная, как <span class=a>int pop()</span>, теперь
+будет объявлена так: <span class=a>int iStack::pop()</span>, и т.д.</p>
+
+<p class=P>Работать со стеком теперь тоже надо по-другому. Для того чтобы создать
+стек не надо явно вызывать некоторую функцию – достаточно лишь объявить
+переменную типа <span class=a>iStack</span> (т.е. создать объект класса <span
+class=a>iStack</span>). В момент, когда в своем выполнении дойдет до оператора
+объявления конструктор будет вызван автоматически. Для того<span class=GramE>,</span>
+чтобы выполнить над стеком некоторое действие, нужно для объекта “стек” вызвать
+соответствующий метод (так иногда называют функцию-член класса). Уничтожение
+объекта также автоматизировано. Оно, как и уничтожение любой встроенной
+переменной, произойдет при выходе из объемлющего блока. Проиллюстрируем все
+сказанное примером:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>main</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>int</span> <span
+class=SpellE>i</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>iStack</span> <span
+class=SpellE>stack</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>for(</span></span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>i</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> = 0; <span
+class=SpellE>i</span> &lt;= 10; <span class=SpellE>i</span>++) <span
+class=SpellE>stack.push</span>(<span class=SpellE>i</span>*10);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>for(</span><span class=SpellE>i</span> = 0; <span class=SpellE>i</span>
+&lt;= 10; <span class=SpellE>i</span>++) <span class=SpellE>printf</span>(&quot;%d\n&quot;,
+<span class=SpellE>stack.pop</span>());<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>getch</span></span></span><span
+class=Code><span style='font-size:12.0pt'>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>В четвёртой строке объявлена
+переменная типа <span class=a>iStack</span>. В отличие от Си, в C++ это
+объявление является оператором, вызывающим конструктор класса iStack для
+объекта stack. <o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Следует упомянуть, что, поскольку эта
+переменная имеет автоматический тип хранения, она будет размещена в системном
+стеке. Размер памяти, необходимой для ее размещения, определяется суммарным
+размером <i style='mso-bidi-font-style:normal'>членов-данных класса </i></span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>iStack</span><span
+style='mso-no-proof:yes'>. Может создаться ошибочное впечатление, что в области
+памяти, отведенной под объект, помещается все, что объявлено внутри класса.
+Однако это не верно: функции, объявленные в классе хранятся вне какого-либо
+блока данных.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Далее, в циклах, для объекта stack
+вызываются функции члены </span><span lang=EN-US style='mso-ansi-language:EN-US;
+mso-no-proof:yes'>push</span><span style='mso-no-proof:yes'>() и </span><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>pop</span><span
+style='mso-no-proof:yes'>(). Как видно из примера, доступ к ним, как и к
+элементам структуры, осуществляется посредством оператора “.” (точка):<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>stack.push</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(<span class=SpellE>i</span>*10);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>stack.pop</span></span></span><span
+class=Code><span style='font-size:12.0pt'>();<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В первоначальном варианте программы для вызова тех же функций была
+бы использована следующая форма:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>push(</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>stack,
+<span class=SpellE>i</span>*10);<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>pop(</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>stack);<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В сущности обе версии программы вызывают одну и ту же функцию. Разница
+заключается лишь в том, как, синтаксически, это происходит. В обоих случаях
+функции должны получить адрес конкретного стека, над которым нужно выполнить
+операцию, но в случае с <span class=SpellE>ООП-реализацией</span> этот адрес
+передается <i style='mso-bidi-font-style:normal'>неявно</i>, а при
+использовании обычных функций – явно.</p>
+
+<p class=P>После того, как стек сыграл свою роль в программе, (например, после
+выхода из функции, где был объявлен), он должен быть удален из памяти. В Си для
+этого приходилось явно вызывать специальную функцию:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>delete_stack</span></span></span><span
+class=Code><span style='font-size:12.0pt'>(&amp;<span class=SpellE>stack</span>);<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Для объекта <span class=SpellE>stack</span> такую функцию вовсе
+вызывать не нужно: его деструктор будет <i style='mso-bidi-font-style:normal'>автоматически</i>
+вызван перед выходом из объемлющей области, в нашем примере, функции <span
+class=a><span lang=EN-US style='mso-ansi-language:EN-US'>m</span>ain()</span>.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272322"></a><a
+name="_Toc265340362"></a><a name="_Toc263373133"></a><a name="_Toc58077188"></a><a
+name="_Toc27831287"><span style='mso-bookmark:_Toc58077188'><span
+style='mso-bookmark:_Toc263373133'><span style='mso-bookmark:_Toc265340362'><span
+style='mso-bookmark:_Toc266272322'><span style='mso-ansi-language:RU'>12.4. </span><span
+lang=EN-US>C</span></span></span></span></span></a><span style='mso-bookmark:
+_Toc27831287'><span style='mso-bookmark:_Toc58077188'><span style='mso-bookmark:
+_Toc263373133'><span style='mso-bookmark:_Toc265340362'><span style='mso-bookmark:
+_Toc266272322'><span style='mso-ansi-language:RU'>++ и объектно-ориентированное
+программирование</span></span></span></span></span></span><span
+style='mso-ansi-language:RU'><o:p></o:p></span></p>
+
+<p class=P>Кроме решения приведенных выше (в разделе 13.1) проблем, ООП
+стимулирует повторное использование существующего кода, способствует
+коллективной работе нескольких программистов над проектом, повышает
+безопасность и отказоустойчивость программ, простоту их тестирования и
+сопровождения. Другим немаловажным фактом является то, что применение ООП
+позволяет описать задачу в более понятных и близких человеку понятиях. </p>
+
+<p class=P>Объектно-ориентированное программирование (ООП) – это подход к
+написанию программ, суть которого заключается в сведении реализации проекта к
+реализации набора объектов и построению взаимосвязей между ними. Методология
+ООП отталкивается от понятия объекта, как некоторого набора данных и функций,
+управляющих этими данными. Обычно тип объекта – это реализованная на языке
+программирования концепция. </p>
+
+<p class=P>Так, можно говорить о концепции вещественного числа (с операциями +,
+-, *,<span style='mso-spacerun:yes'>  </span>/, …), концепции человека (с
+операциями «вывести на экран свою фамилию», «начислить себе зарплату», «идти
+выносить мусор»), стека (со сложной структурой данных и простым интерфейсом «<span
+class=a>push»</span> и «<span class=a>pop»</span>).</p>
+
+<p class=P>В языке C++ типом объекта называется его класс. Класс – это определяемый
+пользователем тип. Кла<span class=GramE>сс вкл</span>ючает данные, необходимые
+для хранения информации об объекте, и функции управления этими данными. Объект
+– это переменная класса (т.е. типа данных объявленного пользователем).
+Синтаксис определения класса, в упрощенном виде, можно описать так:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span style='mso-no-proof:yes'>определение_класса ::=<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><span style='mso-tab-count:1'>         </span>“class
+| struct” идентификатор “{” { блок_объявлений } “};”<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>блок_объявлений ::=<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><span style='mso-tab-count:1'>         </span>дисциплина_доступа
+{ объявление_члена_класса }<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>дисциплина_доступа ::=<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><span style='mso-tab-count:1'>         </span>“private:”
+| “public:”<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>объявление_члена_класса ::=<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><span style='mso-tab-count:1'>         </span>объявление_функции
+| объявление_переменной<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В описании класса могут содержаться объявления функций, данных,
+типов, других классов (все они называются членами класса). Все пространство
+объявлений разделяется на области по дисциплине доступа. Дисциплину доступа к
+тому или иному члену класса определяет ключевое слово (<span class=SpellE><span
+style='font-size:12.0pt;font-family:"Lucida Console"'>private</span></span> или
+<span class=SpellE><span style='font-size:12.0pt;font-family:"Lucida Console"'>public</span></span>),
+стоящее перед блоком объявлений, в который он входит.</p>
+
+<p class=P>Очевидно, дисциплина доступа к члену класса определяется ближайшим
+(сверху) квалификатором доступа. В случае, когда такого квалификатора нет, член
+получает права доступа по умолчанию: если описание класса началось ключевым
+словом <span class=a><span style='font-family:"Lucida Console"'>class</span> –</span>
+<span class=a><span style='font-family:"Lucida Console"'>private</span>, если </span><span
+class=a><span style='font-family:"Lucida Console"'>struct</span> – </span><span
+class=a><span style='font-family:"Lucida Console"'>public</span></span>.</p>
+
+<p class=P>Важно помнить, что понятия объявления и определения (<span
+lang=EN-US style='mso-ansi-language:EN-US'>declaration</span><span lang=EN-US> </span><span
+lang=EN-JM style='mso-ansi-language:EN-JM'>and</span><span lang=EN-JM> </span><span
+lang=EN-JM style='mso-ansi-language:EN-JM'>definition</span>) различаются. Так,
+например, объявить функцию – значит задать ее прототип:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>summ</span>(<span
+class=SpellE>int</span>, <span class=SpellE>int</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P style='text-indent:0cm'><span style='mso-no-proof:yes'>определить
+функцию, значит привести ее тело:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>summ</span>(<span class=SpellE>int</span> a, <span class=SpellE>int</span>
+b) { return <span class=SpellE>a+b</span>; };<o:p></o:p></span></span></p>
+
+<p class=P><span lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Аналогично, разделяют понятия
+объявления и определения класса: определение класса содержит перечисление всех
+его членов, тогда как объявление лишь указывает компилятору, что данное имя –
+имя класса.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>class</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>some_class</span>;<span
+style='mso-spacerun:yes'>  </span>// Объявление класса<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>class</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>some_class</span><span
+style='mso-spacerun:yes'>   </span>// Определение класса<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-tab-count:1'>     </span>//...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Формально, класс или функция считаются определенными после того, как
+встретилась закрывающая фигурная скобка определения.</p>
+
+<p class=P>Относительно данного класса весь код программы можно условно разделить
+на две части: код, который «принадлежит» классу, и весь остальной код. К первой
+группе относятся, в частности, определения функций-членов. К закрытым членам
+класса (т.е. к функциям и переменным, объявленным с дисциплиной доступа <span
+class=a><span style='font-family:"Lucida Console"'>private</span></span>) можно
+обратиться только из тех частей программы, которые принадлежат классу.
+Рассмотрим определение функции извлечения элемента из стека: </p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>iStack::pop</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>return</span> <span
+class=SpellE>remove_item</span>(<span class=SpellE>top</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Для того чтобы определить функцию-член класса необходимо в ее заголовке,
+непосредственно перед именем (через два двоеточия<span class=GramE> “::”) </span>указать
+название класса. В нашем примере, функции <span lang=EN-US style='mso-ansi-language:
+EN-US'>remove</span>_<span lang=EN-US style='mso-ansi-language:EN-US'>item</span>,
+в качестве параметра, передается закрытый член класса <span class=SpellE>iStack</span>
+– переменная <span class=SpellE>top</span>. Такое обращение к переменной
+правомерно, т.к. происходит в определении функции-члена того же класса. Точно
+так же, при необходимости, из функции, принадлежащей области видимости класса,
+можно обращаться к его открытым членам и к членам-функциям.</p>
+
+<p class=P>С другой стороны, из любой, <i style='mso-bidi-font-style:normal'>не
+принадлежащей</i> области видимости класса функции, обращение к закрытым членам
+невозможно. Следует помнить, что определение метода класса может встретиться на
+значительном расстоянии от определения самого класса, и все функции,
+оказавшиеся между ними, могут не иметь к классу никакого отношения.</p>
+
+<p class=P>Для класса могут быть объявлены две функции специального вида.
+Первая из них называется <i style='mso-bidi-font-style:normal'>конструктор</i>
+(<span lang=EN-US style='mso-ansi-language:EN-US'>constructor</span>). Он не
+имеет типа возвращаемого значения и его имя должно совпадать с именем класса.
+Гарантируется, что если у класса есть конструктор, то он будет вызван для
+каждого объекта класса перед первым его (объекта) использованием.</p>
+
+<p class=P>Второй функцией специального назначения является <i
+style='mso-bidi-font-style:normal'>деструктор</i> (<span lang=EN-US
+style='mso-ansi-language:EN-US'>destructor</span>). Его имя также должно
+совпадать с именем класса и в объявлении не надо указывать тип возвращаемого
+значения, но начинаться оно должно с тильды&nbsp;“~”. Гарантируется, что если у
+класса есть деструктор, то он будет вызван перед выходом из блока объемлющего
+объявление объекта данного класса:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>class</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+Group<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>public</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>Group(</span><span class=SpellE>int</span>);<span
+style='mso-spacerun:yes'>     </span>// Constructor<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>~<span
+class=GramE>Group(</span>);<span style='mso-spacerun:yes'>       </span>//
+Destructor<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>// ...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>private</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> *marks;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span>// ...<span
+style='mso-spacerun:yes'>          </span></span></span><span class=Code><span
+style='font-size:12.0pt'>Другие</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>члены</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>.<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Group::<span class=GramE>Group</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=SpellE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+number)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// Выделение памяти для массива оценок<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// студентов группы из <span class=SpellE>number</span>
+целых чисел<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>marks</span> = (<span
+class=SpellE>int</span> *) <span class=SpellE>malloc</span>(<span class=SpellE>number</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// ...<span
+style='mso-spacerun:yes'>            </span>Инициализация других переменных.<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Обычно конструктор производит инициализацию внутренних переменных
+класса. В данном примере для хранения некоторых данных о группе студентов
+выделяется динамическая память. Понятно, что такое действие должно быть
+произведено <i style='mso-bidi-font-style:normal'>до</i> того, как объект
+класса будет использован в первый раз.</p>
+
+<p class=P>В примере конструктору должен передаваться параметр – величина
+массива. Ниже приведен пример функции создающей объект класса <span lang=EN-US
+style='mso-ansi-language:EN-US'>Group</span>, и передающий, в качестве параметра,
+его конструктору число 15:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+function(void)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>Group <span
+class=GramE>g251002(</span>15);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// ...<span
+style='mso-spacerun:yes'>         </span>Использование объекта g251002<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Из того, как вызывается конструктор, следует, что он (конструктор)
+не может иметь возвращаемого параметра. Это правило распространяется и на
+деструктор:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>Group::~Group</span></span></span><span
+class=Code><span style='font-size:12.0pt'>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span style='font-size:12.0pt'>{</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// Удаление массива из динамической памяти<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>free</span>(<span
+class=SpellE>marks</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Обычно, деструктор освобождает ресурсы, выделенные для объекта
+конструктором.</p>
+
+<p class=P>Как и к членам структуры Си, доступ к членам класса производится
+посредством операторов “<span class=GramE>.”</span> (точка) и “-&gt;”
+(стрелка). Таким образом, можно получить доступ не только к данным объекта, но
+и к его функциям:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>g251002.~Group();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>g251002.Group(25);<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Таким образом, для объекта <span lang=EN-US style='mso-ansi-language:
+EN-US'>g</span>251002 был вызван деструктор, который вернул в кучу память,
+выделенную для массива из 15 элементов, а затем конструктор, который создал
+новый массив из 25 элементов.</p>
+
+<p class=P>Если имеется указатель на объект, то те же действия можно выполнить
+таким образом:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>Group *pg = &amp;g251002;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>pg-&gt;~<span class=GramE>Group(</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>pg</span></span></span><span
+class=Code><span style='font-size:12.0pt'>-&gt;<span class=SpellE>Group</span>(25);<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>ООП зиждется на трех основных понятиях: инкапсуляция, наследование и
+полиморфизм. <i style='mso-bidi-font-style:normal'>Инкапсуляцией</i> называется
+способность классов скрывать детали реализации (функции и переменные), или,
+другими словами, совмещать данные и функции их обработки. Эта способность
+классов была рассмотрена выше. <i style='mso-bidi-font-style:normal'>Наследование</i>
+– это механизм, позволяющий получить новый тип данных (класс) из уже <span
+class=GramE>имеющегося</span>. При этом описание класса может быть изменено и
+дополнено. Наследование стимулирует повторное использование кода. Под понятием <i
+style='mso-bidi-font-style:normal'>полиморфизм</i> (в контексте ООП) понимают
+возможность одинаково обращаться к родственным объектам. Так, примером полиморфизма
+является перегрузка функций. Эта тема рассмотрена в разделе 12.6.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272323"></a><a
+name="_Toc265340363"></a><a name="_Toc263373134"></a><a name="_Toc58077189"></a><a
+name="_Toc27831292"><span style='mso-bookmark:_Toc58077189'><span
+style='mso-bookmark:_Toc263373134'><span style='mso-bookmark:_Toc265340363'><span
+style='mso-bookmark:_Toc266272323'><span style='mso-ansi-language:RU'>12.5.
+Наследование</span></span></span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>При решении многих задач оказывается, что разные классы имеют множество
+близких свойств и используют большое количество схожего кода. Примерами таких
+классов могут служить стек и очередь. Если реализовать эти классы раздельно, то
+в части реализации списков, на которых они основаны, различий может не быть
+вовсе. Реализовав список, и наследуя от него стек и очередь можно добиться
+наиболее простого и изящного решения.</p>
+
+<p class=P>Преобразуем список из примера 13.2 в класс <span class=a>iList</span>.
+Для этого проделаем <span class=GramE>все то</span> же, что и в разделе 13.1 со
+стеком: выделим интерфейс и реализацию, заменим имена конструкторов и
+деструкторов, уберем из числа формальных параметров ссылки на конкретный
+объект. В результате список примет такой вид:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>class</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>iList</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>public</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span><span class=SpellE>iList</span>();<span
+style='mso-spacerun:yes'>        </span>// Конструктор<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>    </span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>~<span
+class=SpellE><span class=GramE>iList</span></span><span class=GramE>(</span>);<span
+style='mso-spacerun:yes'>       </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Деструктор</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>TItem</span>*
+<span class=SpellE>add_item</span>(<span class=SpellE>int</span> num);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>front_item_value</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>void</span> <span class=SpellE>removet_item</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>private</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>TItem</span>*
+front;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> size;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>iList::<span class=GramE>iList</span></span></span></span><span
+class=GramE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>(</span></span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>)<span
+style='mso-spacerun:yes'>      </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Конструктор</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>size</span> = 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>front</span> = 0;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>iList</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>::~iList</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>()<span
+style='mso-spacerun:yes'>     </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Деструктор</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>while</span> (size) <span class=SpellE>remove_item</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Остальные
+функции-члены<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В данном примере для простоты подразумевается, что в точке объявления
+класса доступен, определенный ранее «элемент списка». Теперь <i
+style='mso-bidi-font-style:normal'>структура программы</i> такова:</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Подключение
+заголовочных файлов библиотек</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Определение
+типа «элемент списка»</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Определение
+функций работающих с элементами списка</p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Класс
+<span class=SpellE>i</span><span lang=EN-US style='mso-ansi-language:EN-US'>List</span></p>
+
+<p class=P style='margin-left:71.45pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 71.45pt'><![if !supportLists]><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Класс
+<span class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>iStack</span></span></p>
+
+<p class=P>В связи с изменениями, произошедшими в реализации списка, придется
+модифицировать стек. Это можно сделать так:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>// Класс <span
+class=SpellE>iStack</span> (стек <span class=SpellE>чисел_типа_int</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>class</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>public</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>void</span> push(<span class=SpellE>int</span> a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> pop();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>private</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>struct</span></span> <span class=SpellE>iList</span>
+list;<span style='mso-spacerun:yes'>     </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>Список</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>};<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::push</span>(<span class=SpellE>int</span> a)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>list.add_<span class=GramE>item</span></span><span class=GramE>(</span>a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::pop</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>res</span>
+= <span class=SpellE>list.front_item_value</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>list.remove_<span class=GramE>item</span></span><span class=GramE>(</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>return</span> <span class=SpellE>res</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Следует отметить, что в данном случае нет необходимости в создании
+конструктора и деструктора класса <span class=SpellE><span lang=EN-US
+style='mso-ansi-language:EN-US'>iStack</span></span>, т.к. единственная
+переменная член (<span class=a>list</span>) имеет конструктор и деструктор по
+умолчанию (т.е. конструктор и деструктор не требующие передачи им параметров),
+которые будут вызваны автоматически.</p>
+
+<p class=P>Уже на таком простом примере видно, что создание цепочки базирующихся
+друг на друге классов имеет большие преимущества по сравнению с созданием
+набора процедур, реализующих более простые сущности. Однако ООП предлагает еще
+более широкие возможности. </p>
+
+<p class=P>Недостатком приведенной реализации стека может стать то, что, формально,
+он никак не связан со списком, хотя представляет с ним практически одно целое.
+Одним из способов указать компилятору, что данные классы имеют родственную
+структуру (а конкретней, стек – является развитием идеи списка), и, таким
+образом, избавиться от программирования тех функций стека, которые уже есть в
+списке, является применение механизма наследования.</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>class</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack</span>: public <span class=SpellE>iList</span><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>public</span>:<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=GramE>void</span> push(<span class=SpellE>int</span> a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> pop();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>};<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В данном случае класс <span class=a>iList</span> становится предком
+для <span class=a>iStack</span> и все его члены (кроме конструктора и
+деструктора) автоматически становятся членами класса-потомка. Определению,
+очевидно, подлежат функции-члены<span style='mso-spacerun:yes'>  </span><span
+class=a>push()</span> и <span class=a>pop()</span>:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>iStack::push</span>(<span
+class=SpellE>int</span> <span class=SpellE>a</span>)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>add_front_<span class=GramE>item</span></span><span class=GramE>(</span>a);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>}<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>int</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>iStack::pop</span>()<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>res</span>
+= <span class=SpellE>get_front_item</span>();<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>del_front_<span class=GramE>item</span></span><span class=GramE>(</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>return</span> <span class=SpellE>res</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Как и в предыдущем, в данном примере явно не вызываются конструкторы
+<span class=a>iList </span>и<span class=a> iStack</span>. Это объясняется тем,
+что первый имеет конструктор по умолчанию, а второму конструктор вообще не
+нужен (нет данных подлежащих инициализации или действий, которые нужно
+произвести перед началом работы с экземпляром класса). </p>
+
+<p class=P>Упрощенно <i style='mso-bidi-font-style:normal'>наследованием</i>
+классов называется порождение одного класса от другого. При этом порождающий
+класс является <i style='mso-bidi-font-style:normal'>предком, отцом, базовым
+классом</i> для порождаемого класса. И<span style='mso-spacerun:yes'> 
+</span>наоборот, порождаемый класс – <i style='mso-bidi-font-style:normal'>наследник,
+сын, производный класс</i> относительно порождающего класса. Возможны разные
+способы наследования. Простейший из них описывается так:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span style='mso-no-proof:yes'>определение_класса_наследника ::=<o:p></o:p></span></p>
+
+<p class=P style='text-indent:63.0pt'><span style='mso-no-proof:yes'>“class”
+имя_потомка “:&nbsp;</span><span lang=EN-US style='mso-ansi-language:EN-US;
+mso-no-proof:yes'>public</span><span style='mso-no-proof:yes'>” имя_предка <o:p></o:p></span></p>
+
+<p class=P style='text-indent:63.0pt'><span style='mso-no-proof:yes'>“{” {
+блок_объявлений } “};”<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>В результате потомок содержит все члены базового <span class=GramE>класса</span>
+но имеет доступ лишь к открытым. </p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272324"></a><a
+name="_Toc265340364"></a><a name="_Toc263373135"></a><a name="_Toc58077190"></a><a
+name="_Toc27831295"><span style='mso-bookmark:_Toc58077190'><span
+style='mso-bookmark:_Toc263373135'><span style='mso-bookmark:_Toc265340364'><span
+style='mso-bookmark:_Toc266272324'><span style='mso-ansi-language:RU'>12.6.
+Перегрузка</span></span></span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P><i style='mso-bidi-font-style:normal'>Перегрузка</i> – это средство
+языка <span lang=EN-US style='mso-ansi-language:EN-US'>C</span>++, позволяющее
+несколько раз использовать один и тот же идентификатор для схожих логически, но
+разных формально сущностей. <span class=GramE>Так, перегрузить функцию означает
+– создать несколько функций с одинаковым именами, но разными формальными
+параметрами:</span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>print</span>(<span
+class=SpellE>int</span> <span class=SpellE>a</span>);<span
+style='mso-spacerun:yes'>       </span>// Вывести на печать число<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>print</span>(<span
+class=SpellE>char</span> <span class=SpellE>c</span>);<span
+style='mso-spacerun:yes'>      </span>// Вывести на печать символ<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>void</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>print</span>(<span
+class=SpellE>char</span>* <span class=SpellE>s</span>);<span
+style='mso-spacerun:yes'>     </span>// Вывести на печать строку<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Каноническим является пример функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>print</span>. Это очень удобное имя для
+функции, выводящей что-то на печать. <span class=GramE>Но если в программе
+используется несколько функций, одна из которых выводит число, другая – символ
+и т.д., то в Си придется создать функции с разными именами (<span class=SpellE><span
+lang=EN-US style='mso-ansi-language:EN-US'>printa</span></span>(<span
+class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>int</span></span>),
+<span class=SpellE><span lang=EN-US style='mso-ansi-language:EN-US'>printc</span></span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>char</span>), <span lang=EN-US
+style='mso-ansi-language:EN-US'>prints</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>char</span>*), …). Это, в свою очередь, вносит
+некоторые неудобства при работе с функциями (иногда необходимо иметь достаточно
+богатую фантазию, чтобы придумывать новые имена, сложно вспомнить, какое имя
+имеет нужная модификация</span> и т.д.). </p>
+
+<p class=P>С другой стороны, очевидно, что компилятор и сам может выбрать среди
+предложенных прототипов, какую именно функцию имеет в виду программист:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+f(<span class=SpellE>int</span> a, char c, char* s)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>// ...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>print(</span>a);<span style='mso-spacerun:yes'>         </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>Будет</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>вызвана</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+void print(<span class=SpellE>int</span> a)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>print(</span>c);<span style='mso-spacerun:yes'>         </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>Будет</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>вызвана</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+void print(char c)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>print(s)</span>;<span style='mso-spacerun:yes'>         </span>// </span></span><span
+class=Code><span style='font-size:12.0pt'>Будет</span></span><span class=Code><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'> </span></span><span
+class=Code><span style='font-size:12.0pt'>вызвана</span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+void print(char* s)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// ...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>В случае, когда ни один из прототипов не подходит для вызова (например,
+при попытке вызова <span lang=EN-US style='mso-ansi-language:EN-US'>print</span>
+с параметром типа <span lang=EN-US style='mso-ansi-language:EN-US'>double</span>
+или <span class=SpellE><span class=GramE><span lang=EN-US style='mso-ansi-language:
+EN-US'>int</span></span></span><span class=GramE>*) ко</span>мпилятор
+попытается выполнить неявное преобразование к нужному типу, или, если оно не
+возможно, констатирует ошибку. </p>
+
+<p class=P>Очевидно, перегрузка функций является развитием принципа
+полиморфизма в ООП. Перегрузку можно применять и к членам-функциям классов.</p>
+
+<p class=H2 style='mso-outline-level:3'><a name="_Toc266272325"></a><a
+name="_Toc265340365"></a><a name="_Toc263373136"></a><a name="_Toc58077191"><span
+style='mso-bookmark:_Toc263373136'><span style='mso-bookmark:_Toc265340365'><span
+style='mso-bookmark:_Toc266272325'><span style='mso-ansi-language:RU'>12.7.
+Ссылочный тип</span></span></span></span></a><span style='mso-ansi-language:
+RU'><o:p></o:p></span></p>
+
+<p class=P>Дополнительно к типу указателя в <span lang=EN-US style='mso-ansi-language:
+EN-US'>C</span>++ введен <i style='mso-bidi-font-style:normal'>ссылочный тип</i>.
+Переменная ссылочного типа похожа на переменную указатель, но может быть
+проинициализирована ссылкой на некоторую переменную (ее адресом) лишь один раз
+(при объявлении) и, в дальнейшем, не нуждается в операциях раскрытия указателя:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>a</span> =
+5;<span style='mso-spacerun:yes'>     </span>// Переменная целого типа<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> *<span class=SpellE>pa</span> =
+&amp;<span class=SpellE>a</span>;<span style='mso-spacerun:yes'>  </span>//
+Указатель на переменную целого типа<o:p></o:p></span></span></p>
+
+<p class=P><span class=SpellE><span class=Code><span style='font-size:12.0pt'>int</span></span></span><span
+class=Code><span style='font-size:12.0pt'> &amp;<span class=SpellE>sa</span> = <span
+class=SpellE>a</span>;<span style='mso-spacerun:yes'>   </span>// Ссылка на
+переменную <span class=SpellE>a</span> (целого типа)<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P>Из данного примера виден синтаксис объявления ссылок. В отличие от
+объявления указателя идентификатору ссылки предшествует не звёздочка, а
+амперсанд. Кроме того, как уже было сказано, ссылка должна быть инициализирована
+при объявлении (заметьте, что в инициализации ссылки, перед идентификатором «<span
+class=a>a», </span>нет амперсанда).</p>
+
+<p class=P>Работать со ссылочной переменной можно точно так же, как с <span
+class=GramE>переменной</span> на которую она ссылается:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+f(<span class=SpellE>int</span> a)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> *pa = &amp;a;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>int</span></span> &amp;<span class=SpellE>sa</span>
+= a;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>sa</span></span> = 3;<span
+style='mso-spacerun:yes'>       </span>// </span></span><span class=Code><span
+style='font-size:12.0pt'>Эквивалентно</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> a = 3; </span></span><span
+class=Code><span style='font-size:12.0pt'>или</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> *pa = 3;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=Code><span style='font-size:12.0pt'>// ...<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span></span></span><span class=GramE><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>f</span></span><span
+class=Code><span style='font-size:12.0pt'>(</span></span></span><span
+class=SpellE><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>sa</span></span></span><span class=Code><span
+style='font-size:12.0pt'>);<span style='mso-spacerun:yes'>        </span>// Эквивалентно
+</span></span><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>f</span></span><span class=Code><span
+style='font-size:12.0pt'>(</span></span><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>a</span></span><span
+class=Code><span style='font-size:12.0pt'>); или </span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>f</span></span><span
+class=Code><span style='font-size:12.0pt'>(*</span></span><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>pa</span></span><span
+class=Code><span style='font-size:12.0pt'>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Это средство было бы практически бесполезно, если бы не возможность
+передавать функции параметры ссылочного типа:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>s_add</span>(<span class=SpellE>int</span> &amp;<span
+class=SpellE>sa</span>, <span class=SpellE>int</span> b)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>sa</span> += <span
+class=SpellE>b</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>При передаче параметров, переменная <span class=a>b</span> будет
+передана в функцию через стек по значению, а переменная <span class=a>sa</span>
+станет <i style='mso-bidi-font-style:normal'>ссылкой</i> на первый фактический
+параметр функции <span class=a>add()</span>. Таким образом, при изменении <span
+class=a>sa</span> реально изменяется переменная, на которую <span class=a>sa</span>
+ссылается. Можно говорить что <span class=a>add()</span> является аналогом
+такой функции использующей указатель:</p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>p_add</span>(<span class=SpellE>int</span> *pa, <span
+class=SpellE>int</span> b)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>*<span class=SpellE>pa</span> += <span
+class=SpellE>b</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Применение ссылки в качестве
+формального параметра функции изменит и синтаксис ее вызова:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>void</span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>
+f(<span class=SpellE>int</span> a, <span class=SpellE>int</span> b)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// Вызов с передачей адреса переменной<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>p_add</span>(&amp;<span
+class=SpellE>a</span>, <span class=SpellE>b</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>// Вызов с «передачей ссылки» на переменную<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>s_add</span>(<span
+class=SpellE>a</span>, <span class=SpellE>b</span>);<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>В приведенном примере обе функции
+изменят значение <span class=a>a, </span>прибавляя к нему<span class=a>&nbsp;b</span>.
+Не следует, также, забывать и о том, что во втором случае также произошла
+передача <i style='mso-bidi-font-style:normal'>адреса</i>, хотя и в неявной
+форме.<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Имеют смысл, также ссылки на
+указатели, которые упрощают понимание их назначения. Ниже приведен пример
+функции, которая создает элемент списка, и изменяет полученный указатель на
+элемент списка соответствующим образом:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TItem</span> *<span class=SpellE>create_item</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TItem</span> **item,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                          </span><span class=SpellE><span
+class=GramE>struct</span></span> <span class=SpellE>TItem</span> *<span
+class=SpellE>nxt</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                          </span><span class=SpellE><span
+class=GramE>int</span></span> num)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>*item = (<span
+class=SpellE>struct</span> <span class=SpellE>TItem</span> *) <span
+class=SpellE><span class=GramE>malloc</span></span><span class=GramE>(</span><span
+class=SpellE>sizeof</span>(<span class=SpellE>struct</span> <span class=SpellE>TItem</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span>(*item)-&gt;number
+= num;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'> 
+</span>(*item)-&gt;next = <span class=SpellE>nxt</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>return</span></span></span><span
+class=Code><span style='font-size:12.0pt'> *<span class=SpellE>item</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'>Здесь для того, чтобы дать
+возможность функции изменить при необходимости указатель на элемент списка,
+используется <i style='mso-bidi-font-style:normal'>указатель на указатель</i>.
+Хотя это вполне простой прием, он делает код непонятным и запутанным. Его можно
+упростить заменив один из указателей ссылкой:<o:p></o:p></span></p>
+
+<p class=P><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=P><span class=SpellE><span class=GramE><span class=Code><span
+style='font-size:12.0pt'>struct</span></span></span></span><span class=GramE><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>TItem</span> *<span
+class=SpellE>create_item</span>(<span class=SpellE>struct</span> <span
+class=SpellE>TItem</span> *&amp;<span class=SpellE>item</span>,</span></span></span><span
+class=Code><span style='font-size:12.0pt'><o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                          </span></span></span><span
+class=SpellE><span class=GramE><span class=Code><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>struct</span></span></span></span><span
+class=Code><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'> <span
+class=SpellE>TItem</span> *<span class=SpellE>nxt</span>,<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                          </span><span class=SpellE><span
+class=GramE>int</span></span> num)<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>{<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>item</span> = (<span class=SpellE>struct</span> <span class=SpellE>TItem</span>
+*) <span class=SpellE>malloc</span>(<span class=SpellE>sizeof</span>(<span
+class=SpellE>struct</span> <span class=SpellE>TItem</span>));<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>item</span>-&gt;number = num;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span><span
+class=GramE>item</span>-&gt;next = <span class=SpellE>nxt</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=SpellE><span class=Code><span style='font-size:12.0pt'>return</span></span></span><span
+class=Code><span style='font-size:12.0pt'> <span class=SpellE>item</span>;<o:p></o:p></span></span></p>
+
+<p class=P><span class=Code><span style='font-size:12.0pt'>}<o:p></o:p></span></span></p>
+
+<p class=P><o:p>&nbsp;</o:p></p>
+
+<p class=P>Таким образом, использование ссылок упрощает синтаксис функций,
+которые должны в качестве параметров получать (константные) указатели, а не
+сами переменные. Следует помнить о том,<span style='mso-spacerun:yes'> 
+</span>что нет способа изменить переменную ссылку так, чтобы она ссылалась на
+другую переменную, нежели указано в объявлении (или при передаче фактического
+параметра функции).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
