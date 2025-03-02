@@ -1,0 +1,31 @@
+    BlockWrite(F4,c,1);
+
+      if (d4 - b) mod 2 = 0 then
+      begin
+        c := (d4 - b) div 2 mod (p*q);
+
+        if c < 0 then
+          c := c + p*q
+      end
+      else
+        c := (d4 - b + (p*q)) div 2 mod (p*q);
+      BlockWrite(F5,c,1);
+    end;
+    CloseFile(F3);
+    CloseFile(F4);
+    CloseFile(F5);
+  end;
+
+  CloseFile(F1);
+  if RBDC.Checked then
+    Reset(F2,1)
+  else
+    Reset(F2,2);
+
+  MResult.Text := '';
+  i:=0;
+  while (not Eof(F2)) and (i<=1000) do
+  begin
+    BlockRead(F2,c,1);
+
+    MResult.Text:=MResult.Text + inttostr(c) + ' ';
