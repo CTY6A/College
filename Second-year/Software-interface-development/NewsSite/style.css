@@ -1,0 +1,33 @@
+body {background: green; margin: 0;}
+a{text-decoration: none; color: white;}
+
+/*Структура сайта*/
+.mid {width: 100%; margin: 0 auto;}
+.img {line-height: 1px;}
+
+/*Шапка сайта*/
+.Navigation {display: none;}
+.topmenu{padding: 30px 20px; background-color: black;}
+.topmenu a{margin: 10px; font-size: 12px;}
+
+/*Меню сайта*/
+.menu img{width: 33.333333333333333%;}
+
+/*Контент сайта*/
+.fon {padding: 70px 80px; background: silver;}
+h1 {font-size: 21px; color: aqua; margin-top: 0; margin-bottom: 0;}
+.text1 {float: left; width: 45%;}
+.text2 {float: right; width: 45%;}
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 640px){
+	.topmenu{display: none;}
+	.menu img{width: 100%;}
+	.Navigation {display: block;}
+	.fon {padding: 11vw;}
+	p {font-size: 3.5vw;}
+	.text1 {width: 100%;}
+	.text2 {display: none;}
+}
+
+div.clear{clear: both;}
