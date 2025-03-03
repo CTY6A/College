@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\Курсач\Курсач\bin\Debug\Курсач.exe.config
+C:\Users\User\Desktop\Курсач\Курсач\bin\Debug\Курсач.exe
+C:\Users\User\Desktop\Курсач\Курсач\bin\Debug\Курсач.pdb
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.FMain.resources
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.Properties.Resources.resources
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.exe
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.pdb
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.FAuthorization.resources
+C:\Users\User\Desktop\Курсач\Курсач\obj\Debug\Курсач.FGame.resources

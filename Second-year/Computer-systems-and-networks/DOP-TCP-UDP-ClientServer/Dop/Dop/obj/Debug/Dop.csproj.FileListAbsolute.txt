@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\bin\Debug\Dop.exe.config
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\bin\Debug\Dop.exe
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\bin\Debug\Dop.pdb
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\obj\Debug\Dop.csprojAssemblyReference.cache
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\obj\Debug\Dop.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\obj\Debug\Dop.exe
+C:\Users\User\Desktop\КСиС 3\Dop\Dop\obj\Debug\Dop.pdb
