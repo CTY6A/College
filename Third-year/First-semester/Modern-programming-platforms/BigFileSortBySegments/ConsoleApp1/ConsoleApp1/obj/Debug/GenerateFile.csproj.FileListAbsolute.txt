@@ -1,0 +1,27 @@
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\obj\Debug\GenerateFile.csprojAssemblyReference.cache
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\obj\Debug\GenerateFile.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\obj\Debug\GenerateFile.csprojAssemblyReference.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\obj\Debug\GenerateFile.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\obj\Debug\GenerateFile.csprojAssemblyReference.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\obj\Debug\GenerateFile.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\User\Desktop\laba1 по блоку\ConsoleApp1\obj\Debug\GenerateFile.csprojAssemblyReference.cache

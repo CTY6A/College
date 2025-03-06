@@ -1,0 +1,15 @@
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.csprojAssemblyReference.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.pdb
+C:\Users\User\Desktop\WindowsFormsApp1\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.dll
+C:\Users\User\Desktop\WindowsFormsApp1\IGenerateFileInterface\bin\Debug\IGenerateFileInterface.pdb
+C:\Users\User\Desktop\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.dll
+C:\Users\User\Desktop\WindowsFormsApp1\IGenerateFileInterface\obj\Debug\IGenerateFileInterface.pdb

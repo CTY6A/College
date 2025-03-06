@@ -1,0 +1,16 @@
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\ISortFile\bin\Debug\ISortFile.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\ISortFile\bin\Debug\ISortFile.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\ISortFile\obj\Debug\ISortFileInterface.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\ISortFile\obj\Debug\ISortFile.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\laba1 по блоку с потоками с dll\ISortFile\obj\Debug\ISortFile.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\bin\Debug\ISortFile.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\bin\Debug\ISortFile.pdb
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\obj\Debug\ISortFileInterface.csprojAssemblyReference.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\obj\Debug\ISortFileInterface.csproj.CoreCompileInputs.cache
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\obj\Debug\ISortFile.dll
+C:\BSUIR\5 сем\СПП\лабы\лаба1\WindowsFormsApp1\ISortFile\obj\Debug\ISortFile.pdb
+C:\Users\User\Desktop\WindowsFormsApp1\ISortFile\bin\Debug\ISortFile.dll
+C:\Users\User\Desktop\WindowsFormsApp1\ISortFile\bin\Debug\ISortFile.pdb
+C:\Users\User\Desktop\WindowsFormsApp1\ISortFile\obj\Debug\ISortFileInterface.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WindowsFormsApp1\ISortFile\obj\Debug\ISortFile.dll
+C:\Users\User\Desktop\WindowsFormsApp1\ISortFile\obj\Debug\ISortFile.pdb
