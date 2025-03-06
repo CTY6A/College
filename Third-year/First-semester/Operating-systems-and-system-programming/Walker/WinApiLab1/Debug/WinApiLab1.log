@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\Work\Семестры\5\ОСиСП 5\WinApiLab1\WinApiLab1\Source.cpp(87,9): warning C4101: hBrush: неиспользованная локальная переменная
+D:\Work\Семестры\5\ОСиСП 5\WinApiLab1\WinApiLab1\Source.cpp(86,6): warning C4101: hmdc: неиспользованная локальная переменная
+  WinApiLab1.vcxproj -> D:\Work\Семестры\5\ОСиСП 5\WinApiLab1\Debug\WinApiLab1.exe
