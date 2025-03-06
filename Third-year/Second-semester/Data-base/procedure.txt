@@ -1,0 +1,30 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `new_procedure_team_players`(id INT)
+BEGIN
+	SELECT `last_name`, `first_name`, `middle_name`, `rank`, `role`, `height`, `weight`, `nationality`
+	FROM bc_tsmoki_minsk.players 
+	WHERE t_id ='id';
+END
+  
+CREATE DEFINER=`root`@`localhost` PROCEDURE `new_procedure`()
+BEGIN
+	SELECT bc_tsmoki_minsk.attendances_list.`date`, bc_tsmoki_minsk.specialists.`last_name` as doctor_last_name, bc_tsmoki_minsk.specialists.`first_name` as doctor_first_name, 
+	bc_tsmoki_minsk.specialists.`middle_name` as doctor_middle_name, 
+	(SELECT `last_name` 
+	FROM bc_tsmoki_minsk.players WHERE `patient_id`=bc_tsmoki_minsk.attendances_list.`Medical_Histories_patient_id`) as patient_last_name,
+	(SELECT `first_name` 
+	FROM bc_tsmoki_minsk.players WHERE `patient_id`=bc_tsmoki_minsk.attendances_list.`Medical_Histories_patient_id`) as patient_first_name,
+	(SELECT `middle_name` 
+	FROM bc_tsmoki_minsk.players WHERE `patient_id`=bc_tsmoki_minsk.attendances_list.`Medical_Histories_patient_id`) as patient_middle_name,
+	bc_tsmoki_minsk.attendances_list.`ICD_10_ICD_10_id` as ICD10
+	FROM bc_tsmoki_minsk.attendances_list
+	INNER JOIN bc_tsmoki_minsk.specialists 
+	ON bc_tsmoki_minsk.attendances_list.`Doctors_Specialists_specialist_id`=bc_tsmoki_minsk.specialists.`specialist_id`;
+END
+
+SELECT bc_tsmoki_minsk.specialists.`last_name`, bc_tsmoki_minsk.specialists.`first_name`, 
+  bc_tsmoki_minsk.specialists.`middle_name`, 
+  (SELECT (`first_name`, `last_name`) 
+  FROM bc_tsmoki_minsk.players WHERE `patient_id`=bc_tsmoki_minsk.attendances_list.`Medical_Histories_patient_id`)
+  FROM bc_tsmoki_minsk.attendances_list
+  INNER JOIN bc_tsmoki_minsk.specialists 
+  ON bc_tsmoki_minsk.attendances_list.`Doctors_Specialists_specialist_id`=bc_tsmoki_minsk.specialists.`specialist_id`;
