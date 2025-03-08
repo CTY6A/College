@@ -1,0 +1,13 @@
+[ElectronicsCatalog]+[HotGoods|+MinAmountOfDiscount: double;+PromotionTime: date|-ShowLimitedOffers(): void;+SetMinAmountOfDiscount(): void]
+
+[ElectronicsCatalog|-NumOfGoods: uint;+Portability: boolean;+DisplayPresence: boolean|+AddItem(): void;+SortingGoods():void;+SetPriceRange(): void;-Choose(): void;-Buy(): void;+SetPortability(): void;+SetDisplayPresence(): void]^-[ComputerCatalog|+MinVideoMemory: uint;+OpticalDrive: boolean;+MinDiskRotationSpeed: uint|-SetMinDiskRotationSpeed(): void;-SetMinVideoMemory(): void;-SetOpticalDrive(): void]
+
+[ElectronicsCatalog]^-[TelephoneCatalog|+MinNumOfSimCards: uint;+MinNumOfCamers: uint;+AudioOutput: boolean|-SetMinNumOfSimCards(): void;-SetMinNumOfCamers(): void;-SetAudioOutput(): void]
+
+[ElectronicsCatalog]^-[HomeApplianceCatalog|+Smart: boolean;+Bulky: boolean;+BuiltIn: boolean;+MinNumOfFunctions: uint|-SetMinNumOfFunctions(): void;-SetSmart(): void;-SetBulky(): void;-SetBuiltIn(): void]
+
+[HomeApplianceCatalog]^-[OvenCatalog|+Grill: boolean|-SetGrill(): void; -SetClean(): void;-SetTypeOfDoor(): void]
+
+[HomeApplianceCatalog]^-[WashingMashineCatalog|+MinSpinSpeed: uint; +SteamTreatment: boolean; +MinSpecialPrograms: uint|-SetMinSpinSpeed(): void; -SetSteamTreatment(): void; -SetMinSpecialPrograms(): void]
+
+[HomeApplianceCatalog]^-[RefrigeratorCatalog|+MinNumOfBoxes: uint; +MinNumOfShelves: uint; +MinNumOfCompressors: uint|-SetMinNumOfBoxes(): void;-SetMinNumOfShelves(): void; -SetMinNumOfCompressors(): void]
