@@ -1,0 +1,57 @@
+F:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.exe.config
+F:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.exe
+F:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.pdb
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.csprojResolveAssemblyReference.cache
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.MainForm.resources
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.Cache
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.exe
+F:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.pdb
+G:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.exe.config
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.exe
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.pdb
+G:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.exe
+G:\Лабы\МиАПР\MiAPR_1_VS\bin\Debug\MiAPR_1_VS.pdb
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.csprojResolveAssemblyReference.cache
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.MainForm.resources
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+G:\Лабы\МиАПР\MiAPR_1_VS\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.Cache
+G:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
+G:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.exe
+G:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.pdb
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.csprojResolveAssemblyReference.cache
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.MainForm.resources
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+G:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.Cache
+E:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
+E:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.exe
+E:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.pdb
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.csprojResolveAssemblyReference.cache
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.MainForm.resources
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+E:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.Cache
+F:\Лабы\МиАПР\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+F:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+F:\Лабы\МиАПР\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.pdb
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.MainForm.resources
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+C:\Users\User\Desktop\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe.config
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.exe
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\bin\Debug\MiAPR_1_VS.pdb
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.MainForm.resources
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.Properties.Resources.resources
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.exe
+C:\Users\User\Desktop\Методы и Алгоритмы Принятия Решений\Лабораторные работы\MiAPR_1\obj\Debug\MiAPR_1_VS.pdb
