@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/settings_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#32CD32"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/baseline_settings_white_36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_item_label_font_size"
+        style="@style/ToolBarTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/settings_text_view_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_item_image" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_item_label_font_size" />
+
+    <TextView
+        android:id="@+id/settings_item_label_choose_font"
+        style="@style/SettingsDialogTextViewPrimary"
+        android:layout_marginTop="30dp"
+        android:text="@string/settings_text_view_choose_font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Spinner
+        android:id="@+id/app_fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_item_label_choose_font" />
+
+    <TextView
+        android:id="@+id/settings_item_label_choose_locale"
+        style="@style/SettingsDialogTextViewPrimary"
+        android:layout_marginTop="30dp"
+        android:text="@string/settings_text_view_choose_locale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_fonts" />
+
+    <Spinner
+        android:id="@+id/app_locales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_item_label_choose_locale" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

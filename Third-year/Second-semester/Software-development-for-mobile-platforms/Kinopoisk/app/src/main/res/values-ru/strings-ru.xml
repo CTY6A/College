@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinopoisk</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start activity -->
+
+    <string name="start_activity_loading">Загрузка...</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film info activity -->
+
+    <string name="film_image_description">Постер фильма</string>
+    <string name="film_info_name">Фильм</string>
+    <string name="film_info_about_name">Название:</string>
+    <string name="film_info_about_tag_line">Слоган:</string>
+    <string name="film_info_about_release_year">Год выпуска:</string>
+    <string name="film_info_about_genres">Жанры:</string>
+    <string name="film_info_about_director">Режиссёр:</string>
+    <string name="film_info_about_duration">Продолжительность:</string>
+    <string name="film_info_about_rating">Рейтинг:</string>
+    <string name="film_info_about_views">Просмотры:</string>
+    <string name="film_info_about_description">Описание:</string>
+    <string name="film_info_text_view_no_video_string">Нет видео</string>
+    <string name="film_info_activity_play_button">Играть</string>
+
+    <string name="film_info_description_example">Сказания о Средиземье — это хроника Великой войны за Кольцо, войны, длившейся не одну тысячу лет. Тот, кто владел Кольцом, получал власть над всеми живыми тварями, но был обязан служить злу.
+
+Тихая деревня, где живут хоббиты. Волшебник Гэндальф, придя на 111-й день рождения к своему старому другу Бильбо Бэггинсу, начинает вести разговор о кольце, которое Бильбо нашел много лет назад. Это кольцо принадлежало когда-то темному властителю Средиземья Саурону, и оно дает большую власть своему обладателю. Теперь Саурон хочет вернуть себе власть над Средиземьем. Бильбо отдает найденное кольцо своему племяннику Фродо, который пытается научиться справляться с тем страшным могуществом, которое дает ему кольцо…</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Toolbar -->
+
+    <string name="toolbar_settings_hint">Настройки</string>
+    <string name="toolbar_filter_hint">Фильтр</string>
+    <string name="toolbar_add_film_hint">Добавить фильм</string>
+    <string name="toolbar_edit_film_hint">Редактировать фильм</string>
+
+    <string name="positive_push">OK</string>
+    <string name="negative_push">Отмена</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Settings dialog -->
+
+    <string name="settings_text_view_font_size">Масштаб размера шрифта:</string>
+    <string name="settings_text_view_choose_font">Выберите шрифт:</string>
+    <string name="settings_text_view_choose_locale">Выберите язык:</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Filter dialog -->
+
+    <string name="views_start_hint">От</string>
+    <string name="views_end_hint">До</string>
+    <string name="views_range_checkbox_text">Отфильтровать фильмы по просмотрам?</string>
+    <string name="filter_tv_views">Отфильтровать по просмотрам:</string>
+
+    <string name="filter_tv_sorting_name">Сортировка по названию:</string>
+    <string name="filter_checkbox_sorting_name_ascending">Возрастание</string>
+    <string name="filter_checkbox_sorting_name_descending">Убывание</string>
+
+    <string name="filter_tv_sorting_rating">Сортировка по рейтингу:</string>
+    <string name="filter_checkbox_sorting_rating_ascending">Возрастание</string>
+    <string name="filter_checkbox_sorting_rating_descending">Убывание</string>
+
+    <string name="filter_checkbox_all_films_text">Восстановить список всех фильмов?</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Youtube activity -->
+
+    <string name="player_error">Ошибка инициализации Youtube Player: %s</string>
+    <string name="seek_to">Переход к</string>
+    <string name="seek_to_hint">Секунды</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film adding dialog -->
+
+    <string name="film_adding_label_name_string">Название:</string>
+    <string name="film_adding_edit_text_name_string">Введите имя фильма</string>
+
+    <string name="film_adding_label_description_string">Описание:</string>
+    <string name="film_adding_edit_text_description_string">Введите описание фильма</string>
+
+    <string name="film_adding_label_tag_line_string">Слоган:</string>
+    <string name="film_adding_edit_text_tag_line_string">Введите слоган фильма</string>
+
+    <string name="film_adding_label_director_string">Режиссёр:</string>
+    <string name="film_adding_edit_text_director_string">Введите режиссёра фильма</string>
+
+    <string name="film_adding_label_genres_string">Жанры (разделённые запятой):</string>
+    <string name="film_adding_edit_text_genres_string">Введите жанры фильма</string>
+
+    <string name="film_adding_label_release_year_string">Год выпуска:</string>
+    <string name="film_adding_edit_text_release_year_string">Введите год выпуска</string>
+
+    <string name="film_adding_label_duration_string">Продолжительность:</string>
+    <string name="film_adding_edit_text_duration_string">Введите продолжительность фильма</string>
+
+    <string name="film_adding_label_views_string">Просмотры:</string>
+    <string name="film_adding_edit_text_views_string">Введите просмотры фильма</string>
+
+    <string name="film_adding_label_ratings_sum_string">Сумма рейтингов (>= просмотрам):</string>
+    <string name="film_adding_edit_text_ratings_sum_string">Введите сумму рейтингов</string>
+
+    <string name="film_adding_label_poster_URI_string">Постер URL:</string>
+    <string name="film_adding_edit_text_poster_URI_string">Введите постер URI</string>
+
+    <string name="film_adding_label_trailer_local_file_string">Название файла трейлера (находится в sdcard/Kinopoisk trailers/):</string>
+    <string name="film_adding_edit_text_trailer_local_file_string">Введите название файла трейлера</string>
+    <string name="film_adding_checkbox_trailer_local_file_string">Трейлер как локальный файл</string>
+
+    <string name="film_adding_label_trailer_URI_string">Трейлер URL:</string>
+    <string name="film_adding_edit_text_trailer_URI_string">Введите трейлер URL</string>
+    <string name="film_adding_checkbox_trailer_URI_string">Трейлер как URL</string>
+
+    <string name="film_adding_checkbox_add_film_string">Добавить фильм?</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film editing dialog -->
+
+    <string name="film_editing_label_trailer_local_file_string">Название файла трейлера (находится в sdcard/Kinopoisk trailers/):</string>
+    <string name="film_editing_edit_text_trailer_local_file_string">Введите название файла трейлера</string>
+    <string name="film_editing_checkbox_trailer_local_file_string">Трейлер как локальный файл</string>
+
+    <string name="film_editing_label_trailer_URI_string">Трейлер URL:</string>
+    <string name="film_editing_edit_text_trailer_URI_string">Введите трейлер URL</string>
+    <string name="film_editing_checkbox_trailer_URI_string">Трейлер как URL</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Toast messages -->
+
+    <string name="main_activity_film_adding_toast_empty">Фильм не был добавлен из-за пустого поля \"%1$s\"</string>
+    <string name="main_activity_film_adding_toast_success">Фильм был добавлен</string>
+    <string name="main_activity_film_adding_start_uploading_trailer">Загрузка видео…</string>
+    <string name="main_activity_film_adding_failure_uploaded_trailer">Провальная загрузка видео!</string>
+    <string name="main_activity_film_adding_success_uploaded_trailer">Видео загружено успешно!</string>
+    <string name="main_activity_film_adding_toast_no_such_file">Введённый файл не существует!</string>
+
+    <string name="film_info_activity_film_editing_toast_success">Фильм был отредактирован</string>
+    <string name="film_info_activity_film_editing_start_uploading_trailer">Загрузка видео…</string>
+    <string name="film_info_activity_film_editing_failure_uploaded_trailer">Провальная загрузка видео!</string>
+    <string name="film_info_activity_film_editing_success_uploaded_trailer">Видео загружено успешно!</string>
+    <string name="film_info_activity_film_adding_toast_no_such_file">Введённый файл не существует!</string>
+
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Message to display while video is buffering. -->
+    <string name="video_activity_buffering_string">Буферизуем&#8230;</string>
+
+    <!-- Message to display when video is finished playing. -->
+    <string name="video_activity_toast_message">Воспроизведение окончнено.</string>
+
+</resources>

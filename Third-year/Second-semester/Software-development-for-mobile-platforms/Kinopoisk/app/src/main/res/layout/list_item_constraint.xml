@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_orange_light"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal"
+    android:layout_marginBottom="4sp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_custom_background">
+
+        <ImageView
+            android:id="@+id/film_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/film_image_description"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/genres_text_view"
+            app:layout_constraintHorizontal_weight="14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_help" />
+
+        <TextView
+            android:id="@+id/genres_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_custom_background"
+            android:gravity="center_vertical"
+            android:paddingStart="8sp"
+            android:paddingEnd="3sp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/name_text_view"
+            app:layout_constraintEnd_toStartOf="@+id/rating_text_view"
+            app:layout_constraintHorizontal_weight="51"
+            app:layout_constraintStart_toEndOf="@+id/film_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="45"
+            tools:ignore="NestedWeights"
+            tools:text="thriller, detective, drama" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_custom_background"
+            android:gravity="center_vertical"
+            android:paddingStart="8sp"
+            android:paddingEnd="3sp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/views_text_view"
+            app:layout_constraintHorizontal_weight="51"
+            app:layout_constraintStart_toEndOf="@+id/film_image"
+            app:layout_constraintTop_toBottomOf="@+id/genres_text_view"
+            app:layout_constraintVertical_weight="55"
+            tools:text="Gentlemen" />
+
+        <TextView
+            android:id="@+id/rating_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_custom_background"
+            android:gravity="center"
+            android:paddingStart="3sp"
+            android:paddingEnd="3sp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/views_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="17"
+            app:layout_constraintStart_toEndOf="@+id/genres_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="3"
+            tools:ignore="NestedWeights"
+            tools:text="8.7" />
+
+        <TextView
+            android:id="@+id/views_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_custom_background"
+            android:gravity="center"
+            android:paddingStart="3sp"
+            android:paddingEnd="3sp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="17"
+            app:layout_constraintStart_toEndOf="@+id/name_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/rating_text_view"
+            app:layout_constraintVertical_weight="2"
+            tools:text="2987654" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="film_image"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="genres_text_view,name_text_view"
+            tools:layout_editor_absoluteX="411dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinopoisk</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Start activity -->
+
+    <string name="start_activity_loading">Loading...</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film info activity -->
+
+    <string name="film_image_description">Film image</string>
+
+    <string name="film_info_name">Film</string>
+    <string name="film_info_about_name">Name:</string>
+    <string name="film_info_about_tag_line">Tag line:</string>
+    <string name="film_info_about_release_year">Release year:</string>
+    <string name="film_info_about_genres">Genres:</string>
+    <string name="film_info_about_director">Director:</string>
+    <string name="film_info_about_duration">Duration:</string>
+    <string name="film_info_about_rating">Rating:</string>
+    <string name="film_info_about_views">Views:</string>
+    <string name="film_info_about_description">Description:</string>
+    <string name="film_info_text_view_no_video_string">No video</string>
+    <string name="film_info_activity_play_button">Play</string>
+
+    <string name="film_info_description_example">Сказания о Средиземье — это хроника Великой войны за Кольцо, войны, длившейся не одну тысячу лет. Тот, кто владел Кольцом, получал власть над всеми живыми тварями, но был обязан служить злу.
+
+Тихая деревня, где живут хоббиты. Волшебник Гэндальф, придя на 111-й день рождения к своему старому другу Бильбо Бэггинсу, начинает вести разговор о кольце, которое Бильбо нашел много лет назад. Это кольцо принадлежало когда-то темному властителю Средиземья Саурону, и оно дает большую власть своему обладателю. Теперь Саурон хочет вернуть себе власть над Средиземьем. Бильбо отдает найденное кольцо своему племяннику Фродо, который пытается научиться справляться с тем страшным могуществом, которое дает ему кольцо…</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Toolbar -->
+
+    <string name="toolbar_settings_hint">Settings</string>
+    <string name="toolbar_filter_hint">Filter</string>
+    <string name="toolbar_add_film_hint">Add film</string>
+    <string name="toolbar_edit_film_hint">Edit film</string>
+
+    <string name="positive_push">OK</string>
+    <string name="negative_push">Cancel</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Settings dialog -->
+
+    <string name="settings_text_view_font_size">Font size scale:</string>
+    <string name="settings_text_view_choose_font">Choose font:</string>
+    <string name="settings_text_view_choose_locale">Choose locale:</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Filter dialog -->
+
+    <string name="views_start_hint">Range start</string>
+    <string name="views_end_hint">Range end</string>
+    <string name="views_range_checkbox_text">Filter films by above views range?</string>
+    <string name="filter_tv_views">Filter views:</string>
+
+    <string name="filter_tv_sorting_name">Sorting by name:</string>
+    <string name="filter_checkbox_sorting_name_ascending">Ascending</string>
+    <string name="filter_checkbox_sorting_name_descending">Descending</string>
+
+    <string name="filter_tv_sorting_rating">Sorting by rating:</string>
+    <string name="filter_checkbox_sorting_rating_ascending">Ascending</string>
+    <string name="filter_checkbox_sorting_rating_descending">Descending</string>
+
+    <string name="filter_checkbox_all_films_text">Restart all films list?</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Youtube activity -->
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film adding dialog -->
+
+    <string name="film_adding_label_name_string">Name:</string>
+    <string name="film_adding_edit_text_name_string">Input film name</string>
+
+    <string name="film_adding_label_description_string">Description:</string>
+    <string name="film_adding_edit_text_description_string">Input film description</string>
+
+    <string name="film_adding_label_tag_line_string">Tag line:</string>
+    <string name="film_adding_edit_text_tag_line_string">Input film tag line</string>
+
+    <string name="film_adding_label_director_string">Director:</string>
+    <string name="film_adding_edit_text_director_string">Input film director</string>
+
+    <string name="film_adding_label_genres_string">Genres (separated by comma):</string>
+    <string name="film_adding_edit_text_genres_string">Input film genres</string>
+
+    <string name="film_adding_label_release_year_string">Release year:</string>
+    <string name="film_adding_edit_text_release_year_string">Input film release year</string>
+
+    <string name="film_adding_label_duration_string">Duration:</string>
+    <string name="film_adding_edit_text_duration_string">Input film duration</string>
+
+    <string name="film_adding_label_views_string">Views:</string>
+    <string name="film_adding_edit_text_views_string">Input film views</string>
+
+    <string name="film_adding_label_ratings_sum_string">Ratings sum (>= views):</string>
+    <string name="film_adding_edit_text_ratings_sum_string">Input film ratings sum</string>
+
+    <string name="film_adding_label_poster_URI_string">Poster URL:</string>
+    <string name="film_adding_edit_text_poster_URI_string">Input film poster URI</string>
+
+    <string name="film_adding_label_trailer_local_file_string">Trailer file name (in sdcard/Kinopoisk trailers/):</string>
+    <string name="film_adding_edit_text_trailer_local_file_string">Input film trailer file name</string>
+    <string name="film_adding_checkbox_trailer_local_file_string">Trailer as local file</string>
+
+    <string name="film_adding_label_trailer_URI_string">Trailer URL:</string>
+    <string name="film_adding_edit_text_trailer_URI_string">Input film trailer URL</string>
+    <string name="film_adding_checkbox_trailer_URI_string">Trailer as URL</string>
+
+    <string name="film_adding_checkbox_add_film_string">Add film?</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Film editing dialog -->
+
+    <string name="film_editing_label_trailer_local_file_string">Trailer file name (in sdcard/Kinopoisk trailers/):</string>
+    <string name="film_editing_edit_text_trailer_local_file_string">Input film trailer file name</string>
+    <string name="film_editing_checkbox_trailer_local_file_string">Trailer as local file</string>
+
+    <string name="film_editing_label_trailer_URI_string">Trailer URL:</string>
+    <string name="film_editing_edit_text_trailer_URI_string">Input film trailer URL</string>
+    <string name="film_editing_checkbox_trailer_URI_string">Trailer as URL</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Toast messages -->
+
+    <string name="main_activity_film_adding_toast_empty">Film was not added, because of empty \"%1$s\" field</string>
+    <string name="main_activity_film_adding_toast_success">Film was added</string>
+    <string name="main_activity_film_adding_start_uploading_trailer">Uploadig video…</string>
+    <string name="main_activity_film_adding_failure_uploaded_trailer">Video upload failed!</string>
+    <string name="main_activity_film_adding_success_uploaded_trailer">Video upload success!</string>
+    <string name="main_activity_film_adding_toast_no_such_file">Inputed file doesn\'t exist!</string>
+
+    <string name="film_info_activity_film_editing_toast_success">Film was edited</string>
+    <string name="film_info_activity_film_editing_start_uploading_trailer">Uploadig video…</string>
+    <string name="film_info_activity_film_editing_failure_uploaded_trailer">Video upload failed!</string>
+    <string name="film_info_activity_film_editing_success_uploaded_trailer">Video upload success!</string>
+    <string name="film_info_activity_film_adding_toast_no_such_file">Inputed file doesn\'t exist!</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Message to display while video is buffering. -->
+    <string name="video_activity_buffering_string">Buffering&#8230;</string>
+
+    <!-- Message to display when video is finished playing. -->
+    <string name="video_activity_toast_message">Playback completed.</string>
+
+</resources>

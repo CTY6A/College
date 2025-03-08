@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="list_item_image_width">70dp</dimen>
+    <dimen name="list_item_image_height">86dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+
+    <dimen name="big_film_image_width">140dp</dimen>
+    <dimen name="big_film_image_height">200dp</dimen>
+
+    <dimen name="film_info_list_about_padding_top">5sp</dimen>
+    <dimen name="film_info_list_about_padding_bottom">5sp</dimen>
+</resources>

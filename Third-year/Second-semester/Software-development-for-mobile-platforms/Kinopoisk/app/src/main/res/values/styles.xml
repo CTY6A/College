@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- added below for toolBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- added below for шрифт -->
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- Кастомная AppTheme.Launcher. Устанавливает в качестве фона вашу drawable -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <!-- для Android 5+ вы можете поменять цвет colorPrimaryDark, чтобы соответствовать цвету windowBackground -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Style for a category of vocabulary words -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:background">#800080</item>
+    </style>
+
+    <style name="TextViewPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ToolBarTextView" parent="TextViewPrimary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginRight">4sp</item>
+        <item name="android:layout_marginBottom">4sp</item>
+        <item name="android:layout_marginLeft">4sp</item>
+    </style>
+
+    <style name="SettingsDialogTextViewPrimary" parent="ToolBarTextView">
+        <item name="android:layout_marginTop">30sp</item>
+        <item name="android:layout_marginBottom">8sp</item>
+    </style>
+
+    <style name="FilterDialogTextViewPrimary" parent="ToolBarTextView">
+        <item name="android:layout_marginTop">30sp</item>
+    </style>
+
+    <style name="FilterDialogEditTextPrimary">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:layout_marginTop">8sp</item>
+        <item name="android:layout_marginRight">4sp</item>
+        <item name="android:layout_marginBottom">4sp</item>
+        <item name="android:layout_marginLeft">4sp</item>
+    </style>
+
+    <style name="FilterDialogSingleCheckBoxPrimary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FilterDialogMultiplyCheckBoxPrimary">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewPrimary">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewLabel" parent="FilmInfoActivityTextViewPrimary">
+        <item name="android:layout_weight">38</item>
+        <item name="android:paddingLeft">6sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewAbout" parent="FilmInfoActivityTextViewPrimary">
+        <item name="android:layout_weight">62</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewPrimaryConstraint">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/my_custom_background</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewLabelConstraint" parent="FilmInfoActivityTextViewPrimaryConstraint">
+        <item name="android:layout_weight">38</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="FilmInfoActivityTextViewAboutConstraint" parent="FilmInfoActivityTextViewPrimaryConstraint">
+        <item name="android:layout_weight">62</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

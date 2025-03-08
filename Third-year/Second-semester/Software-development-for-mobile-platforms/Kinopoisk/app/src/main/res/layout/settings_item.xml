@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/baseline_settings_white_36"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#32CD32"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        style="@style/ToolBarTextView"
+        android:text="@string/settings_text_view_font_size"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="8" />
+
+    <TextView
+        style="@style/SettingsDialogTextViewPrimary"
+        android:text="@string/settings_text_view_choose_font" />
+
+    <Spinner
+        android:id="@+id/app_fonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/SettingsDialogTextViewPrimary"
+        android:text="@string/settings_text_view_choose_locale" />
+
+    <Spinner
+        android:id="@+id/app_locales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/film_adding_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#32CD32"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/baseline_add_white_36"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/film_adding_label_name"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="10dp"
+            android:text="@string/film_adding_label_name_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_item_image" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_name_string"
+            android:inputType="textShortMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_name"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_description"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_description_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_name" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_description_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_description"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_tag_line"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_tag_line_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_description" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_tag_line"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_tag_line_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_tag_line"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_director"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_director_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_tag_line" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_director"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_director_string"
+            android:inputType="textShortMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_director"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_genres"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_genres_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_director" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_genres"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_genres_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_genres"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_release_year"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_release_year_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_genres" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_release_year"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_release_year_string"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_release_year"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_duration"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_duration_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_release_year" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_duration"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_duration_string"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_duration"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_views"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_views_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_duration" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_views"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_views_string"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_views"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_ratings_sum"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_ratings_sum_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_views" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_ratings_sum"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_ratings_sum_string"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_ratings_sum"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_poster_URI"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_poster_URI_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_ratings_sum" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_poster_URI"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_poster_URI_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_poster_URI"
+            tools:ignore="TextFields"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/film_adding_label_trailer_local_file"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_trailer_local_file_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_poster_URI" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_trailer_local_file"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_trailer_local_file_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_trailer_local_file"
+            tools:ignore="TextFields"
+            android:autofillHints="" />
+
+        <CheckBox
+            android:id="@+id/film_adding_checkbox_trailer_local_file"
+            style="@style/FilterDialogSingleCheckBoxPrimary"
+            android:layout_width="0dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/film_adding_checkbox_trailer_local_file_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_trailer_local_file" />
+
+        <TextView
+            android:id="@+id/film_adding_label_trailer_URI"
+            style="@style/ToolBarTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_adding_label_trailer_URI_string"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_checkbox_trailer_local_file" />
+
+        <EditText
+            android:id="@+id/film_adding_edit_text_trailer_URI"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:hint="@string/film_adding_edit_text_trailer_URI_string"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_label_trailer_URI"
+            tools:ignore="TextFields"
+            android:autofillHints="" />
+
+        <CheckBox
+            android:id="@+id/film_adding_checkbox_trailer_URI"
+            style="@style/FilterDialogSingleCheckBoxPrimary"
+            android:layout_width="0dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/film_adding_checkbox_trailer_URI_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_edit_text_trailer_URI" />
+
+        <CheckBox
+            android:id="@+id/film_adding_checkbox_add_film"
+            style="@style/FilterDialogSingleCheckBoxPrimary"
+            android:layout_width="0dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/film_adding_checkbox_add_film_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_adding_checkbox_trailer_URI" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

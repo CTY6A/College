@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/baseline_filter_list_white_36"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:scaleType="center"
+            android:background="#32CD32"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            style="@style/ToolBarTextView"
+            android:text="@string/filter_tv_views"
+            android:layout_marginTop="8sp"/>
+
+        <LinearLayout
+            android:id="@+id/filter_views_range_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_filter_views_start"
+                style="@style/FilterDialogEditTextPrimary"
+                android:hint="@string/views_start_hint" />
+
+            <EditText
+                android:id="@+id/edit_text_filter_views_end"
+                style="@style/FilterDialogEditTextPrimary"
+                android:hint="@string/views_end_hint" />
+        </LinearLayout>
+
+        <CheckBox android:id="@+id/filter_checkbox_views"
+            style="@style/FilterDialogSingleCheckBoxPrimary"
+            android:text="@string/views_range_checkbox_text" />
+
+        <TextView
+            style="@style/FilterDialogTextViewPrimary"
+            android:text="@string/filter_tv_sorting_name" />
+
+        <LinearLayout
+            android:id="@+id/filter_sorting_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox android:id="@+id/filter_checkbox_sorting_name_ascending"
+                style="@style/FilterDialogMultiplyCheckBoxPrimary"
+                android:text="@string/filter_checkbox_sorting_name_ascending" />
+
+            <CheckBox android:id="@+id/filter_checkbox_sorting_name_descending"
+                style="@style/FilterDialogMultiplyCheckBoxPrimary"
+                android:text="@string/filter_checkbox_sorting_name_descending" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/FilterDialogTextViewPrimary"
+            android:text="@string/filter_tv_sorting_rating" />
+
+        <LinearLayout
+            android:id="@+id/filter_sorting_rating_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox android:id="@+id/filter_checkbox_sorting_rating_ascending"
+                style="@style/FilterDialogMultiplyCheckBoxPrimary"
+                android:text="@string/filter_checkbox_sorting_rating_ascending" />
+
+            <CheckBox android:id="@+id/filter_checkbox_sorting_rating_descending"
+                style="@style/FilterDialogMultiplyCheckBoxPrimary"
+                android:text="@string/filter_checkbox_sorting_rating_descending" />
+
+        </LinearLayout>
+
+        <CheckBox android:id="@+id/filter_checkbox_all_films"
+            style="@style/FilterDialogSingleCheckBoxPrimary"
+            android:text="@string/filter_checkbox_all_films_text"
+            android:layout_marginTop="30sp"/>
+
+    </LinearLayout>
+</ScrollView>
