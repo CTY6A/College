@@ -1,0 +1,4 @@
+vhdl work "NOR2.vhd"
+vhdl work "Inv.vhd"
+vhdl work "AND2.vhd"
+vhdl work "D_Enable_Latch_Struct_with_delay.vhd"

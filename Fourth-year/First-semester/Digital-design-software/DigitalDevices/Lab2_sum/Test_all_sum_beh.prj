@@ -1,0 +1,4 @@
+vhdl work "sum1.vhd"
+vhdl work "sum2.vhd"
+vhdl work "Lab2_sum.vhd"
+vhdl work "Test_all_sum.vhd"

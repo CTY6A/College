@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/LabsPOCP/Lab1/TestMultiplexor_isim_beh.exe" -prj "C:/Users/User/Desktop/LabsPOCP/Lab1/TestMultiplexor_beh.prj" "work.TestMultiplexor" 

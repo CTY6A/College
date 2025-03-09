@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab4/LFSR_Out.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab4/LFSR_Out.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab4/LFSR_Out.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab4/LFSR_Out.syr" 

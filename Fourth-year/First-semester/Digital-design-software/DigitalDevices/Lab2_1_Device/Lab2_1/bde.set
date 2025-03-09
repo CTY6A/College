@@ -1,0 +1,124 @@
+##########
+ARCHITECTURE
+0
+##########
+ARRAY RANGE DECLARATION
+1
+##########
+ARRAY VALUE
+0
+##########
+ATTRIBUTES
+0
+##########
+BUS DEFAULT TYPE
+STD_LOGIC_VECTOR
+##########
+CHECK DIAGRAM
+YES
+##########
+COMMENT
+0
+##########
+COMPONENT
+0
+##########
+DEFAULT BDE LANGUAGE
+VHDL
+##########
+GENERIC ACTUAL VALUES
+0
+##########
+GENERIC DECLARATIONS
+0
+##########
+GND DEFAULT TYPE
+STD_LOGIC
+##########
+GND DEFAULT VALUE
+'0'
+##########
+HANGING WIRE DEFAULT TYPE
+STD_LOGIC
+##########
+HANGING WIRE DEFAULT VALUE
+'Z'
+##########
+IMPLEMENTATION TYPE
+0
+##########
+INCLUDE ACTIVE LIBRARY CLAUSE
+0
+##########
+INCREMENT NET FACTOR
+1
+##########
+INCREMENT NET START
+0
+##########
+INCREMENT NETS
+0
+##########
+INITIAL VALUE
+0
+##########
+LIBRARIES
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_signed.all;
+use IEEE.std_logic_unsigned.all;
+##########
+LIBRARY
+0
+##########
+NAME
+1
+##########
+PAGE_DEFAULT_HEIGHT
+1700
+##########
+PAGE_DEFAULT_WIDTH
+2200
+##########
+PRIMARY DESIGN LIBRARY
+Lab2_1
+##########
+SYMBOL ATTRIBUTES
+0
+##########
+SYMBOL LANGUAGE
+0
+##########
+USE GLOBAL DEFAULTS
+1
+##########
+VCC DEFAULT TYPE
+STD_LOGIC
+##########
+VCC DEFAULT VALUE
+'1'
+##########
+VERILOG DANGLING DEFAULT VALUE
+1'bZ
+##########
+VERILOG DESIGN UNIT HEADER
+`timescale 1ps / 1ps
+##########
+VERILOG GND DEFAULT TYPE
+supply0
+##########
+VERILOG GND DEFAULT VALUE
+1'b0
+##########
+VERILOG VCC DEFAULT TYPE
+supply1
+##########
+VERILOG VCC DEFAULT VALUE
+1'b1
+##########
+VHDL TYPE
+0
+##########
+WIRE DEFAULT TYPE
+STD_LOGIC

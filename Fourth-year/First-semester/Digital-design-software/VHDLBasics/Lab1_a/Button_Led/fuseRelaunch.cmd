@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/LabsPOCP/Lab1_a/Button_Led/Test_Button_Led_isim_beh.exe" -prj "C:/Users/User/Desktop/LabsPOCP/Lab1_a/Button_Led/Test_Button_Led_beh.prj" "work.Test_Button_Led" 

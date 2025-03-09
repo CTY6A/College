@@ -1,0 +1,2 @@
+vhdl isim_temp "Lab2_sum.vhd"
+vhdl isim_temp "Test_all_sum2.vhd"

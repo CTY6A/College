@@ -1,0 +1,116 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=Lab2_1
+
+[Library]
+Lab2_1=.\Lab2_1\Lab2_1.lib
+
+[$LibMap$]
+Lab2_1=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=sum_testbensh|sum_TestBensh|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/mux2_schema.bde=-1
+/mux2_schema.asdb=-1
+/mux2_schema.awc=-1
+/mux2_schema1.asdb=-1
+/mux2_schema1.awc=-1
+/mux2_2_schema.bde=-1
+/mux2_2_schema.asdb=-1
+/mux2_2_schema.awc=-1
+/mux2_2_shema.asdb=-1
+/mux2_2_shema.awc=-1
+/mux_schema3.bde=-1
+/mux_schema3.asdb=-1
+/mux_schema3.awc=-1
+/mux_schema3_1.asdb=-1
+/mux_schema3_1.awc=-1
+/sum1.bde=-1
+/sum1.asdb=-1
+/sum1.awc=-1
+/sum2.bde=-1
+/sum2.asdb=-1
+/sum2.awc=-1
+/sum21.asdb=-1
+/sum21.awc=-1
+/sum2_1.bde=-1
+/sum_TestBensh.bde=-1
+/sum_TestBench.asdb=-1
+/sum_TestBench.awc=-1
+
+[Files.Data]
+.\src\mux2_schema.bde=Block Diagram
+.\src\mux2_schema.asdb=Accelerated Waveform File
+.\src\mux2_schema.awc=Accelerated Waveform Configuration
+.\src\mux2_schema1.asdb=Accelerated Waveform File
+.\src\mux2_schema1.awc=Accelerated Waveform Configuration
+.\src\mux2_2_schema.bde=Block Diagram
+.\src\mux2_2_schema.asdb=Accelerated Waveform File
+.\src\mux2_2_schema.awc=Accelerated Waveform Configuration
+.\src\mux2_2_shema.asdb=Accelerated Waveform File
+.\src\mux2_2_shema.awc=Accelerated Waveform Configuration
+.\src\mux_schema3.bde=Block Diagram
+.\src\mux_schema3.asdb=Accelerated Waveform File
+.\src\mux_schema3.awc=Accelerated Waveform Configuration
+.\src\mux_schema3_1.asdb=Accelerated Waveform File
+.\src\mux_schema3_1.awc=Accelerated Waveform Configuration
+.\src\sum1.bde=Block Diagram
+.\src\sum1.asdb=Accelerated Waveform File
+.\src\sum1.awc=Accelerated Waveform Configuration
+.\src\sum2.bde=Block Diagram
+.\src\sum2.asdb=Accelerated Waveform File
+.\src\sum2.awc=Accelerated Waveform Configuration
+.\src\sum21.asdb=Accelerated Waveform File
+.\src\sum21.awc=Accelerated Waveform Configuration
+.\src\sum2_1.bde=Block Diagram
+.\src\sum_TestBensh.bde=Block Diagram
+.\src\sum_TestBench.asdb=Accelerated Waveform File
+.\src\sum_TestBench.awc=Accelerated Waveform Configuration
+
+[file_out:/mux2_schema.bde]
+/..\compile\mux2_schema.vhd=-1
+
+[file_out:/mux2_2_schema.bde]
+/..\compile\mux2_2_schema.vhd=-1
+
+[file_out:/mux_schema3.bde]
+/..\compile\mux_schema3.vhd=-1
+
+
+[file_out:/sum2.bde]
+/..\compile\sum2.vhd=-1
+
+[file_out:/sum2_1.bde]
+/..\compile\sum2_TestBench.vhd=-1
+/..\compile\sum2_1.vhd=-1
+
+[file_out:/sum_TestBensh.bde]
+/..\compile\sum_TestBensh.vhd=-1
+
+[file_out:/sum1.bde]
+/..\compile\sum1.vhd=-1

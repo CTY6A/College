@@ -1,0 +1,2 @@
+vhdl work "NOR2.vhd"
+vhdl work "RS_Latch_with_delay.vhd"

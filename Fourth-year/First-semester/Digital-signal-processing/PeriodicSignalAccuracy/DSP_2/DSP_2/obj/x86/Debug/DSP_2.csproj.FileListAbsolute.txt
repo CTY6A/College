@@ -1,0 +1,17 @@
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\trDSP.exe
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\trDSP.pdb
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\bin\Debug\trDSP.exe
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\bin\Debug\trDSP.pdb
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\trDSP.DSP_2.resources
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\trDSP.Properties.Resources.resources
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\WorkMaterials\ЦОС\DSP_2\DSP_2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\User\Desktop\DSP_2\DSP_2\bin\Debug\trDSP.exe
+C:\Users\User\Desktop\DSP_2\DSP_2\bin\Debug\trDSP.pdb
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\DSP_2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\trDSP.DSP_2.resources
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\trDSP.Properties.Resources.resources
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\DSP_2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\trDSP.exe
+C:\Users\User\Desktop\DSP_2\DSP_2\obj\x86\Debug\trDSP.pdb

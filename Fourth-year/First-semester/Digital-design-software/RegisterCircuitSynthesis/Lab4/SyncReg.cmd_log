@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab4/SyncReg.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab4/SyncReg.syr" 

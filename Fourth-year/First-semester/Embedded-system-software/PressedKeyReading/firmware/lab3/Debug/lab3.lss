@@ -1,0 +1,488 @@
+
+lab3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000018  00800100  00000240  000002d4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000240  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800118  00800118  000002ec  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000031c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000048  00000000  00000000  0000035c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000969  00000000  00000000  000003a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000727  00000000  00000000  00000d0d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003d4  00000000  00000000  00001434  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000007c  00000000  00000000  00001808  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000003a8  00000000  00000000  00001884  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000001d5  00000000  00000000  00001c2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000068  00000000  00000000  00001e01  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+   8:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+   c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  10:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  14:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  18:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  1c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  20:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  24:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  28:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  2c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  30:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  34:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  38:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  3c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  40:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  44:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  48:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  4c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  50:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  54:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  58:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  5c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  60:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  64:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	11 e0       	ldi	r17, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	e0 e4       	ldi	r30, 0x40	; 64
+  7c:	f2 e0       	ldi	r31, 0x02	; 2
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+  84:	a8 31       	cpi	r26, 0x18	; 24
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+
+0000008a <__do_clear_bss>:
+  8a:	21 e0       	ldi	r18, 0x01	; 1
+  8c:	a8 e1       	ldi	r26, 0x18	; 24
+  8e:	b1 e0       	ldi	r27, 0x01	; 1
+  90:	01 c0       	rjmp	.+2      	; 0x94 <.do_clear_bss_start>
+
+00000092 <.do_clear_bss_loop>:
+  92:	1d 92       	st	X+, r1
+
+00000094 <.do_clear_bss_start>:
+  94:	ac 31       	cpi	r26, 0x1C	; 28
+  96:	b2 07       	cpc	r27, r18
+  98:	e1 f7       	brne	.-8      	; 0x92 <.do_clear_bss_loop>
+  9a:	0e 94 fd 00 	call	0x1fa	; 0x1fa <main>
+  9e:	0c 94 1e 01 	jmp	0x23c	; 0x23c <_exit>
+
+000000a2 <__bad_interrupt>:
+  a2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000a6 <send_to_MAX7219>:
+#define GET_BIT(port, n) (port & BIT(n))
+// https://chipenable.ru/index.php/programming-avr/item/138-avr-spi-module-part2.html?tmpl=component&print=1
+
+void send_to_MAX7219(uint8_t reg, uint8_t digit)
+{
+	PORTB &= ~BIT(PORTB2);	
+  a6:	2a 98       	cbi	0x05, 2	; 5
+	SPDR = reg;
+  a8:	8e bd       	out	0x2e, r24	; 46
+	while (!(SPSR & BIT(SPIF)));
+  aa:	0d b4       	in	r0, 0x2d	; 45
+  ac:	07 fe       	sbrs	r0, 7
+  ae:	fd cf       	rjmp	.-6      	; 0xaa <send_to_MAX7219+0x4>
+	SPDR = digit;
+  b0:	6e bd       	out	0x2e, r22	; 46
+	while (!(SPSR & BIT(SPIF)));
+  b2:	0d b4       	in	r0, 0x2d	; 45
+  b4:	07 fe       	sbrs	r0, 7
+  b6:	fd cf       	rjmp	.-6      	; 0xb2 <send_to_MAX7219+0xc>
+	PORTB |= BIT(PORTB2);
+  b8:	2a 9a       	sbi	0x05, 2	; 5
+  ba:	08 95       	ret
+
+000000bc <clear>:
+}
+
+void clear()
+{	
+  bc:	cf 93       	push	r28
+  be:	c0 e0       	ldi	r28, 0x00	; 0
+	for (int i = 0; i < SEG_COUNT; i++)
+	{
+		send_to_MAX7219(i, 0xF);		
+  c0:	6f e0       	ldi	r22, 0x0F	; 15
+  c2:	8c 2f       	mov	r24, r28
+  c4:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+  c8:	cf 5f       	subi	r28, 0xFF	; 255
+	PORTB |= BIT(PORTB2);
+}
+
+void clear()
+{	
+	for (int i = 0; i < SEG_COUNT; i++)
+  ca:	c4 30       	cpi	r28, 0x04	; 4
+  cc:	c9 f7       	brne	.-14     	; 0xc0 <clear+0x4>
+	{
+		send_to_MAX7219(i, 0xF);		
+	}
+}
+  ce:	cf 91       	pop	r28
+  d0:	08 95       	ret
+
+000000d2 <init_MAX7219>:
+
+void init_MAX7219()
+{
+	DDRB |= (BIT(PORTB2) | BIT(PORTB3) | BIT(PORTB5));
+  d2:	84 b1       	in	r24, 0x04	; 4
+  d4:	8c 62       	ori	r24, 0x2C	; 44
+  d6:	84 b9       	out	0x04, r24	; 4
+	PORTB &= ~(BIT(PORTB2) | BIT(PORTB3) | BIT(PORTB5));
+  d8:	85 b1       	in	r24, 0x05	; 5
+  da:	83 7d       	andi	r24, 0xD3	; 211
+  dc:	85 b9       	out	0x05, r24	; 5
+	SPCR |= BIT(SPE) | BIT(MSTR)| BIT(SPR0);
+  de:	8c b5       	in	r24, 0x2c	; 44
+  e0:	81 65       	ori	r24, 0x51	; 81
+  e2:	8c bd       	out	0x2c, r24	; 44
+	
+	send_to_MAX7219(0x09, 0x0F);// set decode mode
+  e4:	6f e0       	ldi	r22, 0x0F	; 15
+  e6:	89 e0       	ldi	r24, 0x09	; 9
+  e8:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+	send_to_MAX7219(0x0B, SEG_COUNT - 1);// set bit count
+  ec:	63 e0       	ldi	r22, 0x03	; 3
+  ee:	8b e0       	ldi	r24, 0x0B	; 11
+  f0:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+	send_to_MAX7219(0x0A, 0x02);// set brightness
+  f4:	62 e0       	ldi	r22, 0x02	; 2
+  f6:	8a e0       	ldi	r24, 0x0A	; 10
+  f8:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+	send_to_MAX7219(0x0C, 1);	// set switch on
+  fc:	61 e0       	ldi	r22, 0x01	; 1
+  fe:	8c e0       	ldi	r24, 0x0C	; 12
+ 100:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+	
+	clear();
+ 104:	0e 94 5e 00 	call	0xbc	; 0xbc <clear>
+ 108:	08 95       	ret
+
+0000010a <get_pressed_key>:
+};
+
+char t,nt;
+int get_pressed_key()
+{
+	DDRD = 0x00; 
+ 10a:	1a b8       	out	0x0a, r1	; 10
+	PORTD = 0x0F;
+ 10c:	8f e0       	ldi	r24, 0x0F	; 15
+ 10e:	8b b9       	out	0x0b, r24	; 11
+	DDRC = 0x0F;
+ 110:	87 b9       	out	0x07, r24	; 7
+	PORTC = 0x00;
+ 112:	18 b8       	out	0x08, r1	; 8
+	int i = 4;
+	if (!GET_BIT(PIND, PIND0)) 
+ 114:	48 99       	sbic	0x09, 0	; 9
+ 116:	03 c0       	rjmp	.+6      	; 0x11e <get_pressed_key+0x14>
+		i = 0;
+ 118:	e0 e0       	ldi	r30, 0x00	; 0
+ 11a:	f0 e0       	ldi	r31, 0x00	; 0
+ 11c:	02 c0       	rjmp	.+4      	; 0x122 <get_pressed_key+0x18>
+{
+	DDRD = 0x00; 
+	PORTD = 0x0F;
+	DDRC = 0x0F;
+	PORTC = 0x00;
+	int i = 4;
+ 11e:	e4 e0       	ldi	r30, 0x04	; 4
+ 120:	f0 e0       	ldi	r31, 0x00	; 0
+	if (!GET_BIT(PIND, PIND0)) 
+		i = 0;
+	if (!GET_BIT(PIND, PIND1)) 
+ 122:	49 99       	sbic	0x09, 1	; 9
+ 124:	02 c0       	rjmp	.+4      	; 0x12a <get_pressed_key+0x20>
+		i = 1;
+ 126:	e1 e0       	ldi	r30, 0x01	; 1
+ 128:	f0 e0       	ldi	r31, 0x00	; 0
+	if (!GET_BIT(PIND, PIND2)) 
+ 12a:	4a 99       	sbic	0x09, 2	; 9
+ 12c:	02 c0       	rjmp	.+4      	; 0x132 <get_pressed_key+0x28>
+		i = 2;
+ 12e:	e2 e0       	ldi	r30, 0x02	; 2
+ 130:	f0 e0       	ldi	r31, 0x00	; 0
+	if (!GET_BIT(PIND, PIND3)) 
+ 132:	4b 99       	sbic	0x09, 3	; 9
+ 134:	02 c0       	rjmp	.+4      	; 0x13a <get_pressed_key+0x30>
+		i = 3;
+ 136:	e3 e0       	ldi	r30, 0x03	; 3
+ 138:	f0 e0       	ldi	r31, 0x00	; 0
+		
+	DDRD = 0x0F;
+ 13a:	8f e0       	ldi	r24, 0x0F	; 15
+ 13c:	8a b9       	out	0x0a, r24	; 10
+	PORTD = 0x00;
+ 13e:	1b b8       	out	0x0b, r1	; 11
+	DDRC = 0x00;
+ 140:	17 b8       	out	0x07, r1	; 7
+	PORTC = 0x0F;
+ 142:	88 b9       	out	0x08, r24	; 8
+
+	int j = 3;
+	if (!GET_BIT(PINC, PINC0)) 
+ 144:	30 99       	sbic	0x06, 0	; 6
+ 146:	03 c0       	rjmp	.+6      	; 0x14e <get_pressed_key+0x44>
+		j = 0;
+ 148:	80 e0       	ldi	r24, 0x00	; 0
+ 14a:	90 e0       	ldi	r25, 0x00	; 0
+ 14c:	02 c0       	rjmp	.+4      	; 0x152 <get_pressed_key+0x48>
+	DDRD = 0x0F;
+	PORTD = 0x00;
+	DDRC = 0x00;
+	PORTC = 0x0F;
+
+	int j = 3;
+ 14e:	83 e0       	ldi	r24, 0x03	; 3
+ 150:	90 e0       	ldi	r25, 0x00	; 0
+	if (!GET_BIT(PINC, PINC0)) 
+		j = 0;
+	if (!GET_BIT(PINC, PINC1)) 
+ 152:	31 99       	sbic	0x06, 1	; 6
+ 154:	02 c0       	rjmp	.+4      	; 0x15a <get_pressed_key+0x50>
+		j = 1;
+ 156:	81 e0       	ldi	r24, 0x01	; 1
+ 158:	90 e0       	ldi	r25, 0x00	; 0
+	if (!GET_BIT(PINC, PINC2)) 
+ 15a:	32 9b       	sbis	0x06, 2	; 6
+ 15c:	1d c0       	rjmp	.+58     	; 0x198 <get_pressed_key+0x8e>
+		j = 2;
+		
+	if ((i < 4) && (j < 3))
+ 15e:	e4 30       	cpi	r30, 0x04	; 4
+ 160:	f1 05       	cpc	r31, r1
+ 162:	a4 f4       	brge	.+40     	; 0x18c <get_pressed_key+0x82>
+ 164:	83 30       	cpi	r24, 0x03	; 3
+ 166:	91 05       	cpc	r25, r1
+ 168:	1c f0       	brlt	.+6      	; 0x170 <get_pressed_key+0x66>
+ 16a:	13 c0       	rjmp	.+38     	; 0x192 <get_pressed_key+0x88>
+	if (!GET_BIT(PINC, PINC0)) 
+		j = 0;
+	if (!GET_BIT(PINC, PINC1)) 
+		j = 1;
+	if (!GET_BIT(PINC, PINC2)) 
+		j = 2;
+ 16c:	82 e0       	ldi	r24, 0x02	; 2
+ 16e:	90 e0       	ldi	r25, 0x00	; 0
+		
+	if ((i < 4) && (j < 3))
+		return keys[i][j];
+ 170:	9f 01       	movw	r18, r30
+ 172:	22 0f       	add	r18, r18
+ 174:	33 1f       	adc	r19, r19
+ 176:	e2 0f       	add	r30, r18
+ 178:	f3 1f       	adc	r31, r19
+ 17a:	e8 0f       	add	r30, r24
+ 17c:	f9 1f       	adc	r31, r25
+ 17e:	ee 0f       	add	r30, r30
+ 180:	ff 1f       	adc	r31, r31
+ 182:	e0 50       	subi	r30, 0x00	; 0
+ 184:	ff 4f       	sbci	r31, 0xFF	; 255
+ 186:	80 81       	ld	r24, Z
+ 188:	91 81       	ldd	r25, Z+1	; 0x01
+ 18a:	08 95       	ret
+	return -1;
+ 18c:	8f ef       	ldi	r24, 0xFF	; 255
+ 18e:	9f ef       	ldi	r25, 0xFF	; 255
+ 190:	08 95       	ret
+ 192:	8f ef       	ldi	r24, 0xFF	; 255
+ 194:	9f ef       	ldi	r25, 0xFF	; 255
+ 196:	08 95       	ret
+	if (!GET_BIT(PINC, PINC1)) 
+		j = 1;
+	if (!GET_BIT(PINC, PINC2)) 
+		j = 2;
+		
+	if ((i < 4) && (j < 3))
+ 198:	e4 30       	cpi	r30, 0x04	; 4
+ 19a:	f1 05       	cpc	r31, r1
+ 19c:	3c f3       	brlt	.-50     	; 0x16c <get_pressed_key+0x62>
+		return keys[i][j];
+	return -1;
+ 19e:	8f ef       	ldi	r24, 0xFF	; 255
+ 1a0:	9f ef       	ldi	r25, 0xFF	; 255
+}
+ 1a2:	08 95       	ret
+
+000001a4 <to_Jons>:
+};
+
+uint8_t JonsNumber[4] = {0, 0, 0, 0};
+
+void to_Jons(int number)
+{	
+ 1a4:	fc 01       	movw	r30, r24
+	for (int i = 0; i < 4; i++)
+	{		
+		JonsNumber[i] = 0;
+ 1a6:	a8 e1       	ldi	r26, 0x18	; 24
+ 1a8:	b1 e0       	ldi	r27, 0x01	; 1
+ 1aa:	1c 92       	st	X, r1
+ 1ac:	11 96       	adiw	r26, 0x01	; 1
+ 1ae:	1c 92       	st	X, r1
+ 1b0:	11 97       	sbiw	r26, 0x01	; 1
+ 1b2:	12 96       	adiw	r26, 0x02	; 2
+ 1b4:	1c 92       	st	X, r1
+ 1b6:	12 97       	sbiw	r26, 0x02	; 2
+ 1b8:	13 96       	adiw	r26, 0x03	; 3
+ 1ba:	1c 92       	st	X, r1
+	}
+	for (int i = 0; i < number; i++)
+ 1bc:	18 16       	cp	r1, r24
+ 1be:	19 06       	cpc	r1, r25
+ 1c0:	dc f4       	brge	.+54     	; 0x1f8 <to_Jons+0x54>
+ 1c2:	60 e0       	ldi	r22, 0x00	; 0
+ 1c4:	70 e0       	ldi	r23, 0x00	; 0
+ 1c6:	50 e0       	ldi	r21, 0x00	; 0
+ 1c8:	40 e0       	ldi	r20, 0x00	; 0
+ 1ca:	20 e0       	ldi	r18, 0x00	; 0
+ 1cc:	30 e0       	ldi	r19, 0x00	; 0
+	{
+		uint8_t firstBit = JonsNumber[0];
+		firstBit = !firstBit;
+ 1ce:	81 e0       	ldi	r24, 0x01	; 1
+ 1d0:	a0 e0       	ldi	r26, 0x00	; 0
+ 1d2:	03 c0       	rjmp	.+6      	; 0x1da <to_Jons+0x36>
+		for (int j = 0; j < 3; j++)
+		{
+			JonsNumber[j] = JonsNumber[j+1];
+ 1d4:	57 2f       	mov	r21, r23
+ 1d6:	76 2f       	mov	r23, r22
+		}
+		JonsNumber[3] = firstBit;
+ 1d8:	69 2f       	mov	r22, r25
+		JonsNumber[i] = 0;
+	}
+	for (int i = 0; i < number; i++)
+	{
+		uint8_t firstBit = JonsNumber[0];
+		firstBit = !firstBit;
+ 1da:	98 2f       	mov	r25, r24
+ 1dc:	41 11       	cpse	r20, r1
+ 1de:	9a 2f       	mov	r25, r26
+{	
+	for (int i = 0; i < 4; i++)
+	{		
+		JonsNumber[i] = 0;
+	}
+	for (int i = 0; i < number; i++)
+ 1e0:	2f 5f       	subi	r18, 0xFF	; 255
+ 1e2:	3f 4f       	sbci	r19, 0xFF	; 255
+	{
+		uint8_t firstBit = JonsNumber[0];
+		firstBit = !firstBit;
+		for (int j = 0; j < 3; j++)
+		{
+			JonsNumber[j] = JonsNumber[j+1];
+ 1e4:	45 2f       	mov	r20, r21
+{	
+	for (int i = 0; i < 4; i++)
+	{		
+		JonsNumber[i] = 0;
+	}
+	for (int i = 0; i < number; i++)
+ 1e6:	e2 17       	cp	r30, r18
+ 1e8:	f3 07       	cpc	r31, r19
+ 1ea:	a1 f7       	brne	.-24     	; 0x1d4 <to_Jons+0x30>
+ 1ec:	e8 e1       	ldi	r30, 0x18	; 24
+ 1ee:	f1 e0       	ldi	r31, 0x01	; 1
+ 1f0:	50 83       	st	Z, r21
+ 1f2:	71 83       	std	Z+1, r23	; 0x01
+ 1f4:	62 83       	std	Z+2, r22	; 0x02
+ 1f6:	93 83       	std	Z+3, r25	; 0x03
+ 1f8:	08 95       	ret
+
+000001fa <main>:
+	}
+}
+
+int main(void)
+{
+	init_MAX7219();
+ 1fa:	0e 94 69 00 	call	0xd2	; 0xd2 <init_MAX7219>
+	{
+		int key = get_pressed_key();
+		if(key >= 0 && key <= 7)
+		{
+			to_Jons(key);
+			send_to_MAX7219(1, JonsNumber[0]);			
+ 1fe:	c8 e1       	ldi	r28, 0x18	; 24
+ 200:	d1 e0       	ldi	r29, 0x01	; 1
+int main(void)
+{
+	init_MAX7219();
+	while (1)
+	{
+		int key = get_pressed_key();
+ 202:	0e 94 85 00 	call	0x10a	; 0x10a <get_pressed_key>
+		if(key >= 0 && key <= 7)
+ 206:	88 30       	cpi	r24, 0x08	; 8
+ 208:	91 05       	cpc	r25, r1
+ 20a:	98 f4       	brcc	.+38     	; 0x232 <main+0x38>
+		{
+			to_Jons(key);
+ 20c:	0e 94 d2 00 	call	0x1a4	; 0x1a4 <to_Jons>
+			send_to_MAX7219(1, JonsNumber[0]);			
+ 210:	68 81       	ld	r22, Y
+ 212:	81 e0       	ldi	r24, 0x01	; 1
+ 214:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+			send_to_MAX7219(2, JonsNumber[1]);
+ 218:	69 81       	ldd	r22, Y+1	; 0x01
+ 21a:	82 e0       	ldi	r24, 0x02	; 2
+ 21c:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+			send_to_MAX7219(3, JonsNumber[2]);
+ 220:	6a 81       	ldd	r22, Y+2	; 0x02
+ 222:	83 e0       	ldi	r24, 0x03	; 3
+ 224:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+			send_to_MAX7219(4, JonsNumber[3]);
+ 228:	6b 81       	ldd	r22, Y+3	; 0x03
+ 22a:	84 e0       	ldi	r24, 0x04	; 4
+ 22c:	0e 94 53 00 	call	0xa6	; 0xa6 <send_to_MAX7219>
+ 230:	e8 cf       	rjmp	.-48     	; 0x202 <main+0x8>
+		} else if (key == RESET_KEY)
+ 232:	02 96       	adiw	r24, 0x02	; 2
+ 234:	31 f7       	brne	.-52     	; 0x202 <main+0x8>
+		{
+			clear();
+ 236:	0e 94 5e 00 	call	0xbc	; 0xbc <clear>
+ 23a:	e3 cf       	rjmp	.-58     	; 0x202 <main+0x8>
+
+0000023c <_exit>:
+ 23c:	f8 94       	cli
+
+0000023e <__stop_program>:
+ 23e:	ff cf       	rjmp	.-2      	; 0x23e <__stop_program>

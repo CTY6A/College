@@ -1,0 +1,9 @@
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\bin\Debug\DSP_3.exe
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\bin\Debug\DSP_3.pdb
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\DSP_3.MainForm.resources
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\DSP_3.Properties.Resources.resources
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\DSP_3.exe
+E:\WorkMaterials\ЦОС\DSP_3\DSP_3\obj\x86\Debug\DSP_3.pdb

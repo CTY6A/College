@@ -1,0 +1,29 @@
+Command line:
+   Test_Button_Led_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50101
+
+Fri Oct 09 10:43:54 2020
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 4688.23 Meg
+
+ Total Signals          : 16
+ Total Nets             : 8
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 368
+Total Line Count : 12
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5002.8 Meg
+
+Fri Oct 09 10:46:11 2020
+

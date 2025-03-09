@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/D_Latch_struct.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/D_Latch_struct.syr" 

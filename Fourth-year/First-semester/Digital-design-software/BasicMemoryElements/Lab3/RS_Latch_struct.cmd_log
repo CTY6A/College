@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/RS_Latch_struct.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/RS_Latch_struct.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/RS_Latch_struct.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/RS_Latch_struct.syr" 

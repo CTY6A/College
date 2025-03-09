@@ -1,0 +1,19 @@
+Running: D:\Work\Instruments\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/User/Desktop/LabsPOCP/Lab3/TFF_Test_isim_beh.exe -prj C:/Users/User/Desktop/LabsPOCP/Lab3/TFF_Test_beh.prj work.TFF_Test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/User/Desktop/LabsPOCP/Lab3/TFF.vhd" into library work
+Parsing VHDL file "C:/Users/User/Desktop/LabsPOCP/Lab3/TFF_Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity TFF [tff_default]
+Compiling architecture behavior of entity tff_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/User/Desktop/LabsPOCP/Lab3/TFF_Test_isim_beh.exe
+Fuse Memory Usage: 29956 KB
+Fuse CPU Usage: 343 ms

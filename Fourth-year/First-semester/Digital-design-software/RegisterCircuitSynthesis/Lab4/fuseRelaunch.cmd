@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Desktop/LabsPOCP/Lab4/Signature_TB_isim_beh.exe" -prj "C:/Users/User/Desktop/LabsPOCP/Lab4/Signature_TB_beh.prj" "work.Signature_TB" 

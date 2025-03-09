@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab1_Button_Led/Button_Led/Button_Led.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab1_Button_Led/Button_Led/Button_Led.syr" 

@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+lab2_1=.\Lab2_1\Lab2_1.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+lab2_1=1

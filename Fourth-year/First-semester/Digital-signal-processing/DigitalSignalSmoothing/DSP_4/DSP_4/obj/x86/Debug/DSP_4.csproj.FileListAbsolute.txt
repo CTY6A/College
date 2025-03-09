@@ -1,0 +1,17 @@
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\DSP_3.exe
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\DSP_3.pdb
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\bin\Debug\DSP_3.exe
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\bin\Debug\DSP_3.pdb
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\ResolveAssemblyReference.cache
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\DSP_3.Properties.Resources.resources
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\GenerateResource.read.1.tlog
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\GenerateResource.write.1.tlog
+e:\WorkMaterials\ЦОС\DSP_4\DSP_4\obj\x86\Debug\DSP_4.MainForm.resources
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\bin\Debug\DSP_3.exe
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\bin\Debug\DSP_3.pdb
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_4.csprojAssemblyReference.cache
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_4.MainForm.resources
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_3.Properties.Resources.resources
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_4.csproj.GenerateResource.cache
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_3.exe
+C:\Users\User\Desktop\TsOS-LRs\DSP_4\DSP_4\obj\x86\Debug\DSP_3.pdb

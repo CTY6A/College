@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/D_Enable_Latch_Param.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/D_Enable_Latch_Param.syr" 

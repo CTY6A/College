@@ -1,0 +1,2 @@
+vhdl isim_temp "Button_Led.vhd"
+vhdl isim_temp "Test_Button_Led.vhd"

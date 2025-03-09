@@ -1,0 +1,29 @@
+Command line:
+   Multiplexor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52857
+
+Sat Sep 12 09:22:23 2020
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 4688.76 Meg
+
+ Total Signals          : 4
+ Total Nets             : 4
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 364
+Total Line Count : 1
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5003.34 Meg
+
+Sat Sep 12 09:23:47 2020
+

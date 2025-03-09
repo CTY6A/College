@@ -1,0 +1,1 @@
+vhdtdtfi -prj Lab4 -o C:/Users/User/Desktop/LabsPOCP/Lab4/DFF_Enable_Async.tfi -module DFF_Enable_Async -template D:/Work/Instruments/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work a.vhd 

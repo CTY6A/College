@@ -1,0 +1,9 @@
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\trDSP.Form1.resources
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\trDSP.Properties.Resources.resources
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\WorkMaterials\ЦОС\trDSP\trDSP\bin\Debug\trDSP.exe
+E:\WorkMaterials\ЦОС\trDSP\trDSP\bin\Debug\trDSP.pdb
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\trDSP.exe
+E:\WorkMaterials\ЦОС\trDSP\trDSP\obj\x86\Debug\trDSP.pdb

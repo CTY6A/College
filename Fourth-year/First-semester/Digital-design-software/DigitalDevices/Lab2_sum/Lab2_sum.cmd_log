@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Lab2_sum.ngc Lab2_sum.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Lab2_sum_map.ncd Lab2_sum.ngd Lab2_sum.pcf 
+par -w -intstyle ise -ol high -mt off Lab2_sum_map.ncd Lab2_sum.ncd Lab2_sum.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab2_sum.twx Lab2_sum.ncd -o Lab2_sum.twr Lab2_sum.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab2_sum/Lab2_sum.syr" 

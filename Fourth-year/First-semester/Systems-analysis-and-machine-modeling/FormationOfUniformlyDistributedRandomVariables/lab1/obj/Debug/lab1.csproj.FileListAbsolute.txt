@@ -1,0 +1,26 @@
+D:\BSUIR\7 семестр\САММ\lab1\lab1\bin\Debug\lab1.exe.config
+D:\BSUIR\7 семестр\САММ\lab1\lab1\bin\Debug\lab1.exe
+D:\BSUIR\7 семестр\САММ\lab1\lab1\bin\Debug\lab1.pdb
+D:\BSUIR\7 семестр\САММ\lab1\lab1\obj\Debug\lab1.MainForm.resources
+D:\BSUIR\7 семестр\САММ\lab1\lab1\obj\Debug\lab1.Properties.Resources.resources
+D:\BSUIR\7 семестр\САММ\lab1\lab1\obj\Debug\lab1.csproj.GenerateResource.Cache
+D:\BSUIR\7 семестр\САММ\lab1\lab1\obj\Debug\lab1.exe
+D:\BSUIR\7 семестр\САММ\lab1\lab1\obj\Debug\lab1.pdb
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\bin\Debug\lab1.exe.config
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\bin\Debug\lab1.exe
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\bin\Debug\lab1.pdb
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.csprojAssemblyReference.cache
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.MainForm.resources
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.exe
+C:\Users\User\Desktop\poit-labs-master\7\SAMM\lab1-2\lab1\obj\Debug\lab1.pdb
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\bin\Debug\lab1.exe.config
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\bin\Debug\lab1.exe
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\bin\Debug\lab1.pdb
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.csprojAssemblyReference.cache
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.MainForm.resources
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.exe
+C:\Users\User\Desktop\SAiMMOD_lab1-2\lab1\obj\Debug\lab1.pdb

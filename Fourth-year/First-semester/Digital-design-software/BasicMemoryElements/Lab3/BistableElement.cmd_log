@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/BistableElement.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/BistableElement.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/LabsPOCP/Lab3/BistableElement.xst" -ofn "C:/Users/User/Desktop/LabsPOCP/Lab3/BistableElement.syr" 

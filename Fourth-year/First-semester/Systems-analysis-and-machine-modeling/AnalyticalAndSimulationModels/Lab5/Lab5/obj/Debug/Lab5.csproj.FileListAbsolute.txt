@@ -1,0 +1,39 @@
+C:\Users\Любовь\source\repos\Lab5\Lab5\bin\Debug\Lab5.exe.config
+C:\Users\Любовь\source\repos\Lab5\Lab5\bin\Debug\Lab5.exe
+C:\Users\Любовь\source\repos\Lab5\Lab5\bin\Debug\Lab5.pdb
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.exe
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.pdb
+C:\Users\Любовь\source\repos\Lab5\Lab5\obj\Debug\Lab5.Form1.resources
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe.config
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.pdb
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Form1.resources
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.exe
+E:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.pdb
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe.config
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.pdb
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Form1.resources
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.exe
+D:\Занятия\7 семестр\Мод\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.pdb
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe.config
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.exe
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\bin\Debug\Lab5.pdb
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Form1.resources
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.exe
+C:\Users\User\Desktop\Lab5-6. Вариант 12б\Lab5\Lab5\obj\Debug\Lab5.pdb
