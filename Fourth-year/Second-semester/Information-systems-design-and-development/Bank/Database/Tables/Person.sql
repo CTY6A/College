@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Person]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [FirstName] NVARCHAR(50) NOT NULL, 
+    [LastName] NVARCHAR(50) NOT NULL, 
+    [Patronymic] NVARCHAR(50) NOT NULL, 
+    [CityId] UNIQUEIDENTIFIER NOT NULL, 
+    CONSTRAINT [FK_Person_To_City] FOREIGN KEY ([CityId]) REFERENCES [City](ID) 
+)

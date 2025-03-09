@@ -1,0 +1,150 @@
+﻿@model PersonEditViewModel
+
+@{
+    var err = string.Empty;
+    var upateError = ViewData.ModelState["UpdateDB"];
+    if (upateError?.Errors != null && upateError.Errors.Count > 0)
+    {
+        err = upateError.Errors[0].ErrorMessage;
+    }
+}
+<span class="text-danger">@err</span>
+<div class="form-group">
+    <label asp-for="FirstName">Имя</label><br>
+    <input asp-for="FirstName" class="form-control" />
+    <span asp-validation-for="FirstName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="LastName">Фамилия</label><br>
+    <input asp-for="LastName" class="form-control" />
+    <span asp-validation-for="LastName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Patronymic">Отчество</label><br>
+    <input asp-for="Patronymic" class="form-control" />
+    <span asp-validation-for="Patronymic" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="DateOfBirth">Дата рождения</label><br>
+    <input asp-for="DateOfBirth" class="form-control" />
+    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="SeriaPassport">Серия Пасспорта</label><br>
+    <input asp-for="SeriaPassport" class="form-control" />
+    <span asp-validation-for="SeriaPassport" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="PassportNumber">Номер Пасспорта</label><br>
+    <input asp-for="PassportNumber" class="form-control" />
+    <span asp-validation-for="PassportNumber" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="KemVidan">Кем Выдан</label><br>
+    <input asp-for="KemVidan" class="form-control" />
+    <span asp-validation-for="KemVidan" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="DateVidan">Когда Выдан</label><br>
+    <input asp-for="DateVidan" class="form-control" />
+    <span asp-validation-for="DateVidan" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="IdentNumber">Идентификационный номер</label><br>
+    <input asp-for="IdentNumber" class="form-control" />
+    <span asp-validation-for="IdentNumber" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="BirthPlace">Место Рождения</label><br>
+    <input asp-for="BirthPlace" class="form-control" />
+    <span asp-validation-for="BirthPlace" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="CityId">Город проживания</label><br>
+    <select asp-for="CityId" asp-items="@Model.Cities" class="form-control"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Address">Адрес проживания</label><br>
+    <input asp-for="Address" class="form-control" />
+    <span asp-validation-for="Address" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="HomePhone">Домашний телефон</label><br>
+    <input asp-for="HomePhone" class="form-control" />
+    <span asp-validation-for="HomePhone" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="MobPhone">Мобильный телефон</label><br>
+    <input asp-for="MobPhone" class="form-control" />
+    <span asp-validation-for="MobPhone" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Email">Почта</label><br>
+    <input asp-for="Email" class="form-control" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="WorkPlace">Место работы</label><br>
+    <input asp-for="WorkPlace" class="form-control" />
+    <span asp-validation-for="WorkPlace" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Position">Должность</label><br>
+    <input asp-for="Position" class="form-control" />
+    <span asp-validation-for="Position" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="FamilyStatus">Семейное положение</label><br>
+    <select asp-for="FamilyStatus" class="form-control">
+        @*      <option value=""></option>*@
+        <option value="0">Женат(а)</option>
+        <option value="1">Холост</option>
+        <option value="2">Не замужем</option>
+    </select>
+    <span asp-validation-for="FamilyStatus" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Nationality">Гражданство</label><br>
+    <select asp-for="Nationality" class="form-control">
+        @*        <option value=""></option>*@
+        <option value="0">Беларусь</option>
+        <option value="1">ЕС</option>
+        <option value="2">СНГ</option>
+        <option value="3">США</option>
+    </select>
+    <span asp-validation-for="Nationality" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Disability">Инвалидность</label><br>
+    <select asp-for="Disability" class="form-control">
+        @*<option value=""></option>*@
+        <option value="0">Нет</option>
+        <option value="1">1-ая группа</option>
+        <option value="2">2-ая группа</option>
+        <option value="3">3-ая группа</option>
+    </select>
+    <span asp-validation-for="Disability" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Pensioner">Пенсионер</label><br>
+    <input asp-for="Pensioner" />
+    <span asp-validation-for="Pensioner" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Salary">Зарплата</label><br>
+    <input asp-for="Salary" class="form-control" />
+    <span asp-validation-for="Salary" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Army">Военнообязаный</label><br>
+    <input asp-for="Army" />
+    <span asp-validation-for="Army" class="text-danger"></span>
+</div>
+
+
+<input type="submit" class="btn btn-primary" value="Save" />
+@*<a class="btn btn-primary" asp-controller="Course" asp-action="Index" asp-route-type="@TempData.Peek("type")"
+       asp-route-arrangement="@TempData.Peek("arrangement")" asp-route-pageNumber="@TempData.Peek("pageNumber")"
+       asp-route-perPage="@TempData.Peek("perPage")">
+        Back to List
+    </a>*@

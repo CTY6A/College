@@ -1,0 +1,97 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idPreference">
+
+    <ListPreference
+        app:defaultValue="#004D40"
+        app:entries="@array/color_entries"
+        app:entryValues="@array/color_values"
+        app:key="background_color"
+        app:title="@string/background_color"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:defaultValue="nothing"
+        app:entries="@array/signal_entries"
+        app:entryValues="@array/signal_values"
+        app:key="first_signal"
+        app:title="@string/first_signal"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:defaultValue="cyan"
+        app:entries="@array/signal_entries"
+        app:entryValues="@array/signal_values"
+        app:key="second_signal"
+        app:title="@string/second_signal"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:defaultValue="big"
+        app:entries="@array/workzone_entries"
+        app:entryValues="@array/workzone_values"
+        app:key="workzone"
+        app:title="@string/work_zone"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        app:defaultValue="true"
+        app:key="highlight_with_dotted_line"
+        app:title="@string/highlight_with_dotted_line" />
+
+    <ListPreference
+        app:defaultValue="click"
+        app:entries="@array/reaction_entries"
+        app:entryValues="@array/reaction_values"
+        app:key="reaction"
+        app:title="@string/reaction"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:defaultValue="0"
+        app:entries="@array/number_of_attempts_entries"
+        app:entryValues="@array/number_of_attempts_values"
+        app:key="number_of_attempts"
+        app:title="@string/number_of_attempts"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        app:key="pass_without_error"
+        app:title="@string/pass_without_error" />
+
+    <SwitchPreferenceCompat
+        app:key="show_statistics"
+        app:title="@string/show_statistics" />
+
+    <ListPreference
+        app:defaultValue="ru"
+        app:entries="@array/locale_entries"
+        app:entryValues="@array/locale_values"
+        app:key="locale"
+        app:title="@string/locale"
+        app:useSimpleSummaryProvider="true" />
+
+    <!--
+    <SwitchPreferenceCompat
+        app:key="picture_signal"
+        app:title="@string/picture_signal" />
+
+    <ListPreference
+        app:dependency="picture_signal"
+        app:defaultValue="serios_smile"
+        app:entries="@array/picture_entries"
+        app:entryValues="@array/picture_values"
+        app:key="signal_picture"
+        app:title="@string/signal_picture"
+        app:useSimpleSummaryProvider="true" />
+
+        -->
+
+    <!--
+        app:dependency="sync"
+        app:summaryOff="@string/attachment_summary_off"
+        app:summaryOn="@string/attachment_summary_on"
+        -->
+
+
+</PreferenceScreen>

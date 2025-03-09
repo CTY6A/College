@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Bank.Core.Entities.Account>
+
+@{
+    ViewBag.Title = "Accounts";
+}
+
+@section Content {
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Number</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Kind</th>
+                            <th scope="col">Client</th>
+                            <th scope="col">Debet</th>
+                            <th scope="col">Credit</th>
+                            <th scope="col">Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var account in Model)
+                        {
+                            <tr>
+                                <td>@account.Number</td>
+                                <td>@account.AccountType.Name</td>
+                                <td>@((account.AccountTypeId == 3 && account.Passive) ? "Deposit" : null)@((account.AccountTypeId == 3 && !account.Passive) ? "Credit" : null) </td>
+                                <td>@account.Person?.GetFio()</td>
+                                <td>@account.Debet</td>
+                                <td>@account.Credit</td>
+                                <td>@account.Balance</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <form asp-controller="Deposit" asp-action="CloseDay">
+                    <input type="submit" class="btn btn-primary" value="Close day" />
+                </form>
+                <br>
+                @*<form asp-controller="Deposit" asp-action="Close10Days">
+                    <input type="submit" class="btn btn-primary" value="Close 10 days" />
+                </form>*@
+                <br>
+                <form asp-controller="Deposit" asp-action="CloseNDays">
+                    <input type="submit" class="btn btn-primary" value="Close 30 days" />
+                </form>
+            </div>
+    </div>
+}

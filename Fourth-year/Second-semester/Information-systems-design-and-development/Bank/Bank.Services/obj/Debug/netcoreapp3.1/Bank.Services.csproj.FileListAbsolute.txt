@@ -1,0 +1,12 @@
+E:\8sem\Пирис\Bank\Bank\Bank.Services\bin\Debug\netcoreapp3.1\Bank.Services.deps.json
+E:\8sem\Пирис\Bank\Bank\Bank.Services\bin\Debug\netcoreapp3.1\Bank.Services.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Services\bin\Debug\netcoreapp3.1\Bank.Services.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Services\bin\Debug\netcoreapp3.1\Bank.Core.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Services\bin\Debug\netcoreapp3.1\Bank.Core.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.csprojAssemblyReference.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.AssemblyInfoInputs.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.AssemblyInfo.cs
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.csproj.CopyComplete
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Services\obj\Debug\netcoreapp3.1\Bank.Services.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Data.deps.json
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Data.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.csprojAssemblyReference.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.AssemblyInfoInputs.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.AssemblyInfo.cs
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Data.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Common.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Core.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Common.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Data\bin\Debug\netcoreapp3.1\Bank.Core.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.csproj.CopyComplete
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Data\obj\Debug\netcoreapp3.1\Bank.Data.csproj.CoreCompileInputs.cache

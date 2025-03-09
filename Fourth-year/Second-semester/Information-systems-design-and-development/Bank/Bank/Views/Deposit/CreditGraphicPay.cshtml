@@ -1,0 +1,41 @@
+﻿@model List<double>
+
+@{
+    ViewBag.Title = "Graphic";
+}
+
+@section Content {
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Month</th>
+                        <th scope="col">Sum</th>
+                        @*<th scope="col"></th>*@
+                        @*<th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Sum</th>*@
+                        @*<th scope="col">Credit</th>*@
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    @for (var i = 1; i <= @Model.Count; i++)
+                    {
+
+                        <tr>
+                            <td>@i</td>
+                            <td>@Model[i - 1]</td>
+                            @*<td>@item.AccountFrom?.Number</td>
+                <td>@item.AccountTo?.Number</td>
+                <td>@item.Sum</td>*@
+                            @*<td>@account.Debet</td>
+                <td>@account.Credit</td>*@
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

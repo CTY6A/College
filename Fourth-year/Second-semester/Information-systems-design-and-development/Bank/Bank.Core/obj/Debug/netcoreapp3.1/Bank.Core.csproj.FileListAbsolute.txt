@@ -1,0 +1,8 @@
+E:\8sem\Пирис\Bank\Bank\Bank.Core\bin\Debug\netcoreapp3.1\Bank.Core.deps.json
+E:\8sem\Пирис\Bank\Bank\Bank.Core\bin\Debug\netcoreapp3.1\Bank.Core.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Core\bin\Debug\netcoreapp3.1\Bank.Core.pdb
+E:\8sem\Пирис\Bank\Bank\Bank.Core\obj\Debug\netcoreapp3.1\Bank.Core.csproj.CoreCompileInputs.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Core\obj\Debug\netcoreapp3.1\Bank.Core.AssemblyInfoInputs.cache
+E:\8sem\Пирис\Bank\Bank\Bank.Core\obj\Debug\netcoreapp3.1\Bank.Core.AssemblyInfo.cs
+E:\8sem\Пирис\Bank\Bank\Bank.Core\obj\Debug\netcoreapp3.1\Bank.Core.dll
+E:\8sem\Пирис\Bank\Bank\Bank.Core\obj\Debug\netcoreapp3.1\Bank.Core.pdb

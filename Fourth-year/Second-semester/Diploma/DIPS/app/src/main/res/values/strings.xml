@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name" translatable="false">Simre</string>
+    <string name="start">Start</string>
+    <string name="_0_0000" translatable="false">0.000</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="stop">Stop</string>
+    <string name="exit">Exit</string>
+    <string name="finish">Finish</string>
+    <string name="setting">Setting</string>
+    <string name="color">Color</string>
+    <string name="results">Results</string>
+    <string name="train">Practice</string>
+    <string name="too_early">Too early!</string>
+    <string name="too_late">Too late!</string>
+
+    <!-- Sync Preferences -->
+    <string name="background_color">Background color</string>
+    <string name="work_zone">Work zone</string>
+    <string name="reaction">Reaction</string>
+    <string name="number_of_attempts">Number of attempts</string>
+    <string name="show_statistics">Show statistics</string>
+    <string name="pass_without_error">Pass without error</string>
+    <string name="signal">Signal</string>
+    <string name="first_signal">First signal</string>
+    <string name="second_signal">Second signal</string>
+    <string name="help">Help</string>
+    <string name="locale">Localization</string>
+    <string name="testing">Testing</string>
+    <string name="help_main1">
+        The program is designed to study
+        improving simple visual-motor response,
+        which lies at the heart of the human psychomotor sphere.
+    </string>
+    <string name="help_main2">
+        The program settings allow you to implement many tasks
+        and create an individual program for the diagnosis and development of the reaction.
+    </string>
+    <string name="help_main3">
+        The program can become a diary of your condition, an indicator
+        readiness for work, simple reaction simulator.
+    </string>
+    <string name="help_main4">
+        We wish you success in studying your psychomotor skills!
+    </string>
+    <string name="help_testing1">
+        Press [START] and wait for the signal to appear.
+    </string>
+    <string name="help_testing2">
+        Pressing before the signal or after it disappears - error
+        (if the option is not installed).
+        In the presetting mode, you must first click on the working field,
+        and when a signal appears, release it.
+    </string>
+    <string name="help_testing3">
+        The job runs up to the specified number of SUCCESSFUL attempts.
+    </string>
+    <string name="help_testing4">
+        In test mode, results will be accumulated to monitor your progress.
+    </string>
+    <string name="help_setting1">
+        Setting the size, background color and signal allows
+        customize the screen for comfortable operation of the program on any device.
+    </string>
+    <string name="help_setting2">
+        The release mode studies a simple response under pre-tuning conditions,
+        and the ability to skip the signal is useful for athletes of different roles.
+    </string>
+    <string name="help_setting3">
+        By changing the number of attempts, the stability of the reaction is studied with increasing
+        fatigue, and hiding the result, you can assess the accuracy of self-assessment of your actions.
+    </string>
+    <string name="help_setting4">
+        Try each setting at work and find a comfortable environment for regular work.
+    </string>
+    <string name="simre" translatable="false">Simre</string>
+    <string name="test">Test</string>
+    <string name="highlight_with_dotted_line">Highlight with dotted line</string>
+    <string name="try_again_later">Try again later</string>
+    <string name="name">Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="fast_stats">FastStats</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="not_found">Not found</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="data_not_sent_to_server">Data not sent to server</string>
+    <string name="data_sent_to_server">Data sent to server</string>
+    <string name="server_answer">Server answer</string>
+    <string name="failed_to_connect_to_server">Failed to connect to server</string>
+</resources>

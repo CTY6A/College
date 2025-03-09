@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="exit">Выход</string>
+    <string name="finish">Финиш</string>
+    <string name="setting">Настройки</string>
+    <string name="color">Цвет</string>
+    <string name="results">Результаты</string>
+    <string name="train">Тренировка</string>
+    <string name="too_early">Рано!</string>
+    <string name="too_late">Пропущено</string>
+    <string name="help">Помощь</string>
+    <string name="second_signal">Второй сигнал</string>
+    <string name="first_signal">Первый сигнал</string>
+    <string name="signal">Сигнал</string>
+    <string name="background_color">Цвет фона</string>
+    <string name="work_zone">Рабочая зона</string>
+    <string name="reaction">Реакция</string>
+    <string name="number_of_attempts">Количество попыток</string>
+    <string name="show_statistics">Показывать статистику</string>
+    <string name="pass_without_error">Пропуск без ошибки</string>
+    <string name="locale">Локализация</string>
+    <string name="big">Большая</string>
+    <string name="small">Малая</string>
+    <string name="click">Касание</string>
+    <string name="hold">Отпускание</string>
+    <string name="dark_green">Тёмно зелёный</string>
+    <string name="gray">Серый</string>
+    <string name="red">Красный</string>
+    <string name="yellow">Жёлтый</string>
+    <string name="cyan">Голубой</string>
+    <string name="black">Чёрный</string>
+    <string name="smile_with_tongue">Смайл с языком</string>
+    <string name="fencer_number_one">Фехтовальщик номер один</string>
+    <string name="fencer_number_two">Фехтовальщик номер два</string>
+    <string name="nothing">Ничего</string>
+    <string name="russian">Русская</string>
+    <string name="english">Английская</string>
+    <string name="serious_smile">Серьёзный смайл</string>
+    <string name="testing">Практика</string>
+    <string name="help_main1">
+        Программа предназначена для изучения
+        особенностей простой зрительно-моторной реакции,
+        которая лежит в основе психомоторной сферы человека.
+    </string>
+    <string name="help_main2">
+        Настройки программы позволяют реализовать множество заданий
+        и создать индивидуальную программу диагностики и развития простой реакции.
+    </string>
+    <string name="help_main3">
+        Программа может стать дневником Вашего состояния, индикатором
+        готовности к работе, тренажером простой реакции.
+    </string>
+    <string name="help_main4">
+        Желаем успехов в изучении своей психомоторики!
+    </string>
+    <string name="help_testing1">
+        Нажимайте [СТАРТ] и ждите появления сигнала.
+    </string>
+    <string name="help_testing2">
+        Нажатие до сигнала или после его исчезновения – ошибка
+        (если не установлена опция).
+        В режиме преднастройки надо сначала нажать на рабочее поле,
+        а при появлении сигнала – отпустить.
+    </string>
+    <string name="help_testing3">
+        Задание выполняется до заданного количества УСПЕШНЫХ попыток.
+    </string>
+    <string name="help_testing4">
+        В режиме тестирования результаты будут накапливаться для мониторинга Ваших успехов.
+    </string>
+    <string name="help_setting1">
+        Установка размера, цвета фона и сигнала позволяет
+        настроить экран для комфортной работы программы на любом устройстве.
+    </string>
+    <string name="help_setting2">
+        Режим отпускания изучает простую реакцию в условиях преднастройки,
+        а возможность пропустить сигнал пригодится спортсменам разного амплуа.
+    </string>
+    <string name="help_setting3">
+        Изменяя количество попыток, изучается стабильность реакции при нарастании
+        утомления, а скрыв результат, можно оценить точность самооценки своих действий.
+    </string>
+    <string name="help_setting4">
+        Попробуйте каждый параметр в работе и выберите комфортные условия для регулярной работы.
+    </string>
+    <string name="test">Тест</string>
+    <string name="highlight_with_dotted_line">Выделить пунктиром</string>
+    <string name="try_again_later">Попробуйте позднее</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="fast_stats">Статистика</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="not_found">Не найдено</string>
+    <string name="name">Имя</string>
+    <string name="enter_your_name">Введите ваше имя</string>
+    <string name="data_not_sent_to_server">Данные не отправлены на сервер</string>
+    <string name="data_sent_to_server">Данные отправлены на сервер</string>
+    <string name="server_answer">Ответ сервера</string>
+    <string name="failed_to_connect_to_server">Не удалось подключиться к серверу</string>
+</resources>

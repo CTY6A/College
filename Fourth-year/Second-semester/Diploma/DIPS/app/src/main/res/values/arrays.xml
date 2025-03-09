@@ -1,0 +1,118 @@
+<resources>
+    <!--  -->
+    <string-array name="workzone_entries">
+        <item>@string/big</item>
+        <item>@string/small</item>
+    </string-array>
+
+    <string-array name="workzone_values">
+        <item>big</item>
+        <item>small</item>
+    </string-array>
+
+    <!--  -->
+    <string-array name="reaction_entries">
+        <item>@string/click</item>
+        <item>@string/hold</item>
+    </string-array>
+
+    <string-array name="reaction_values">
+        <item>click</item>
+        <item>hold</item>
+    </string-array>
+
+    <!--  -->
+    <string-array name="color_entries">
+        <item>@string/dark_green</item>
+        <item>@string/gray</item>
+        <item>@string/red</item>
+        <item>@string/yellow</item>
+        <item>@string/cyan</item>
+        <item>@string/black</item>
+    </string-array>
+
+    <string-array name="color_values">
+        <item>#004D40</item>
+        <item>gray</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>cyan</item>
+        <item>black</item>
+    </string-array>
+
+    <!--  -->
+    <string-array name="signal_entries">
+        <item>@string/dark_green</item>
+        <item>@string/gray</item>
+        <item>@string/red</item>
+        <item>@string/yellow</item>
+        <item>@string/cyan</item>
+        <item>@string/black</item>
+        <item>@string/serious_smile</item>
+        <item>@string/smile_with_tongue</item>
+        <item>@string/fencer_number_one</item>
+        <item>@string/fencer_number_two</item>
+        <item>@string/nothing</item>
+    </string-array>
+
+    <string-array name="signal_values">
+        <item>#004D40</item>
+        <item>gray</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>cyan</item>
+        <item>black</item>
+        <item>serios_smile</item>
+        <item>smile_with_tongue</item>
+        <item>fencer_number_one</item>
+        <item>fencer_number_two</item>
+        <item>nothing</item>
+    </string-array>
+
+    <!--  -->
+    <string-array name="locale_entries">
+        <item>@string/russian</item>
+        <item>@string/english</item>
+    </string-array>
+
+    <string-array name="locale_values">
+        <item>ru</item>
+        <item>en</item>
+    </string-array>
+
+    <!--  -->
+    <string-array name="number_of_attempts_entries">
+        <item>@string/train</item>
+        <item>5</item>
+        <item>12</item>
+        <item>20</item>
+        <item>50</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="number_of_attempts_values">
+        <item>0</item>
+        <item>5</item>
+        <item>12</item>
+        <item>20</item>
+        <item>50</item>
+        <item>70</item>
+    </string-array>
+    <string name="big">Big</string>
+    <string name="small">Small</string>
+    <string name="click">Click</string>
+    <string name="hold">Letting go</string>
+    <string name="dark_green">Dark green</string>
+    <string name="gray">Gray</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="cyan">Cyan</string>
+    <string name="black">Black</string>
+    <string name="serious_smile">Serious smile</string>
+    <string name="smile_with_tongue">Smile with tongue</string>
+    <string name="fencer_number_one">Fencer number one</string>
+    <string name="fencer_number_two">Fencer number two</string>
+    <string name="nothing">Nothing</string>
+    <string name="russian">Russian</string>
+    <string name="english">English</string>
+</resources>

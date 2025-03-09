@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" asp-controller="Person" asp-action="Index">Банк</a>
+                
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item" asp-controller="Deposit" asp-action="SelectProgram">Создать депозит</a>
+                        <a class="nav-item" asp-controller="Deposit" asp-action="GetAccountsList">Список счетов</a>
+                        <a class="nav-item" asp-controller="Deposit" asp-action="GetTransactionsList">Транзакции</a>
+                        <a asp-controller="Deposit" asp-action="SelectCreditProgram">Создать кредит</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="d-flex flex-grow-1">
+            <div class="container col-10">
+                @RenderSection("Content")
+            </div>
+        </main>
+        <footer>
+            <div class="container mt-5">
+                <p class="text-muted text-center">&copy; Vadim Stubeda 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    @RenderSection("Scripts", false)
+</body>
+</html>

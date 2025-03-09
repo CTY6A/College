@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PersonListItemViewModel>
+
+@{
+    ViewBag.Title = "Список";
+}
+
+@section Content {
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-primary" asp-controller="Person" asp-action="Create">Добавить</a>
+            @{
+                var err = string.Empty;
+                var upateError = ViewData.ModelState["Delete Person"];
+                if (upateError?.Errors != null && upateError.Errors.Count > 0)
+                {
+                    err = upateError.Errors[0].ErrorMessage;
+                }
+            }
+            <span class="text-danger">@err</span>
+        </div>
+     </div>
+
+    <div class="row">
+        <div class="col">
+             <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Фамилия</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Отчество</th>
+                        <th scope="col">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var person in Model)
+                    {
+                        <tr>
+                            <td class="font-weight-bold">@person.LastName</td>
+                            <td>@person.FirstName</td>
+                            <td>@person.Patronymic</td>
+                            <td nowrap="nowrap" class="text-center">
+                            
+                                <a class="btn btn-primary btn-sm" asp-controller="Person" asp-action="Edit" asp-route-id="@person.Id"><span class="oi oi-pencil"></span></a>
+                                <form asp-controller="Person" asp-action="Delete" class="d-inline">
+                                    <input type="hidden" name="Id" value="@person.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm"><span class="oi oi-trash"></span></button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

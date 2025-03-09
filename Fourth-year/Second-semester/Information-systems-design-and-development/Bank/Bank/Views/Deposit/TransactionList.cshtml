@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Bank.Core.Entities.Transaction>
+
+@{
+    ViewBag.Title = "Transactions";
+}
+
+@section Content {
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Date</th>
+                        @*<th scope="col"></th>*@
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Sum</th>
+                        @*<th scope="col">Credit</th>*@
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.SequenceNumber</td>
+                        <td>@item.Date</td>
+                        <td>@item.AccountFrom?.Number</td>
+                        <td>@item.AccountTo?.Number</td>
+                        <td>@item.Sum</td>
+                        @*<td>@account.Debet</td>
+        <td>@account.Credit</td>*@
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

@@ -1,0 +1,24 @@
+﻿@model Bank.Models.ProgramModel
+
+@{
+    ViewBag.Title = "Select";
+}
+
+@section Content {
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form asp-controller="Deposit" asp-action="SelectProgram">
+                    <div class="form-group">
+                        <label>Programs</label><br>
+                        @{
+                            var items = Model.Programs.Select(x => new SelectListItem(x.Name, x.Id.ToString()));
+                        }
+                        <select asp-for="@Model.ProgramId" asp-items="@items" class="form-control"></select>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Next" />
+                </form>
+            </div>
+        </div>
+    </div>
+}

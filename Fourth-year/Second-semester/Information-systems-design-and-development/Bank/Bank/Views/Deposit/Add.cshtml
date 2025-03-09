@@ -1,0 +1,89 @@
+﻿@model Bank.Models.AddDepositViewModel
+
+@{
+    ViewBag.Title = "Add";
+}
+
+@section Content {
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form asp-controller="Deposit" asp-action="Add">
+                    @{
+                        var err = string.Empty;
+                        var upateError = ViewData.ModelState["UpdateDB"];
+                        if (upateError?.Errors != null && upateError.Errors.Count > 0)
+                        {
+                            err = upateError.Errors[0].ErrorMessage;
+                        }
+                    }
+                    <span class="text-danger">@err</span>
+                    <input asp-for="@Model.DepositInfoId" />
+                    @*<div class="form-group">
+            <label asp-for="DepositInfoId">Program</label><br>
+            <select asp-for="DepositInfoId" asp-items="@Model.DepositsInfo" class="form-control"></select>
+        </div>*@
+                    <div class="form-group">
+                        <label asp-for="@Model.PersonId">Person</label><br>
+                        <select asp-for="@Model.PersonId" asp-items="@Model.Persons" class="form-control"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name">Program</label><br>
+                        <input asp-for="@Model.Name" readonly class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Duration"></label><br>
+                        <input asp-for="@Model.Duration" readonly class="form-control" />
+                    </div>
+                    @*<div class="form-group">
+            <label>Min Sum</label><br>
+            <input id="duration" class="form-control" />
+        </div>*@
+                <div class="form-group">
+                    <label asp-for="@Model.Currency"></label><br>
+                    <input asp-for="@Model.Currency" readonly class="form-control" />
+                    <span asp-validation-for="@Model.Currency" class="text-danger"></span>
+
+                    @*<select class="form-control">
+                  <option value=""></option>
+            <option value="0">Женат(а)</option>
+            <option value="1">Холост</option>
+            <option value="2">Не замужем</option>
+        </select>*@
+                </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.StartDate">Start Date</label><br>
+                        <input asp-for="@Model.StartDate" readonly class="form-control" />
+                        <span asp-validation-for="@Model.StartDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.EndDate">End Date</label><br>
+                        <input asp-for="@Model.EndDate" readonly class="form-control" />
+                        <span asp-validation-for="@Model.EndDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Persent"></label><br>
+                        <input asp-for="@Model.Persent" readonly class="form-control" />
+                        <span asp-validation-for="@Model.Persent" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Sum"></label><br>
+                        <input asp-for="@Model.Sum" class="form-control" />
+                        <span asp-validation-for="@Model.Sum" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Number"></label><br>
+                        <input asp-for="@Model.Number" class="form-control" />
+                        <span asp-validation-for="@Model.Number+" class="text-danger"></span>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Save" />
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+@*@section Scripts{ 
+    
+}*@

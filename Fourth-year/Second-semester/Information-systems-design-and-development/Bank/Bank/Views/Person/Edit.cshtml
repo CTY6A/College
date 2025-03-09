@@ -1,0 +1,18 @@
+﻿@model PersonEditViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@section Content {
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form asp-controller="Person" asp-action="Edit">
+                    <input asp-for="Id" />
+                    <partial name="_EditPerson" model="Model" />
+                </form>
+            </div>
+        </div>
+    </div>
+}

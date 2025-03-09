@@ -1,0 +1,6 @@
+E:\8sem\Пирис\Bank\Bank\Database\bin\Debug\Database.dacpac
+E:\8sem\Пирис\Bank\Bank\Database\bin\Debug\Database.dll
+E:\8sem\Пирис\Bank\Bank\Database\bin\Debug\Database.pdb
+E:\8sem\Пирис\Bank\Bank\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+E:\8sem\Пирис\Bank\Bank\Database\obj\Debug\Database.dll
+E:\8sem\Пирис\Bank\Bank\Database\obj\Debug\Database.pdb
