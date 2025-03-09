@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #fff;
+}
+
+nav .brand-logo,
+nav ul a {
+  color: #000;
+}
+
+.app-container {
+  margin-top: 25px;
+}
+
+.complete .card {
+  background-color: #304455 !important;
+}
